@@ -9,4 +9,4 @@ data science and computational education community.
 I have trialed and tested them in my teaching of Data Science throughout the past 6 years 
 in both undergraduate and graduate Data Science courses at the University of British Columbia.
 
-- Link to slides TBD!!!
+- [Link to slides](https://bit.ly/timbers-IDWSDS-2023)
