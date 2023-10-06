@@ -1,9 +1,9 @@
 ---
-title: "10 simple rules for teaching R for Data Science"  
+title: "10 simple rules for teaching Data Science"  
 author: 
   - "Tiffany Timbers (UBC)"
-  - "2022-09-17"
-date: 'bit.ly/timbers-cascadia-r-conf-2022'
+  - "2023-10-10"
+date: 'bit.ly/timbers-IDWSDS-2023'
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -66,7 +66,7 @@ style_duo_accent(
 ```
 
 
-### 1. Teach R by doing data analysis
+### 1. Teach data science by doing data analysis
 
 **What?** In your first lesson, load the data, do some "mild" wrangling and make a plot!
 
@@ -333,9 +333,9 @@ ggplot(subset(gapminder, continent != "Oceania"),
 
 ## 7. Provide cultural and historical context
 
-**What?** When R things seem "odd", take time to explain why they are the way they are.
+**What?** When software things seem "odd", take time to explain why they are the way they are.
 
-**Why?** Cultivates an appreciation, or at least understanding of R's quirks (compared to other programming languages). Helps prevent frustration and/or annoyances. Helps with motivation again!
+**Why?** Cultivates an appreciation, or at least understanding of software's quirks. Helps prevent frustration and/or annoyances. Helps with motivation again!
 
 ***
 
@@ -484,11 +484,11 @@ Source: https://stat545.stat.ubc.ca/
 
 ---
 
-## 10 simple rules for teaching R for Data Science
+## 10 simple rules for teaching Data Science
 
 --
 
-1. Teach R by doing data analysis
+1. Teach data science by doing data analysis
 
 --
 
@@ -561,6 +561,6 @@ Source: https://stat545.stat.ubc.ca/
 
 class: inverse, center, middle
 
-## 10 simple rules for teaching R for Data Science
+## 10 simple rules for teaching Data Science
 
-#### talk slides: *[https://bit.ly/timbers-cascadia-r-conf-2022](https://bit.ly/timbers-cascadia-r-conf-2022)*
+#### talk slides: *[https://bit.ly/timbers-IDWSDS-2023](https://bit.ly/timbers-IDWSDS-2023)*
