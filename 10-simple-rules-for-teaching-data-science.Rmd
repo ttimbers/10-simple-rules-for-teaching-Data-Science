@@ -564,3 +564,5 @@ class: inverse, center, middle
 ## 10 simple rules for teaching Data Science
 
 #### talk slides: *[https://bit.ly/timbers-IDWSDS-2023](https://bit.ly/timbers-IDWSDS-2023)*
+
+<img src="img/bit.ly_timbers-IDWSDS-2023.png" width=300>
