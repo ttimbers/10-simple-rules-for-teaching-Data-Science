@@ -10,3 +10,4 @@ I have trialed and tested them in my teaching of Data Science throughout the pas
 in both undergraduate and graduate Data Science courses at the University of British Columbia.
 
 - [Link to slides](https://bit.ly/timbers-IDWSDS-2023)
+- [Talk recording](https://youtu.be/ZoH5tzmHJ3s?si=oNpypbVM6dL1Htjp)
