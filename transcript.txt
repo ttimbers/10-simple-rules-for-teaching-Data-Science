@@ -1,0 +1,305 @@
+[00:00.000 --> 00:21.600]  Hello, great. Okay. Hello, everyone. I hope you're enjoying this virtual conference. I'm Wendy Lu,
+[00:21.600 --> 00:28.080]  Professor of Biostatistics at the University of Toronto, Canada. It is my great pleasure to chair
+[00:28.080 --> 00:36.080]  this session sponsored by the Statistical Society of Canada, SSC. Before I start, I'd like to give a
+[00:36.080 --> 00:43.280]  very brief introduction about the speaker, Professor Tiffany Timbers. Tiffany is a faculty
+[00:43.280 --> 00:49.760]  member in the Department of Statistics at the University of British Columbia, I'll briefly
+[00:49.760 --> 00:56.720]  as UBC in Vancouver, Canada. In addition to teaching, she co-directs the master's program
+[00:56.720 --> 01:04.320]  of data science at UBC. Prior to joining UBC as a faculty, she completed her postdoctoral training
+[01:04.320 --> 01:11.760]  at UBC in Simon Fraser University after obtaining her PhD in neuroscience also at UBC. She's a true
+[01:12.640 --> 01:20.160]  Vancouver person. Tiffany is an internationally recognized leader in teaching data science.
+[01:20.160 --> 01:28.640]  She was recently awarded with the SSC's Early Career Educator Award just this year. If you're teaching
+[01:28.640 --> 01:35.840]  courses on data science, I highly recommend you check out her website. She co-authored two textbooks.
+[01:35.840 --> 01:42.560]  One is titled Introduction to Data Science and the other is titled Python Packages. Both are available at
+[01:42.560 --> 01:52.640]  her website and also available as published texts through CRC Press. In the interest of time, for more details
+[01:52.640 --> 02:00.160]  about Tiffany's research interests, publications, and her leadership roles, I will refer you to her website,
+[02:00.160 --> 02:08.240]  which I will send the URLs through the chat shortly. So today, she's going to tell you about
+[02:08.240 --> 02:15.120]  10 simple rules for teaching data science. All right. So over to you, Tiffany.
+[02:15.120 --> 02:18.480]  Tiffany, thank you. Thank you for the introduction, Wendy, and thank you to
+[02:19.120 --> 02:24.080]  the organizers for this great meeting. I'm very honored to be part of it. I'm going to share my screen now
+[02:24.080 --> 02:31.280]  and let me know if that everything looks okay on your end. Yep. Looks great. Excellent.
+[02:31.280 --> 02:38.320]  Excellent. Okay. So as Wendy said, the talk title I have for you today is 10 simple rules for teaching
+[02:38.320 --> 02:44.720]  data science. And so these 10 rules that I'm going to present to you are not rules that I have
+[02:44.720 --> 02:50.880]  necessarily like, I'm not the first person to do this thing, but I'm trying to collate 10, I think,
+[02:50.880 --> 02:56.880]  really good tips, I guess, for teaching that I've seen other people do and then used in the classroom
+[02:56.880 --> 03:02.960]  to with some success. So the first rule that I'm going to talk to you about is teaching data science
+[03:02.960 --> 03:08.720]  by doing data analysis. So what do I mean by this? So I mean, in your first lesson, not in your third
+[03:08.720 --> 03:13.680]  lesson, not in your 10th lesson, not at the end of the semester, but in your first data science lesson,
+[03:13.680 --> 03:20.640]  get the students to load some data, do some mild data wrangling and make a plot. Why do I suggest this?
+[03:20.640 --> 03:26.240]  Because it's extremely motivating to students. In the beginnings, students have signed up to data
+[03:26.240 --> 03:32.160]  to do data analysis or to do data science because they're interested in asking and answering questions
+[03:32.160 --> 03:39.520]  about the world using data. And they don't necessarily have enough knowledge to care deeply
+[03:39.520 --> 03:44.400]  about small things like type and, you know, whether you're using tidyverse versus base R,
+[03:44.400 --> 03:50.080]  whether you're using R versus Python. So get them, show them something interesting early on,
+[03:50.080 --> 03:54.080]  hook them, and then they're going to be begging you to answer those questions for them.
+[03:54.080 --> 04:00.400]  So an example of this is shown in the slide here. So in our first lecture in introduction to data
+[04:00.400 --> 04:06.640]  science, DCI 100 at UBC, and this also comes from the first chapter of the companion textbook for that
+[04:06.640 --> 04:13.200]  data science at first introduction, we get the students to load a data from a CSV, do some light
+[04:13.200 --> 04:19.040]  data wrangling through filtering, arranging and slicing, and then create a plot to answer a question
+[04:19.040 --> 04:24.720]  about indigenous languages in Canada, how, you know, how many of them are there, how many people are
+[04:24.720 --> 04:31.600]  speaking them as their mother tongue. So this is not a new idea for me, as I said, I was first inspired
+[04:31.600 --> 04:38.960]  to do this through following what David Robinson was doing in some of his online courses. He talked about
+[04:39.520 --> 04:46.080]  how it is just so much more intuitive to, you know, use the tidyverse. His case was using the tidyverse to get
+[04:46.080 --> 04:51.040]  students doing things really quickly in a readable way as opposed to base R. That's not the argument
+[04:51.040 --> 04:56.240]  I'm necessarily making today, but his reason for this is you can get people doing interesting things
+[04:56.240 --> 05:03.760]  really quickly. Jenny Bryan, another pretty well-known or extremely well-known data science and R
+[05:03.760 --> 05:09.840]  educator, different software developer, has also tweeted about not front-loading the boring foundational
+[05:09.840 --> 05:15.760]  stuff in courses. So do realistic and non-boring tasks and work your way down to those, the more
+[05:15.760 --> 05:19.520]  boring stuff. Students are going to care about that more boring stuff once they get a bit of experience.
+[05:20.480 --> 05:26.720]  So on each of these slides, you'll kind of see a pattern that I'm going to have some, you know,
+[05:26.720 --> 05:31.040]  if you're really particularly interested in a given rule, you can follow these links and I'll share
+[05:31.040 --> 05:34.240]  a link to my slides at the end of this talk so it'll be easy for you to find these.
+[05:35.040 --> 05:41.120]  So my second rule is to use participatory live coding. So what do I mean by that? So I think that
+[05:41.120 --> 05:46.320]  when you are doing something with code in the classroom, instead of, you know, popping it up
+[05:46.320 --> 05:52.240]  on the screen and just running it or even showing it in a static slide, actually open up an editor,
+[05:52.240 --> 05:57.440]  type it out and narrate the code as you are teaching about teaching it. Have the participants follow along
+[05:57.440 --> 06:02.640]  as well. The reason for this is it demonstrates the processes. You can talk about why you're doing
+[06:02.640 --> 06:08.560]  things in different ways as you're doing it to layer that on top of the code itself,
+[06:08.560 --> 06:13.280]  and you're likely going to make mistakes as you live code. And that's actually a good thing.
+[06:13.280 --> 06:16.480]  It helps you appear human to the students because they're going to make mistakes too,
+[06:16.480 --> 06:22.640]  and so they will better identify with you. And then they'll also learn how you solve the problems
+[06:22.640 --> 06:26.720]  when you make mistakes, which they'll be able to leverage and use later in their careers.
+[06:26.720 --> 06:34.400]  So this simple rule comes to us from the carpentry. So I saw this first as a software
+[06:34.400 --> 06:41.600]  carpentry workshop participant and later as an instructor, and it's used in all of their workshops
+[06:41.600 --> 06:48.960]  across the world. The third simple rule that I bring you is giving tons and tons of practice.
+[06:48.960 --> 06:54.240]  So what do I mean by that? Give the learners many, many, many problems to solve, probably many,
+[06:54.240 --> 06:58.720]  many, many more than you think that they might need. The reason for this is that repetition
+[06:58.720 --> 07:04.400]  leads to learning. That's not just in humans. My background is in neuroscience and looking at
+[07:04.400 --> 07:09.040]  animal behavior, and across the animal kingdom, repetition leads to learning. So students really
+[07:09.040 --> 07:15.680]  need to do things many, many times to understand and then to perform those tasks. So here's an example
+[07:15.680 --> 07:20.720]  from my intro. Our course teaches both the undergrad and grad level, and when I'm teaching students to
+[07:20.720 --> 07:29.760]  read in data, I get them to do this in one exercise six different variants of a very similar file. So the
+[07:29.760 --> 07:36.160]  students have to like investigate each file, look at the spacing, look if there's metadata, look at what
+[07:36.160 --> 07:41.440]  type of file it is, and really figure out how to do this. And so they'll do this in a worksheet, and then later
+[07:41.440 --> 07:50.320]  they'll also do it on a different set of files in a lab assignment, and then they'll have to do this on their quiz as well. So many, many practices.
+[07:50.320 --> 07:57.360]  Inspiration from this comes from the Swirl R package, which was the first time I saw something like this.
+[07:57.360 --> 08:03.520]  So this is a really cool R package made by Sean Cross and others, where you install it in an R console,
+[08:03.520 --> 08:07.600]  and run it through the R console, and under different topics in the R programming language,
+[08:07.600 --> 08:12.160]  it'll prompt you with many, many questions, and then you answer the questions in there,
+[08:12.160 --> 08:16.480]  and it will give you hints, and it will tell you if you're doing things correctly or incorrectly,
+[08:16.480 --> 08:19.520]  which is also kind of neat and leading into what I'm going to talk about next.
+[08:20.240 --> 08:26.000]  If you're interested in seeing examples of this beyond Swirl, again, I have more examples here.
+[08:26.000 --> 08:32.880]  So we have some worksheets from our Intro Data Science course, and then there's a great online
+[08:32.880 --> 08:39.520]  course by Julia Siljay for machine learning case studies. And then Greg Wilson has a great book
+[08:39.520 --> 08:44.320]  called Teaching Tech Together, and he's got a whole section on different types of coding exercises,
+[08:44.320 --> 08:50.560]  so you can find different ways to present the same content to your students, and they get to practice
+[08:50.560 --> 09:00.240]  different aspects of it. Pairing with giving lots of practice, you also want to pair that with tons and
+[09:00.240 --> 09:07.680]  tons of timely feedback. And practice without feedback has limited value. So how can we give tons and
+[09:07.680 --> 09:13.440]  tons of timely feedback? One way we can do this is through automated software tests. So in data
+[09:13.440 --> 09:19.120]  science, a lot of the problems we're going to give students to do are working through code, and so we
+[09:19.120 --> 09:24.800]  can write software tests that if a student gives a particular answer and it's wrong in this particular
+[09:24.800 --> 09:29.760]  way, then we can give this feedback back to the student, and then they can maybe try again and
+[09:29.760 --> 09:34.160]  solve the problem in a different way. Here's an example that we use in one of our courses where the
+[09:34.160 --> 09:38.960]  students were given some ggplot code, and it was jumbled up in the wrong order, and they have to
+[09:38.960 --> 09:45.760]  rearrange it. And in this rearranging it, the student is missing, somehow missing the plus sign to add
+[09:45.760 --> 09:51.280]  another layer, and that ends up with a poorly formatted access type title. When they run our test,
+[09:51.280 --> 09:55.520]  then they get some feedback that there's a problem with one of the access labels, so that will direct
+[09:55.520 --> 10:01.040]  the students attention back to look at the, hopefully at the label code, they can fix it, and then they'll get a
+[10:01.040 --> 10:05.680]  message that they were successful in fixing the code, and it's what we've expected.
+[10:07.760 --> 10:12.160]  The first time that I had heard about doing something like this was, there's a wonderful
+[10:12.160 --> 10:16.640]  literate, in addition to like different types of coding exercises in Greg's Teaching Tech Together
+[10:16.640 --> 10:21.600]  book, there's also a section, or there's many sections where he's done a very thorough review
+[10:21.600 --> 10:27.600]  of the literature, and in that review of the literature was this idea to do these automated
+[10:27.600 --> 10:32.400]  testing. And there seems to be quite a convergence of this in the computer science field and coming
+[10:32.400 --> 10:37.120]  into the data science field, so we actually have lots of tools, open source tools now to do this.
+[10:37.120 --> 10:42.480]  So LearnR is a package you can do this with in the R programming language, and then there's
+[10:42.480 --> 10:48.800]  NBgrader and Ottergrader, which are language agnostic tools, or at least work with R and Python for
+[10:48.800 --> 10:53.280]  providing these kinds of feedback to students on their practice problems.
+[10:55.760 --> 11:01.920]  Rule number five is to use tractable or toy data examples. And so what do I mean by this?
+[11:01.920 --> 11:07.360]  So when you're introducing a new tool, a new method, a new algorithm to students,
+[11:09.440 --> 11:14.400]  you give them data to learn this that has a countable number of things, things that will kind
+[11:14.400 --> 11:19.040]  of fit inside of our working memory, so students can track where everything is going through
+[11:19.040 --> 11:25.040]  different steps of the algorithm. And this allows students to see how the elements are manipulated
+[11:25.040 --> 11:31.920]  and really get the intuition for these things. An example from one of our courses, the introduction
+[11:31.920 --> 11:38.080]  in data science course, where we teach k-means clustering, we use the polymer penguins data set
+[11:38.800 --> 11:43.280]  to introduce that, but instead of throwing that entire data set that has hundreds of
+[11:43.280 --> 11:48.640]  observations at students, what we do initially is we subset that to just a handful of observations,
+[11:48.640 --> 11:54.720]  like shown here on the screen. And then we can walk the students through what happens to these
+[11:54.720 --> 12:00.240]  observations at each step of the algorithm. And students can very clearly see from step one,
+[12:00.240 --> 12:05.520]  to step two, to step three, to step four, what is happening with those observations and build an
+[12:05.520 --> 12:14.800]  understanding and an intuition. Inspiration from this comes from Jenny Bryan's great dplyr join cheat
+[12:14.800 --> 12:23.920]  sheet that she created in the STAT 545 course at UBC. And so in this example, she's teaching all the
+[12:23.920 --> 12:28.880]  different joins from the dplyr package. There's left joins and right joins and fold joins and inner joins
+[12:28.880 --> 12:32.560]  and semi joins. And depending on the direction, you might end up getting a different result.
+[12:34.320 --> 12:39.040]  And so to help students understand these things, it's really hard to get an idea of what's going
+[12:39.040 --> 12:43.520]  on and all these things that are also similarly named when you have really big data sets. So she
+[12:43.520 --> 12:50.560]  created an example cheat sheet where there's only like six rows in one data set, three rows in another
+[12:50.560 --> 12:56.160]  data set. And then she goes through all the different possible joins and shows the output of it.
+[12:56.160 --> 13:00.480]  And so as a learner looking at this becomes, this becomes very tractable and easy to understand.
+[13:03.920 --> 13:08.960]  Now, after you've reached, after you've used a toy or tractable data set, and the students have found
+[13:09.520 --> 13:14.720]  conceptual understanding of the new method or algorithm you're teaching them, the next thing
+[13:14.720 --> 13:22.480]  I think to do is to use a real and rich data set paired with like a real question. But as you're doing
+[13:22.480 --> 13:28.960]  this, make sure that that data set is also accessible. So what do I mean by that is that
+[13:29.680 --> 13:34.560]  you want to have a data set where the question is something that a real data scientist, either in
+[13:34.560 --> 13:41.360]  academia, industry, government would really want to answer. It's a larger data set so that it's not just
+[13:41.360 --> 13:46.720]  so easy that you would be able to come up with the answer by eye. That's really motivating. But the catch
+[13:46.720 --> 13:51.600]  here is that the observations in the data set, the different variables, the different columns
+[13:51.600 --> 13:57.280]  in the data set have to be things that very quickly your learners can understand. And really,
+[13:57.280 --> 14:02.320]  what can become kind of like an expert blind spot for us when we're teaching this is especially if we
+[14:02.320 --> 14:08.160]  come from like a particular domain. So for myself, from like the neuroscience or biology domain,
+[14:08.880 --> 14:15.520]  I might, for example, think that using some deep sequencing data data set might be a great example
+[14:15.520 --> 14:23.120]  for this particular algorithm that I want to teach the students. However, that's because I have this,
+[14:23.120 --> 14:27.840]  you know, deeper understanding of biological processes that you need to understand that data
+[14:27.840 --> 14:34.240]  set. And depending on your learners, that data set might not be appropriate. So what you really want
+[14:34.240 --> 14:41.840]  is you don't want that so much of the students cognitive resources spent trying time and energy
+[14:41.840 --> 14:46.000]  trying to understand just what the data set is about, and then mapping that to the question. And
+[14:46.000 --> 14:51.120]  then you see, it just gets to be a bit too much. So instead, we want to use something where people
+[14:51.120 --> 14:58.000]  understand what the observations are and what the columns are quite easily. So one example here from
+[14:58.000 --> 15:04.000]  our introductory data science course is a data set from the can laying our package, where we have,
+[15:04.560 --> 15:09.360]  you know, number of Canadians reporting a particular language as their mother tongue.
+[15:09.360 --> 15:14.560]  So the language that they learned at birth, and then we have different categories. So they in the data
+[15:14.560 --> 15:18.720]  set, they use Aboriginal language as a category, it really probably should be Indigenous languages
+[15:18.720 --> 15:22.400]  versus official languages versus non official and non Indigenous languages.
+[15:22.400 --> 15:30.400]  Inspiration from this game, again, from Jenny, Brian. So she created the Gapminder R data package
+[15:30.400 --> 15:37.040]  that's used quite widely in teaching R in many universities. And it's really nice because it's a
+[15:37.040 --> 15:42.800]  biggish data set. So there's, you know, hundreds of observations in it. And the observations though are,
+[15:42.800 --> 15:47.520]  you know, something most people understand. It's a country in a given year. And, you know,
+[15:47.520 --> 15:51.680]  things that we're actually interested in, because everybody grew up in a country or more than one
+[15:51.680 --> 15:57.520]  country in their lifetime. And we all grew up at a different time in history. And so those things
+[15:57.520 --> 16:02.160]  make us generally maybe interested about asking questions with the data set. Also, the variables
+[16:02.160 --> 16:08.320]  in the data set are country, continent, year, life expectancy, population, per capita GDP. These are
+[16:08.320 --> 16:14.720]  all concepts that we as adults have an understanding of without having to have a deep explanation about
+[16:14.720 --> 16:19.360]  it. So it makes it really accessible. So I've listed here some more explanations of data
+[16:20.000 --> 16:25.920]  sets or data packages that might fit that. But the biggest thing is keeping in mind that,
+[16:25.920 --> 16:30.480]  you know, it doesn't take a lot of time for your students to understand the data set. Because
+[16:30.480 --> 16:33.840]  that's, you know, the data set isn't necessarily what you're trying to teach at that moment.
+[16:35.920 --> 16:41.840]  My seventh simple rule is to provide a cultural and historical context for what you're teaching.
+[16:41.840 --> 16:46.800]  And what this kind of like, what do you mean by that? What I'm talking about is sometimes when
+[16:46.800 --> 16:52.880]  we're teaching things in software, or with software, things might seem weird or odd or
+[16:53.440 --> 17:01.840]  strange. And it's really helpful to say why they are that way. If you give the history for why,
+[17:01.840 --> 17:08.400]  and even tell students that like, this was a design choice, people thought about this and decided this
+[17:08.400 --> 17:14.560]  was the best way to implement this, particularly, you know, maybe for reason X, Y, and Z. It helps
+[17:14.560 --> 17:21.200]  students understand, A, that, you know, tech software is built by humans, and so it's going
+[17:21.200 --> 17:27.520]  to be influenced by humans' perspective, human history, and human culture. And it helps prevent
+[17:27.520 --> 17:33.200]  frustration or annoyances with the software. They can start to see the reason behind that. And
+[17:33.200 --> 17:37.920]  why I think it's important to help prevent those frustration or annoyances, because I think for
+[17:37.920 --> 17:45.520]  some people, they can become real blockers and make people maybe like dislike or written up a
+[17:45.520 --> 17:49.920]  certain piece of software, for example. So an example for this is like when I'm teaching the
+[17:49.920 --> 17:54.880]  programming language R with the tidyverse, where you see something that's quite different from a lot of
+[17:54.880 --> 18:00.320]  other programming languages. So what is that? It's the heavy use of unquoted column names. So you think about
+[18:00.320 --> 18:05.840]  anytime you're accessing a data frame column with the tidyverse, you don't put quotations around it.
+[18:05.840 --> 18:10.160]  That's actually really strange when you come from other programming languages and actually can make,
+[18:10.160 --> 18:16.000]  you know, writing functions with the tidyverse a bit more difficult. And so some people coming,
+[18:16.000 --> 18:20.960]  say, from Python or from, you know, Java or C coming into this situation might be like,
+[18:20.960 --> 18:27.200]  that's a really dumb idea. But if they understand that, you know, R was written by statisticians for
+[18:27.200 --> 18:34.160]  statisticians and like with the intent that many, much of the time would be typing things into the
+[18:34.160 --> 18:41.040]  console or running code interactively and not having to like always keep track of opening and closing those
+[18:41.040 --> 18:46.800]  quotes and making mistakes, trying to minimize that, then students can be like, oh, I understand why that
+[18:46.800 --> 18:54.240]  is a good design choice given that situation. Inspiration for this rule came from Colin Fay.
+[18:54.240 --> 19:01.200]  He's a data scientist at Think R and he wrote a really great post on why in R we use the arrow
+[19:01.840 --> 19:05.840]  as an assignment operator. So he talks about that. And this can be very, from my experience,
+[19:05.840 --> 19:12.000]  teaching students R can be very confusing. He talks about like how R comes from another programming
+[19:12.000 --> 19:17.760]  language named S and then actually S was inspired by another programming language type by called APL.
+[19:17.760 --> 19:23.920]  And APL was designed for a particular keyboard that had one key that made the assignment operator.
+[19:23.920 --> 19:28.160]  When you see, when you, when you know that, then it makes a little, it makes a lot more sense as to
+[19:28.160 --> 19:34.240]  like why that design choice may have been made at the beginning. And maybe a bit more understanding
+[19:34.240 --> 19:39.040]  and less frustration and maybe kind of digging into like, what does it mean now? And do we have to use it?
+[19:39.040 --> 19:44.400]  And those sorts of things. If you're interested in learning more about the history of at least the
+[19:44.400 --> 19:52.000]  R program language, Roger Pang has a great section on it in his R programming data science book.
+[19:54.960 --> 20:00.560]  Number eight is build a safe, inclusive and welcoming community. And I actually think,
+[20:01.200 --> 20:05.600]  you know, practicing this talk a couple of times and giving it now, I might move this to number one.
+[20:05.600 --> 20:11.760]  This is probably the first thing you need to do when teaching in general at all, but I'm talking
+[20:11.760 --> 20:16.560]  about data science, so I'm going to include it here. And what do I mean by this? It means that as the
+[20:16.560 --> 20:21.600]  instructor, you should be putting in place scaffolding and guidelines to facilitate a safe learning
+[20:21.600 --> 20:30.320]  environment. And that's your responsibility. And the reason for that is that students can't learn
+[20:30.320 --> 20:35.200]  effectively if they don't feel safe. So if they don't feel safe to ask the question without being
+[20:35.200 --> 20:39.680]  made look dumb, they're not going to ask that question, they're not going to be curious. If
+[20:39.680 --> 20:46.080]  students don't feel safe to show up in the classroom because of maybe how they are talked to, you know,
+[20:46.080 --> 20:54.320]  just out even just in the hallway, or in, you know, on the course forum, for example, that's,
+[20:54.320 --> 20:59.600]  that's not setting up a good learning environment. So all of that kind of needs to be in place before
+[20:59.600 --> 21:04.640]  you can have real expectations of student learning. It's a big responsibility, but it's one that we do
+[21:04.640 --> 21:09.920]  bear as course instructors, I think. So one example of what we, it's not the only thing we do, but one
+[21:09.920 --> 21:14.800]  thing that we do in our courses at UBC, or at least my courses at UBC, is that we have a code of conduct
+[21:14.800 --> 21:22.080]  for each course. And that code of conduct holds a place of prevalence in the classroom. So we make
+[21:22.080 --> 21:27.200]  time in the classroom to be like, here is our code of conduct. And we're going to highlight parts of
+[21:27.200 --> 21:32.000]  it for you at the beginning of the course. We talk, it's very explicit. It talks about expected
+[21:32.000 --> 21:38.240]  behavior, behaviors that will not be tolerated. It talks about what is the process for reporting
+[21:38.240 --> 21:42.480]  something that violates the code of conduct, and who do you talk to? And if it's the instructor who
+[21:42.480 --> 21:47.040]  violates the course of conduct, who do you talk to then? And all of this, I think, is, is really
+[21:47.040 --> 21:51.040]  important for at least one piece of scaffolding to help students feel safe.
+[21:53.040 --> 21:58.400]  Inspiration for me came from the carpentry's code of conduct. So for all of their workshops,
+[21:58.400 --> 22:02.000]  they take this very seriously, and they apply that not just to their workshop setting,
+[22:02.000 --> 22:06.880]  but even to with all of the spaces that are considered under the carpentry. So, you know,
+[22:06.880 --> 22:12.000]  when instructors are getting together, working on material, at conferences, anywhere, their online
+[22:12.000 --> 22:16.480]  discussion forums, everything is covered by this code of conduct.
+[22:19.280 --> 22:25.360]  Number nine for the simple rule is using checklists to focus and facilitate peer learning.
+[22:25.360 --> 22:32.480]  So the pedagogical literature suggests that, you know, students, we can harness these communities of
+[22:32.480 --> 22:38.640]  learning by having peers learn from each other. And peer review is one way that that can happen.
+[22:39.200 --> 22:43.680]  However, peer review can be really hard and difficult if you haven't done it before,
+[22:43.680 --> 22:47.760]  or if it's reviewing something new that you're just learning. It's hard to know, like,
+[22:47.760 --> 22:54.880]  what should I even be looking at? So what we can do as instructors, we're used to making rubrics for
+[22:54.880 --> 23:00.160]  these things. So we can kind of hijack those rubrics and come up with review checklists. So here's an
+[23:00.160 --> 23:06.400]  example of a data analysis checklist, sorry, a data analysis review checklist that we've generated for the
+[23:07.280 --> 23:13.440]  master of data science program courses. And what it does is it gives kind of the students like a list
+[23:13.440 --> 23:18.960]  of things to focus in on, you know, we think are important for that assessment being completed to
+[23:18.960 --> 23:25.360]  high quality. And then when we ask students to give comments and feedback, like written feedback,
+[23:25.360 --> 23:30.960]  in addition to this checklist, they can focus their feedback in on the things they didn't check off.
+[23:30.960 --> 23:39.440]  Right. So if there was issues with tests, for example, and issues with the conclusions,
+[23:39.440 --> 23:43.760]  they would not check those boxes. And then they would, in their review comments,
+[23:43.760 --> 23:48.480]  really be able to know that that's probably what I should spend my time telling them about.
+[23:48.480 --> 23:55.040]  Inspiration for this came from the R OpenSci organization. So this is an organization
+[23:55.040 --> 24:01.520]  that reviews R packages, does peer review and publishing of R packages, and they use checklists
+[24:01.520 --> 24:07.920]  for their reviewers. I've acted as a reviewer for this organization. And I can say that I personally
+[24:07.920 --> 24:14.320]  found reviewing for that far easier than maybe I found reviewing for journals that didn't have these
+[24:14.320 --> 24:22.560]  types of checklists. Because again, it like, it's a great way for editors or publishing organizations
+[24:22.560 --> 24:26.640]  to communicate to the reviewers, like what is important to them for their publication?
+[24:26.640 --> 24:33.440]  What is really valuable? And it really helps focus your reviewer. This is becoming more and more
+[24:33.440 --> 24:39.920]  prevalent in the publishing world. So the Journal of Open Source Software, the Journal of Open Source
+[24:39.920 --> 24:45.760]  Education used this. There's now a PI OpenSci, Python package organization. And I think there's
+[24:45.760 --> 24:52.800]  real value in these things in the classroom and outside. And finally, my last item on the checklist
+[24:52.800 --> 24:58.640]  is to have students do projects. So what I mean is have students perform a data analysis project on a
+[24:58.640 --> 25:05.120]  topic, ideally, if they're choosing if you can make it happen from beginning to end. And, you know,
+[25:05.120 --> 25:09.840]  this sometimes can feel daunting as an instructor, depending on how many teaching resources you
+[25:09.840 --> 25:15.280]  have or how much time you have for grading. So that's why I put the word scoped here.
+[25:16.560 --> 25:20.800]  You may have to say that the project has to be about this particular topic, has to use this
+[25:20.800 --> 25:26.240]  particular data set, or it has to use this particular method, this particular programming language. So you
+[25:26.240 --> 25:34.400]  can have some homogeneity for grading and making a rubric that's going to apply for everybody. But that can
+[25:34.400 --> 25:39.120]  help make things scalable. And why do we think this is important? Well, I think it really helps provide
+[25:39.120 --> 25:43.920]  students with motivation. We get lots of good feedback about courses that have projects because
+[25:43.920 --> 25:49.200]  they have this flexibility and choice aspect that students really like. But it also gives students,
+[25:49.200 --> 25:55.040]  you know, good experience with messiness of real data. And we all know that in the real world,
+[25:55.040 --> 26:01.680]  data is quite messy. So here's an example of our project from a collaborative software development
+[26:01.680 --> 26:06.720]  course that I teach. And in this project in particular, the students have decided to make
+[26:06.720 --> 26:14.480]  an R package that extracts and analyzes song lyrics. And so they go all the way from taking the raw data
+[26:15.280 --> 26:23.840]  and coming up with outputs from that raw data and all of the software and all of the version control
+[26:23.840 --> 26:25.840]  and building of an R package that went into that.
+[26:28.240 --> 26:34.480]  The inspiration from this comes from STAT545, which is a course at UBC that Jenny Bryan created that was made
+[26:35.440 --> 26:41.280]  before the Master of Data Science program. And in the classroom, Jenny would give lots of examples of
+[26:42.880 --> 26:49.840]  teaching, you know, the new concepts using that kind of like more tractable data set, still rich and interesting. So the gap minor data set.
+[26:49.840 --> 26:55.120]  But then the students homework was actually wrapped up into a project, which was working on like what
+[26:55.120 --> 26:59.200]  something related to their thesis project. And so they got to be working in their discipline,
+[26:59.200 --> 27:03.280]  but applying everything that they were learning in the classroom to that throughout the entire semester
+[27:03.280 --> 27:05.440]  and wrapping up in a final project at the end of the year.
+[27:07.360 --> 27:12.160]  So I'm going to now quickly run through these 10 simple rules that I
+[27:14.240 --> 27:18.160]  or remind you of these 10 simple rules that we just went through for teaching data science.
+[27:18.160 --> 27:22.160]  So the first one, teach data science by doing data analysis and do that on day one.
+[27:22.880 --> 27:28.480]  Use participatory-led coding. So have the students watch you do things and have them do it with you.
+[27:29.040 --> 27:33.200]  Give tons and tons of practice. And along with that, give tons and tons of feedback.
+[27:33.200 --> 27:37.520]  Leverage, if you're using software in the classroom, leverage the automated software test is one way to do
+[27:37.520 --> 27:44.720]  this. Use tractable or toy data examples to build intuition, to build concepts. Once they have those
+[27:44.720 --> 27:51.760]  concepts, add on real rich data sets that are more motivational and more real world, but keep them
+[27:51.760 --> 27:57.600]  accessible. Provide cultural and historical context to the software and the tools that you're using to
+[27:57.600 --> 28:03.440]  avoid frustration and blockers. Build a safe and inclusive welcoming community. Again, that should
+[28:03.440 --> 28:10.400]  be number one. Use checklist to focus and facilitate peer learning and have students do projects. Have
+[28:10.400 --> 28:17.440]  them get an idea, get a sense of what the entire workflow is from beginning to end. And as I said,
+[28:17.440 --> 28:23.040]  I'm standing on the shoulders of many other people giving this talk. I'm really just curating a list of
+[28:23.040 --> 28:27.920]  good things I've seen in the data science education community that are already being practiced by so many
+[28:27.920 --> 28:34.400]  other people. And here is a QR code that will take you to my talk slides, but I'll also paste those in
+[28:34.400 --> 28:41.680]  the chat. And I'm happy to take any questions if there's time. Awesome. Thank you so much, Tiffany. This
+[28:43.680 --> 28:50.480]  rules that I will hold it close to my heart when I teach my students. Wonderful. Thank you. And we have
+[28:50.480 --> 29:00.160]  about a minute and I think we can take one quick question. Is that right, Jessica? I know there's
+[29:00.160 --> 29:17.440]  another networking session. We'll start by 30, my time. Anyone? Maybe I can ask a quick one. I know that
+[29:18.320 --> 29:28.000]  for intro courses, often students will be coming from various disciplines. Just in terms of the rules
+[29:28.000 --> 29:35.760]  that you have shown us today, are there things you will emphasize, especially students from stats versus,
+[29:35.760 --> 29:43.520]  for example, neuroscience, what are the components that you will emphasize more and be sure that students
+[29:43.520 --> 29:49.440]  are fully aware of and then do follow these rules? Like if your classroom is more diverse,
+[29:49.440 --> 29:54.080]  for example, is that your question? Yeah. So students in stats, they may be interested in
+[29:54.080 --> 29:59.200]  something totally different from students from your science. So if you have all that mixed together
+[29:59.200 --> 30:06.160]  in one class, are there tips that you think you can maybe share with us quickly? Yeah, yeah. I think
+[30:06.160 --> 30:11.360]  using a variety of different types of data sets. So it's really easy, you know, sometimes to fall back on
+[30:11.360 --> 30:15.680]  data sets you're familiar with from your discipline or that you learned when you were going through
+[30:15.680 --> 30:20.960]  education. But if you have a lot of different types of data sets when it comes to toy examples
+[30:20.960 --> 30:25.520]  or those kind of more rich examples, but keeping them still accessible, that gives a little bit for
+[30:25.520 --> 30:33.200]  everybody. So I think that is one thing that I would say. Yeah. Okay, great. Yeah. Very helpful tips.
+[30:33.200 --> 30:40.160]  Thank you. No problem. Okay. So I think our time is up and I wanted to be sure we follow the rules of
+[30:41.520 --> 30:50.000]  on time. Okay. That's all. Thank you so much, Tiffany. And all right. So it's time. I guess I'll hand
+[30:50.000 --> 31:02.320]  over to Jessica and Jane.
