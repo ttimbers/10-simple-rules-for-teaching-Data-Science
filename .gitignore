@@ -5,3 +5,5 @@
 **.DS_Store
 .vscode/
 air.toml
+/.quarto/
+**/*.quarto_ipynb

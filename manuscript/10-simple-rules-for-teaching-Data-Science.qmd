@@ -39,29 +39,34 @@ but in your first data science lesson,
 get the students to load some data, 
 do some simple data wrangling and make a data visualization. 
 Why do I suggest this? Because it's extremely motivating to students. 
-In the beginnings, students have signed up to data
-to do data analysis or to do data science because they're interested in asking and answering questions
-about the world using data. And they don't necessarily have enough knowledge to care deeply
-about small things like type and, you know, whether you're using tidyverse versus base R,
-whether you're using R versus Python. So get them, show them something interesting early on,
-hook them, and then they're going to be begging you to answer those questions for them.
-So an example of this is shown in the slide here. So in our first lecture in introduction to data
-science, DCI 100 at UBC, and this also comes from the first chapter of the companion textbook for that
-data science at first introduction, we get the students to load a data from a CSV, do some light
-data wrangling through filtering, arranging and slicing, and then create a plot to answer a question
-about indigenous languages in Canada, how, you know, how many of them are there, how many people are
-speaking them as their mother tongue. So this is not a new idea for me, as I said, I was first inspired
-to do this through following what David Robinson was doing in some of his online courses. He talked about
-how it is just so much more intuitive to, you know, use the tidyverse. His case was using the tidyverse to get
-students doing things really quickly in a readable way as opposed to base R. That's not the argument
-I'm necessarily making today, but his reason for this is you can get people doing interesting things
-really quickly. Jenny Bryan, another pretty well-known or extremely well-known data science and R
-educator, different software developer, has also tweeted about not front-loading the boring foundational
-stuff in courses. So do realistic and non-boring tasks and work your way down to those, the more
-boring stuff. Students are going to care about that more boring stuff once they get a bit of experience.
-So on each of these slides, you'll kind of see a pattern that I'm going to have some, you know,
-if you're really particularly interested in a given rule, you can follow these links and I'll share
-a link to my slides at the end of this talk so it'll be easy for you to find these.
+In the beginnings, students have signed up for a data science course or workshop
+because they're interested in asking, and answering, 
+questions about the world using data. 
+They don't necessarily have enough knowledge to care deeply
+about detailed and technical things, such as object data types, 
+whether one should use R versus Python,
+or if you are using R, whether you should use the tidyverse or base R.
+As a consequence, we should show them something interesting very early on,
+so we hook them. 
+After they are hooked, 
+they will be begging you to answer questions about the detailed, 
+technical aspects you intentionally omiteed.
+An example of this is shown in Figure 1; 
+code from the first chapter of *Data Science: A first introduction* 
+[@timbers2022data].
+In this first chapter, we get the learners to load a data from a CSV, 
+do some introductory data wrangling through filtering, arranging and slicing. 
+Finally create a plot to answer a question about indigenous languages in Canada;
+how many people living in Canada speak an indigenous language as their mother tongue? 
+Other leading data science educators which advocate 
+and practice this rule include
+David Robinson in his introductory online Data Science courses
+ADD REFERENCE]
+and Jenny Bryan --- who summed this up nicely in a tweet "[...] I REPEAT do not front load the 'boring', foundational stuff. Do realistic and nonboring tasks and work your way down to it." [ADD REFERENCE?] 
+
+![Example code from the first chapter of *Data Science: A first introduction* 
+(@timbers2022data) that gets students doing data analysis on day one.](figures/intro-code.png){#fig1 width=100%}
+
 
 # Rule 2: Use participatory live coding {#sec-rule2}
 So my second rule is to use participatory live coding. So what do I mean by that? So I think that
