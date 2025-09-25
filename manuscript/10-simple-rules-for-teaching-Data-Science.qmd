@@ -130,7 +130,7 @@ and then again on a quiz.
 Meaning, 
 that by the end of the course they will have practiced this skill over 15 times.
 Many excellent data science educational resources use this pedagogy.
-Examples include the `{swirl}` R package, 
+Examples include the `{swirl}` R package [@swirl], 
 ADD 2 MORE EXAMPLES HERE.
 For those new to designing practice excercises for data science,
 I recommend looking at the "Exercise Types" chapter 
