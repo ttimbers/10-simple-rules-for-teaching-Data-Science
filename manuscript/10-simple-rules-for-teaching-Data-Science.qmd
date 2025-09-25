@@ -32,11 +32,14 @@ and which I have used and tested in my own data science classroom with success.
 
 
 # Rule 1: Teach data science by doing data analysis {#sec-rule1}
-So the first rule that I'm going to talk to you about is teaching data science
-by doing data analysis. So what do I mean by this? So I mean, in your first lesson, not in your third
-lesson, not in your 10th lesson, not at the end of the semester, but in your first data science lesson,
-get the students to load some data, do some mild data wrangling and make a plot. Why do I suggest this?
-Because it's extremely motivating to students. In the beginnings, students have signed up to data
+The first rule is teaching data science by doing data analysis. 
+This means in your first lesson, not in your third lesson, 
+not in your 10th lesson, not at the end of the semester, 
+but in your first data science lesson, 
+get the students to load some data, 
+do some simple data wrangling and make a data visualization. 
+Why do I suggest this? Because it's extremely motivating to students. 
+In the beginnings, students have signed up to data
 to do data analysis or to do data science because they're interested in asking and answering questions
 about the world using data. And they don't necessarily have enough knowledge to care deeply
 about small things like type and, you know, whether you're using tidyverse versus base R,
