@@ -52,19 +52,23 @@ After they are hooked,
 they will be begging you to answer questions about the detailed, 
 technical aspects you intentionally omiteed.
 An example of this is shown in Figure 1; 
-code from the first chapter of *Data Science: A first introduction* 
+code from the first chapter of *Data Science: A First Introduction* 
 [@timbers2022data].
 In this first chapter, we get the learners to load a data from a CSV, 
 do some introductory data wrangling through filtering, arranging and slicing. 
 Finally create a plot to answer a question about indigenous languages in Canada;
-how many people living in Canada speak an indigenous language as their mother tongue? 
+how many people living in Canada 
+speak an indigenous language as their mother tongue? 
 Other leading data science educators which advocate 
 and practice this rule include
 David Robinson in his introductory online Data Science course
 @robinson2017tidyverse; @robinson2017announcing]
-and Jenny Bryan --- who summed this up nicely in a tweet "[...] I REPEAT do not front load the 'boring', foundational stuff. Do realistic and nonboring tasks and work your way down to it." [-@bryan2017twitter] 
+and Jenny Bryan --- who summed this up nicely in a tweet 
+"[...] I REPEAT do not front load the 'boring', foundational stuff. 
+Do realistic and nonboring tasks and work your way down to it." 
+[-@bryan2017twitter] 
 
-![Example code from the first chapter of *Data Science: A first introduction* 
+![Example code from the first chapter of *Data Science: A First Introduction* 
 (@timbers2022data) that gets students doing data analysis on day one.](figures/intro-code.png){#fig1 width=100%}
 
 
@@ -101,29 +105,36 @@ and shared as ten quick tips by Nederbragt and colleagues
 
 
 # Rule 3: Give tons and tons of practice {#sec-rule3}
-The third simple rule that I bring you is giving tons and tons of practice.
-So what do I mean by that? Give the learners many, many, many problems to solve, probably many,
-many, many more than you think that they might need. The reason for this is that repetition
-leads to learning. That's not just in humans. My background is in neuroscience and looking at
-animal behavior, and across the animal kingdom, repetition leads to learning. So students really
-need to do things many, many times to understand and then to perform those tasks. So here's an example
-from my intro. Our course teaches both the undergrad and grad level, and when I'm teaching students to
-read in data, I get them to do this in one exercise six different variants of a very similar file. So the
-students have to like investigate each file, look at the spacing, look if there's metadata, look at what
-type of file it is, and really figure out how to do this. And so they'll do this in a worksheet, and then later
-they'll also do it on a different set of files in a lab assignment, and then they'll have to do this on their quiz as well. So many, many practices.
-Inspiration from this comes from the Swirl R package, which was the first time I saw something like this.
-So this is a really cool R package made by Sean Cross and others, where you install it in an R console,
-and run it through the R console, and under different topics in the R programming language,
-it'll prompt you with many, many questions, and then you answer the questions in there,
-and it will give you hints, and it will tell you if you're doing things correctly or incorrectly,
-which is also kind of neat and leading into what I'm going to talk about next.
-If you're interested in seeing examples of this beyond Swirl, again, I have more examples here.
-So we have some worksheets from our Intro Data Science course, and then there's a great online
-course by Julia Siljay for machine learning case studies. And then Greg Wilson has a great book
-called Teaching Tech Together, and he's got a whole section on different types of coding exercises,
-so you can find different ways to present the same content to your students, and they get to practice
-different aspects of it. 
+The third simple rule is give tons and tons of practice.
+Give the learners many, many, many problems to solve, probably many,
+many, many more than you think that they might need. 
+The reason for this is that repetition leads to learning [REFERENCE].
+That's not just in humans, it is more fundamental than that.
+Looking at the field of animal behavior, across the animal kingdom, 
+repetition leads to learning [REFERENCE]. 
+So students really need to do things many, many times to understand 
+and then to perform those tasks. 
+For example, when I am teaching students to read in data from a file,
+I don't just give them one file to read in,
+I get them to do this with six different variants of a very similar file. 
+The students have to investigate each file in detail, including:
+look at what type of file it is, look at the column spacing, 
+check if there's metadata to skip over, whether there are column names, 
+*et cetera*. 
+They will do these six variants in an in-class worksheet, 
+as well as in a lab assignment,
+and then again on a quiz. 
+Meaning, 
+that by the end of the course they will have practiced this skill over 15 times.
+Many excellent data science educational resources use this pedagogy.
+Examples include the `{swirl}` R package, 
+ADD 2 MORE EXAMPLES HERE.
+For those new to designing practice excercises for data science,
+I recommend looking at the "Exercise Types" chapter 
+of *Teaching Tech Together: How to Make your lessons work* 
+*and build a teaching community around them* by Greg Wilson 
+[-@wilson2019teaching].
+
 
 # Rule 4: Give tons and tons of timely feedback {#sec-rule4}
 Pairing with giving lots of practice, you also want to pair that with tons and
