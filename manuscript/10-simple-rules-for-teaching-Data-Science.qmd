@@ -15,10 +15,21 @@ fig-cap-location: bottom
 ---
 
 # Introduction {#sec-intro}
-These 10 rules that I'm going to present to you are not rules that I have
-necessarily like, I'm not the first person to do this thing, but I'm trying to collate 10, I think,
-really good tips, I guess, for teaching that I've seen other people do and then used in the classroom
-to with some success. 
+
+Data science is the study, development, and practice 
+of using reproducible and transparent processes 
+to generate insight from data 
+[@berman2018realizing;@Wing2019Data;@Irizarry2020Role;@timbers2022data]. 
+With roots in statistics and computer science, 
+data science educators use many of the teaching strategies 
+used in statistics and computer science education 
+[@carver2016guidelines;@zendler2015;@fincher2019cambridge]. 
+However, data science is a distinct discipline 
+with its own unique challenges and opportunities for teaching and learning.
+Here I collate and present ten simple rules for teaching data science
+which have been piloted by leading data science educators in the community, 
+and which I have used and tested in my own data science classroom with success.
+
 
 # Rule 1: Teach data science by doing data analysis {#sec-rule1}
 So the first rule that I'm going to talk to you about is teaching data science
