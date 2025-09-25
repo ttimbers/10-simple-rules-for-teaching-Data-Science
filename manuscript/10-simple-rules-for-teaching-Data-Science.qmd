@@ -1,27 +1,27 @@
-Hello, great. Okay. Hello, everyone. I hope you're enjoying this virtual conference. I'm Wendy Lu,
-Professor of Biostatistics at the University of Toronto, Canada. It is my great pleasure to chair
-this session sponsored by the Statistical Society of Canada, SSC. Before I start, I'd like to give a
-very brief introduction about the speaker, Professor Tiffany Timbers. Tiffany is a faculty
-member in the Department of Statistics at the University of British Columbia, I'll briefly
-as UBC in Vancouver, Canada. In addition to teaching, she co-directs the master's program
-of data science at UBC. Prior to joining UBC as a faculty, she completed her postdoctoral training
-at UBC in Simon Fraser University after obtaining her PhD in neuroscience also at UBC. She's a true
-Vancouver person. Tiffany is an internationally recognized leader in teaching data science.
-She was recently awarded with the SSC's Early Career Educator Award just this year. If you're teaching
-courses on data science, I highly recommend you check out her website. She co-authored two textbooks.
-One is titled Introduction to Data Science and the other is titled Python Packages. Both are available at
-her website and also available as published texts through CRC Press. In the interest of time, for more details
-about Tiffany's research interests, publications, and her leadership roles, I will refer you to her website,
-which I will send the URLs through the chat shortly. So today, she's going to tell you about
-10 simple rules for teaching data science. All right. So over to you, Tiffany.
-Tiffany, thank you. Thank you for the introduction, Wendy, and thank you to
-the organizers for this great meeting. I'm very honored to be part of it. I'm going to share my screen now
-and let me know if that everything looks okay on your end. Yep. Looks great. Excellent.
-Excellent. Okay. So as Wendy said, the talk title I have for you today is 10 simple rules for teaching
-data science. And so these 10 rules that I'm going to present to you are not rules that I have
+---
+title: "Ten Simple Rules for Teaching Data Science"
+author: 
+  - name: Tiffany Timbers
+    affiliation: The University of British Columbia
+date: today
+date-format: long
+format: pdf
+thanks: "Corresponding author: <tiffany.timbers@stat.ubc.ca>."
+execute:
+    echo: false
+number-sections: true
+bibliography: references.bib
+fig-cap-location: bottom
+---
+
+# Introduction {#sec-intro}
+These 10 rules that I'm going to present to you are not rules that I have
 necessarily like, I'm not the first person to do this thing, but I'm trying to collate 10, I think,
 really good tips, I guess, for teaching that I've seen other people do and then used in the classroom
-to with some success. So the first rule that I'm going to talk to you about is teaching data science
+to with some success. 
+
+# Rule 1: Teach data science by doing data analysis {#sec-rule1}
+So the first rule that I'm going to talk to you about is teaching data science
 by doing data analysis. So what do I mean by this? So I mean, in your first lesson, not in your third
 lesson, not in your 10th lesson, not at the end of the semester, but in your first data science lesson,
 get the students to load some data, do some mild data wrangling and make a plot. Why do I suggest this?
@@ -48,6 +48,8 @@ boring stuff. Students are going to care about that more boring stuff once they 
 So on each of these slides, you'll kind of see a pattern that I'm going to have some, you know,
 if you're really particularly interested in a given rule, you can follow these links and I'll share
 a link to my slides at the end of this talk so it'll be easy for you to find these.
+
+# Rule 2: Use participatory live coding {#sec-rule2}
 So my second rule is to use participatory live coding. So what do I mean by that? So I think that
 when you are doing something with code in the classroom, instead of, you know, popping it up
 on the screen and just running it or even showing it in a static slide, actually open up an editor,
@@ -60,7 +62,10 @@ and so they will better identify with you. And then they'll also learn how you s
 when you make mistakes, which they'll be able to leverage and use later in their careers.
 So this simple rule comes to us from the carpentry. So I saw this first as a software
 carpentry workshop participant and later as an instructor, and it's used in all of their workshops
-across the world. The third simple rule that I bring you is giving tons and tons of practice.
+across the world. 
+
+# Rule 3: Give tons and tons of practice {#sec-rule3}
+The third simple rule that I bring you is giving tons and tons of practice.
 So what do I mean by that? Give the learners many, many, many problems to solve, probably many,
 many, many more than you think that they might need. The reason for this is that repetition
 leads to learning. That's not just in humans. My background is in neuroscience and looking at
@@ -82,7 +87,10 @@ So we have some worksheets from our Intro Data Science course, and then there's 
 course by Julia Siljay for machine learning case studies. And then Greg Wilson has a great book
 called Teaching Tech Together, and he's got a whole section on different types of coding exercises,
 so you can find different ways to present the same content to your students, and they get to practice
-different aspects of it. Pairing with giving lots of practice, you also want to pair that with tons and
+different aspects of it. 
+
+# Rule 4: Give tons and tons of timely feedback {#sec-rule4}
+Pairing with giving lots of practice, you also want to pair that with tons and
 tons of timely feedback. And practice without feedback has limited value. So how can we give tons and
 tons of timely feedback? One way we can do this is through automated software tests. So in data
 science, a lot of the problems we're going to give students to do are working through code, and so we
@@ -104,6 +112,9 @@ into the data science field, so we actually have lots of tools, open source tool
 So LearnR is a package you can do this with in the R programming language, and then there's
 NBgrader and Ottergrader, which are language agnostic tools, or at least work with R and Python for
 providing these kinds of feedback to students on their practice problems.
+
+# Rule 5: Use tractable or toy data examples {#sec-rule5}
+My fifth simple rule is to use tractable or toy data examples.
 Rule number five is to use tractable or toy data examples. And so what do I mean by this?
 So when you're introducing a new tool, a new method, a new algorithm to students,
 you give them data to learn this that has a countable number of things, things that will kind
@@ -125,6 +136,8 @@ on and all these things that are also similarly named when you have really big d
 created an example cheat sheet where there's only like six rows in one data set, three rows in another
 data set. And then she goes through all the different possible joins and shows the output of it.
 And so as a learner looking at this becomes, this becomes very tractable and easy to understand.
+
+# Rule 6: Use real and rich, but accessible data sets {#sec-rule6}
 Now, after you've reached, after you've used a toy or tractable data set, and the students have found
 conceptual understanding of the new method or algorithm you're teaching them, the next thing
 I think to do is to use a real and rich data set paired with like a real question. But as you're doing
@@ -162,6 +175,8 @@ it. So it makes it really accessible. So I've listed here some more explanations
 sets or data packages that might fit that. But the biggest thing is keeping in mind that,
 you know, it doesn't take a lot of time for your students to understand the data set. Because
 that's, you know, the data set isn't necessarily what you're trying to teach at that moment.
+
+# Rule 7: Provide cultural and historical context {#sec-rule7}
 My seventh simple rule is to provide a cultural and historical context for what you're teaching.
 And what this kind of like, what do you mean by that? What I'm talking about is sometimes when
 we're teaching things in software, or with software, things might seem weird or odd or
@@ -195,6 +210,8 @@ like why that design choice may have been made at the beginning. And maybe a bit
 and less frustration and maybe kind of digging into like, what does it mean now? And do we have to use it?
 And those sorts of things. If you're interested in learning more about the history of at least the
 R program language, Roger Pang has a great section on it in his R programming data science book.
+
+# Rule 8: Build a safe, inclusive and welcoming community {#sec-rule8}
 Number eight is build a safe, inclusive and welcoming community. And I actually think,
 you know, practicing this talk a couple of times and giving it now, I might move this to number one.
 This is probably the first thing you need to do when teaching in general at all, but I'm talking
@@ -221,6 +238,8 @@ they take this very seriously, and they apply that not just to their workshop se
 but even to with all of the spaces that are considered under the carpentry. So, you know,
 when instructors are getting together, working on material, at conferences, anywhere, their online
 discussion forums, everything is covered by this code of conduct.
+
+# Rule 9: Use checklists to focus and facilitate peer learning {#sec-rule9}
 Number nine for the simple rule is using checklists to focus and facilitate peer learning.
 So the pedagogical literature suggests that, you know, students, we can harness these communities of
 learning by having peers learn from each other. And peer review is one way that that can happen.
@@ -245,7 +264,10 @@ to communicate to the reviewers, like what is important to them for their public
 What is really valuable? And it really helps focus your reviewer. This is becoming more and more
 prevalent in the publishing world. So the Journal of Open Source Software, the Journal of Open Source
 Education used this. There's now a PI OpenSci, Python package organization. And I think there's
-real value in these things in the classroom and outside. And finally, my last item on the checklist
+real value in these things in the classroom and outside. 
+
+# Rule 10: Have students do projects {#sec-rule10}
+And finally, my last item on the checklist
 is to have students do projects. So what I mean is have students perform a data analysis project on a
 topic, ideally, if they're choosing if you can make it happen from beginning to end. And, you know,
 this sometimes can feel daunting as an instructor, depending on how many teaching resources you
@@ -269,6 +291,8 @@ But then the students homework was actually wrapped up into a project, which was
 something related to their thesis project. And so they got to be working in their discipline,
 but applying everything that they were learning in the classroom to that throughout the entire semester
 and wrapping up in a final project at the end of the year.
+
+# Conclusion {#sec-conclusion}
 So I'm going to now quickly run through these 10 simple rules that I
 or remind you of these 10 simple rules that we just went through for teaching data science.
 So the first one, teach data science by doing data analysis and do that on day one.
@@ -283,23 +307,4 @@ be number one. Use checklist to focus and facilitate peer learning and have stud
 them get an idea, get a sense of what the entire workflow is from beginning to end. And as I said,
 I'm standing on the shoulders of many other people giving this talk. I'm really just curating a list of
 good things I've seen in the data science education community that are already being practiced by so many
-other people. And here is a QR code that will take you to my talk slides, but I'll also paste those in
-the chat. And I'm happy to take any questions if there's time. Awesome. Thank you so much, Tiffany. This
-rules that I will hold it close to my heart when I teach my students. Wonderful. Thank you. And we have
-about a minute and I think we can take one quick question. Is that right, Jessica? I know there's
-another networking session. We'll start by 30, my time. Anyone? Maybe I can ask a quick one. I know that
-for intro courses, often students will be coming from various disciplines. Just in terms of the rules
-that you have shown us today, are there things you will emphasize, especially students from stats versus,
-for example, neuroscience, what are the components that you will emphasize more and be sure that students
-are fully aware of and then do follow these rules? Like if your classroom is more diverse,
-for example, is that your question? Yeah. So students in stats, they may be interested in
-something totally different from students from your science. So if you have all that mixed together
-in one class, are there tips that you think you can maybe share with us quickly? Yeah, yeah. I think
-using a variety of different types of data sets. So it's really easy, you know, sometimes to fall back on
-data sets you're familiar with from your discipline or that you learned when you were going through
-education. But if you have a lot of different types of data sets when it comes to toy examples
-or those kind of more rich examples, but keeping them still accessible, that gives a little bit for
-everybody. So I think that is one thing that I would say. Yeah. Okay, great. Yeah. Very helpful tips.
-Thank you. No problem. Okay. So I think our time is up and I wanted to be sure we follow the rules of
-on time. Okay. That's all. Thank you so much, Tiffany. And all right. So it's time. I guess I'll hand
-over to Jessica and Jane.
+other people.
