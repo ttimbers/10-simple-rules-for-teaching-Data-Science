@@ -5,7 +5,9 @@ author:
     affiliation: The University of British Columbia
 date: today
 date-format: long
-format: pdf
+format: 
+    pdf:
+        number-sections: false
 thanks: "Corresponding author: <tiffany.timbers@stat.ubc.ca>."
 execute:
     echo: false
@@ -108,10 +110,11 @@ and shared as ten quick tips by Nederbragt and colleagues
 The third simple rule is give tons and tons of practice.
 Give the learners many, many, many problems to solve, probably many,
 many, many more than you think that they might need. 
-The reason for this is that repetition leads to learning [REFERENCE].
+The reason for this is that repetition leads to learning 
+[@ebbinghaus1913grundzuge].
 That's not just in humans, it is more fundamental than that.
 Looking at the field of animal behavior, across the animal kingdom, 
-repetition leads to learning [REFERENCE]. 
+repetition leads to learning [@harris1943habituatory; @shaw1986donald]. 
 So students really need to do things many, many times to understand 
 and then to perform those tasks. 
 For example, when I am teaching students to read in data from a file,
