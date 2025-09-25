@@ -69,19 +69,36 @@ and Jenny Bryan --- who summed this up nicely in a tweet "[...] I REPEAT do not 
 
 
 # Rule 2: Use participatory live coding {#sec-rule2}
-So my second rule is to use participatory live coding. So what do I mean by that? So I think that
-when you are doing something with code in the classroom, instead of, you know, popping it up
-on the screen and just running it or even showing it in a static slide, actually open up an editor,
-type it out and narrate the code as you are teaching about teaching it. Have the participants follow along
-as well. The reason for this is it demonstrates the processes. You can talk about why you're doing
-things in different ways as you're doing it to layer that on top of the code itself,
-and you're likely going to make mistakes as you live code. And that's actually a good thing.
-It helps you appear human to the students because they're going to make mistakes too,
-and so they will better identify with you. And then they'll also learn how you solve the problems
-when you make mistakes, which they'll be able to leverage and use later in their careers.
-So this simple rule comes to us from the carpentry. So I saw this first as a software
-carpentry workshop participant and later as an instructor, and it's used in all of their workshops
-across the world. 
+The second rule is to use participatory live coding. 
+This means when you are doing something with code in the classroom, 
+instead of showing it in a static slide, 
+or just running it in an execuatable slide or IDE,
+actually type the code out and narrate it as you are teaching. 
+Have the participants follow along as well. 
+The reason for this is it demonstrates your best practices for processes 
+and workflows; 
+topics that are important in practice 
+but unfortunately often just an afterthought in teaching computational subjects.
+You can talk about why you're doing things in different ways as you're doing it
+You are also likely going to make mistakes as you live code --- 
+and that's actually a good thing.
+It helps you appear human to the students 
+because they're going to make mistakes too.
+More importantly, 
+it allows you to demonstrate how you do debugging to solve problems with code, 
+which they'll be able to leverage in their homework 
+and use later in their work outside the course.
+Participatory live coding also slows you down, 
+so you don't go too fast for the students.
+This pedagogy originates from the 
+"I do, we do, you do" method of knowledge transfer [@fisher2021better] 
+and its use in teaching programming 
+was pioneered by by the global nonprofit called The Carpentries 
+(<https://carpentries.org>).
+Best practices for doing this has been refined 
+and shared as ten quick tips by Nederbragt and colleagues
+[-@nederbragt2020ten].
+
 
 # Rule 3: Give tons and tons of practice {#sec-rule3}
 The third simple rule that I bring you is giving tons and tons of practice.
