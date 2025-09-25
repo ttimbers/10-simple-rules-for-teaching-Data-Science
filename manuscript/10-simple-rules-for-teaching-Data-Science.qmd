@@ -60,9 +60,9 @@ Finally create a plot to answer a question about indigenous languages in Canada;
 how many people living in Canada speak an indigenous language as their mother tongue? 
 Other leading data science educators which advocate 
 and practice this rule include
-David Robinson in his introductory online Data Science courses
-ADD REFERENCE]
-and Jenny Bryan --- who summed this up nicely in a tweet "[...] I REPEAT do not front load the 'boring', foundational stuff. Do realistic and nonboring tasks and work your way down to it." [ADD REFERENCE?] 
+David Robinson in his introductory online Data Science course
+@robinson2017tidyverse; @robinson2017announcing]
+and Jenny Bryan --- who summed this up nicely in a tweet "[...] I REPEAT do not front load the 'boring', foundational stuff. Do realistic and nonboring tasks and work your way down to it." [-@bryan2017twitter] 
 
 ![Example code from the first chapter of *Data Science: A first introduction* 
 (@timbers2022data) that gets students doing data analysis on day one.](figures/intro-code.png){#fig1 width=100%}
