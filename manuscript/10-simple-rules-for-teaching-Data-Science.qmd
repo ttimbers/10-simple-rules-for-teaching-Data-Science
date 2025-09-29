@@ -129,9 +129,10 @@ as well as in a lab assignment,
 and then again on a quiz. 
 Meaning, 
 that by the end of the course they will have practiced this skill over 15 times.
-Many excellent data science educational resources use this pedagogy.
-Examples include the `{swirl}` R package [@swirl], 
-ADD 2 MORE EXAMPLES HERE.
+Many excellent data science educational resources use this pedagogy,
+including software packages (e.g., the `{swirl}` R package [@swirl]), 
+online courses (e.g., Kaggle Learn [@kaggle_learn]) 
+and popular text books (e.g., R for Data Science [@wickham2017r]).
 For those new to designing practice excercises for data science,
 I recommend looking at the "Exercise Types" chapter 
 of *Teaching Tech Together: How to Make your lessons work* 
