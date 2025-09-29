@@ -215,43 +215,56 @@ and narrates and shows the output of each.
 For learners this becomes much more tractable and easy to understand.
 
 # Rule 5: Use real and rich, but accessible data sets {#sec-rule5}
-Now, after you've reached, after you've used a toy or tractable data set, and the students have found
-conceptual understanding of the new method or algorithm you're teaching them, the next thing
-We think to do is to use a real and rich data set paired with like a real question. But as you're doing
-this, make sure that that data set is also accessible. So what do we mean by that is that
-you want to have a data set where the question is something that a real data scientist, either in
-academia, industry, government would really want to answer. It's a larger data set so that it's not just
-so easy that you would be able to come up with the answer by eye. That's really motivating. But the catch
-here is that the observations in the data set, the different variables, the different columns
-in the data set have to be things that very quickly your learners can understand. And really,
-what can become kind of like an expert blind spot for us when we're teaching this is especially if we
-come from like a particular domain. So for one of us authors who was trained in the neuroscience or biology domain,
-We might, for example, think that using some deep sequencing data data set might be a great example
-for this particular algorithm that we want to teach the students. However, that's because we have this,
-you know, deeper understanding of biological processes that you need to understand that data
-set. And depending on your learners, that data set might not be appropriate. So what you really want
-is you don't want that so much of the students cognitive resources spent trying time and energy
-trying to understand just what the data set is about, and then mapping that to the question. And
-then you see, it just gets to be a bit too much. So instead, we want to use something where people
-understand what the observations are and what the columns are quite easily. So one example here from
-our introductory data science course is a data set from the can laying our package, where we have,
-you know, number of Canadians reporting a particular language as their mother tongue.
-So the language that they learned at birth, and then we have different categories. So they in the data
-set, they use Aboriginal language as a category, it really probably should be Indigenous languages
-versus official languages versus non official and non Indigenous languages.
-Inspiration from this game, again, from Jenny, Brian. So she created the Gapminder R data package
-that's used quite widely in teaching R in many universities. And it's really nice because it's a
-biggish data set. So there's, you know, hundreds of observations in it. And the observations though are,
-you know, something most people understand. It's a country in a given year. And, you know,
-things that we're actually interested in, because everybody grew up in a country or more than one
-country in their lifetime. And we all grew up at a different time in history. And so those things
-make us generally maybe interested about asking questions with the data set. Also, the variables
-in the data set are country, continent, year, life expectancy, population, per capita GDP. These are
-all concepts that we as adults have an understanding of without having to have a deep explanation about
-it. So it makes it really accessible. So I've listed here some more explanations of data
-sets or data packages that might fit that. But the biggest thing is keeping in mind that,
-you know, it doesn't take a lot of time for your students to understand the data set. Because
-that's, you know, the data set isn't necessarily what you're trying to teach at that moment.
+After you've helped students reach conceptual understanding of the new tool,
+method or algorithm that you are teaching them, 
+the next thing to do is to get students to apply it with 
+realistic question and a real and rich data. 
+However, as you're doing this, 
+it is critical to ensure that that data set is also accessible 
+to all your learners. 
+The question, as well as the the observations (i.e., rows)
+and variables (i.e., columns) in the data set, 
+have to be things that very quickly your learners can understand. 
+This can easily become an expert blind spot for us when we are teaching,
+especially if we have training in a particular domain.
+For example, one of us authors,
+who was trained in the biological sciences domain,
+might think that using a deep sequencing data set might be a great 
+and motivating example for a particular algorithm 
+that we want to teach the students. 
+However, 
+this thought likely stems from that author's deeper understanding 
+of biological processes that one needs to understand that data set. 
+And depending on your learners, that data set might not be appropriate. 
+It might very well introduce too much cognitive load for the students,
+so much so that they cannot focus on the task at hand --- 
+refining their understanding and applicaiton of whichever tool, 
+method or algorithm you are teaching them.
+We do not want to use up our students' limited cognitive resources 
+just to understand what the data set is about. 
+Instead, we want to use something where all our learners
+quite easily understand what the observations are and what the columns are. 
+One example from one of the courses that we teach uses Canadian census data 
+about the languages spoken in Canada as a person's mother tongue,
+at work, and at home, across different regions [@canlang].
+Another example, that is more widely used in teaching data science,
+is the Gapminder data set [@gapminder]. 
+This is a really nice example because there are hundreds of observations in it,
+however the observations are something most people understand; 
+a country, a year, a population, etc. 
+And with such a data set, 
+we can ask questions that most learners are intereted in, 
+because everybody grew up in a country, or more than one,  in their lifetime. 
+And we all grew up at a different times in history. 
+These lived experiences make us all generally knpowledgeable 
+and interested about asking questions with the data set. 
+There are many more data sets that are real and rich, 
+but also accessible that can be used. 
+The main point here to keep in mind 
+is that it should not take a lot of time 
+for your students to understand the data set 
+because a deep understanding of the data set 
+is not what what you are trying to teach at that moment.
 
 # Rule 6: Provide cultural and historical context {#sec-rule6}
 Our sixth simple rule is to provide a cultural and historical context for what you're teaching.
