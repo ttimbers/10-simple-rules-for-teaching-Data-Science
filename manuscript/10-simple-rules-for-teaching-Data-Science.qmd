@@ -224,7 +224,7 @@ it is critical to ensure that that data set is also accessible
 to all your learners. 
 The question, as well as the the observations (i.e., rows)
 and variables (i.e., columns) in the data set, 
-have to be things that very quickly your learners can understand. 
+have to be things that your learners can very quickly understand. 
 This can easily become an expert blind spot for us when we are teaching,
 especially if we have training in a particular domain.
 For example, one of us authors,
@@ -253,10 +253,10 @@ This is a really nice example because there are hundreds of observations in it,
 however the observations are something most people understand; 
 a country, a year, a population, etc. 
 And with such a data set, 
-we can ask questions that most learners are intereted in, 
+we can ask questions that most learners are interested in, 
 because everybody grew up in a country, or more than one,  in their lifetime. 
 And we all grew up at a different times in history. 
-These lived experiences make us all generally knpowledgeable 
+These lived experiences make us all generally knowledgeable 
 and interested about asking questions with the data set. 
 There are many more data sets that are real and rich, 
 but also accessible that can be used. 
