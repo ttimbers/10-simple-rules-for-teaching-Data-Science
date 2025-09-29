@@ -1,8 +1,10 @@
 ---
 title: "Ten Simple Rules for Teaching Data Science"
 author: 
-  - name: Tiffany Timbers
+  - name: Tiffany Timbers 
     affiliation: The University of British Columbia
+  - name: Mine Çetinkaya-Rundel
+    affiliation: Duke University
 date: today
 date-format: long
 format: 
@@ -28,9 +30,9 @@ used in statistics and computer science education
 [@carver2016guidelines;@zendler2015;@fincher2019cambridge]. 
 However, data science is a distinct discipline 
 with its own unique challenges and opportunities for teaching and learning.
-Here I collate and present ten simple rules for teaching data science
+Here we collate and present ten simple rules for teaching data science
 which have been piloted by leading data science educators in the community, 
-and which I have used and tested in my own data science classroom with success.
+and which we have used and tested in my own data science classroom with success.
 
 
 # Rule 1: Teach data science by doing data analysis {#sec-rule1}
@@ -40,7 +42,7 @@ not in your 10th lesson, not at the end of the semester,
 but in your first data science lesson, 
 get the students to load some data, 
 do some simple data wrangling and make a data visualization. 
-Why do I suggest this? Because it's extremely motivating to students. 
+Why do we suggest this? Because it's extremely motivating to students. 
 In the beginnings, students have signed up for a data science course or workshop
 because they're interested in asking, and answering, 
 questions about the world using data. 
@@ -117,14 +119,14 @@ Looking at the field of animal behavior, across the animal kingdom,
 repetition leads to learning [@harris1943habituatory; @shaw1986donald]. 
 So students really need to do things many, many times to understand 
 and then to perform those tasks. 
-For example, when I am teaching students to read in data from a file,
-I don't just give them one file to read in,
-I get them to do this with six different variants of a very similar file. 
-The students have to investigate each file in detail, including:
+For example, when teaching students to read in data from a file,
+don't just give them one file to read in,
+get them to do this with six different variants of a very similar file. 
+With this approach students have to investigate each file in detail, including:
 look at what type of file it is, look at the column spacing, 
 check if there's metadata to skip over, whether there are column names, 
 *et cetera*. 
-They will do these six variants in an in-class worksheet, 
+In our courses, they will do these six variants in an in-class worksheet, 
 as well as in a lab assignment,
 and then again on a quiz. 
 Meaning, 
@@ -134,7 +136,7 @@ including software packages (e.g., the `{swirl}` R package [@swirl]),
 online courses (e.g., Kaggle Learn [@kaggle_learn]) 
 and popular text books (e.g., R for Data Science [@wickham2017r]).
 For those new to designing practice excercises for data science,
-I recommend looking at the "Exercise Types" chapter 
+We recommend looking at the "Exercise Types" chapter 
 of *Teaching Tech Together: How to Make your lessons work* 
 *and build a teaching community around them* by Greg Wilson 
 [-@wilson2019teaching].
@@ -154,7 +156,7 @@ another layer, and that ends up with a poorly formatted access type title. When 
 then they get some feedback that there's a problem with one of the access labels, so that will direct
 the students attention back to look at the, hopefully at the label code, they can fix it, and then they'll get a
 message that they were successful in fixing the code, and it's what we've expected.
-The first time that I had heard about doing something like this was, there's a wonderful
+The first time that we had heard about doing something like this was, there's a wonderful
 literate, in addition to like different types of coding exercises in Greg's Teaching Tech Together
 book, there's also a section, or there's many sections where he's done a very thorough review
 of the literature, and in that review of the literature was this idea to do these automated
@@ -166,7 +168,7 @@ providing these kinds of feedback to students on their practice problems.
 
 # Rule 5: Use tractable or toy data examples {#sec-rule5}
 My fifth simple rule is to use tractable or toy data examples.
-Rule number five is to use tractable or toy data examples. And so what do I mean by this?
+Rule number five is to use tractable or toy data examples. And so what do we mean by this?
 So when you're introducing a new tool, a new method, a new algorithm to students,
 you give them data to learn this that has a countable number of things, things that will kind
 of fit inside of our working memory, so students can track where everything is going through
@@ -191,8 +193,8 @@ And so as a learner looking at this becomes, this becomes very tractable and eas
 # Rule 6: Use real and rich, but accessible data sets {#sec-rule6}
 Now, after you've reached, after you've used a toy or tractable data set, and the students have found
 conceptual understanding of the new method or algorithm you're teaching them, the next thing
-I think to do is to use a real and rich data set paired with like a real question. But as you're doing
-this, make sure that that data set is also accessible. So what do I mean by that is that
+We think to do is to use a real and rich data set paired with like a real question. But as you're doing
+this, make sure that that data set is also accessible. So what do we mean by that is that
 you want to have a data set where the question is something that a real data scientist, either in
 academia, industry, government would really want to answer. It's a larger data set so that it's not just
 so easy that you would be able to come up with the answer by eye. That's really motivating. But the catch
@@ -200,8 +202,8 @@ here is that the observations in the data set, the different variables, the diff
 in the data set have to be things that very quickly your learners can understand. And really,
 what can become kind of like an expert blind spot for us when we're teaching this is especially if we
 come from like a particular domain. So for myself, from like the neuroscience or biology domain,
-I might, for example, think that using some deep sequencing data data set might be a great example
-for this particular algorithm that I want to teach the students. However, that's because I have this,
+We might, for example, think that using some deep sequencing data data set might be a great example
+for this particular algorithm that we want to teach the students. However, that's because we have this,
 you know, deeper understanding of biological processes that you need to understand that data
 set. And depending on your learners, that data set might not be appropriate. So what you really want
 is you don't want that so much of the students cognitive resources spent trying time and energy
@@ -237,7 +239,7 @@ was the best way to implement this, particularly, you know, maybe for reason X, 
 students understand, A, that, you know, tech software is built by humans, and so it's going
 to be influenced by humans' perspective, human history, and human culture. And it helps prevent
 frustration or annoyances with the software. They can start to see the reason behind that. And
-why I think it's important to help prevent those frustration or annoyances, because I think for
+why we think it's important to help prevent those frustration or annoyances, because we think for
 some people, they can become real blockers and make people maybe like dislike or written up a
 certain piece of software, for example. So an example for this is like when I'm teaching the
 programming language R with the tidyverse, where you see something that's quite different from a lot of
@@ -249,7 +251,7 @@ say, from Python or from, you know, Java or C coming into this situation might b
 that's a really dumb idea. But if they understand that, you know, R was written by statisticians for
 statisticians and like with the intent that many, much of the time would be typing things into the
 console or running code interactively and not having to like always keep track of opening and closing those
-quotes and making mistakes, trying to minimize that, then students can be like, oh, I understand why that
+quotes and making mistakes, trying to minimize that, then students can be like, oh, we understand why that
 is a good design choice given that situation. Inspiration for this rule came from Colin Fay.
 He's a data scientist at Think R and he wrote a really great post on why in R we use the arrow
 as an assignment operator. So he talks about that. And this can be very, from my experience,
@@ -263,10 +265,10 @@ And those sorts of things. If you're interested in learning more about the histo
 R program language, Roger Pang has a great section on it in his R programming data science book.
 
 # Rule 8: Build a safe, inclusive and welcoming community {#sec-rule8}
-Number eight is build a safe, inclusive and welcoming community. And I actually think,
-you know, practicing this talk a couple of times and giving it now, I might move this to number one.
+Number eight is build a safe, inclusive and welcoming community. And we actually think,
+you know, practicing this talk a couple of times and giving it now, we might move this to number one.
 This is probably the first thing you need to do when teaching in general at all, but I'm talking
-about data science, so I'm going to include it here. And what do I mean by this? It means that as the
+about data science, so I'm going to include it here. And what do we mean by this? It means that as the
 instructor, you should be putting in place scaffolding and guidelines to facilitate a safe learning
 environment. And that's your responsibility. And the reason for that is that students can't learn
 effectively if they don't feel safe. So if they don't feel safe to ask the question without being
@@ -275,14 +277,14 @@ students don't feel safe to show up in the classroom because of maybe how they a
 just out even just in the hallway, or in, you know, on the course forum, for example, that's,
 that's not setting up a good learning environment. So all of that kind of needs to be in place before
 you can have real expectations of student learning. It's a big responsibility, but it's one that we do
-bear as course instructors, I think. So one example of what we, it's not the only thing we do, but one
+bear as course instructors, we think. So one example of what we, it's not the only thing we do, but one
 thing that we do in our courses at UBC, or at least my courses at UBC, is that we have a code of conduct
 for each course. And that code of conduct holds a place of prevalence in the classroom. So we make
 time in the classroom to be like, here is our code of conduct. And we're going to highlight parts of
 it for you at the beginning of the course. We talk, it's very explicit. It talks about expected
 behavior, behaviors that will not be tolerated. It talks about what is the process for reporting
 something that violates the code of conduct, and who do you talk to? And if it's the instructor who
-violates the course of conduct, who do you talk to then? And all of this, I think, is, is really
+violates the course of conduct, who do you talk to then? And all of this, we think, is, is really
 important for at least one piece of scaffolding to help students feel safe.
 Inspiration for me came from the carpentry's code of conduct. So for all of their workshops,
 they take this very seriously, and they apply that not just to their workshop setting,
@@ -305,33 +307,33 @@ high quality. And then when we ask students to give comments and feedback, like 
 in addition to this checklist, they can focus their feedback in on the things they didn't check off.
 Right. So if there was issues with tests, for example, and issues with the conclusions,
 they would not check those boxes. And then they would, in their review comments,
-really be able to know that that's probably what I should spend my time telling them about.
+really be able to know that that's probably what we should spend my time telling them about.
 Inspiration for this came from the R OpenSci organization. So this is an organization
 that reviews R packages, does peer review and publishing of R packages, and they use checklists
-for their reviewers. I've acted as a reviewer for this organization. And I can say that I personally
-found reviewing for that far easier than maybe I found reviewing for journals that didn't have these
+for their reviewers. I've acted as a reviewer for this organization. And we can say that we personally
+found reviewing for that far easier than maybe we found reviewing for journals that didn't have these
 types of checklists. Because again, it like, it's a great way for editors or publishing organizations
 to communicate to the reviewers, like what is important to them for their publication?
 What is really valuable? And it really helps focus your reviewer. This is becoming more and more
 prevalent in the publishing world. So the Journal of Open Source Software, the Journal of Open Source
-Education used this. There's now a PI OpenSci, Python package organization. And I think there's
+Education used this. There's now a PI OpenSci, Python package organization. And we think there's
 real value in these things in the classroom and outside. 
 
 # Rule 10: Have students do projects {#sec-rule10}
 And finally, my last item on the checklist
-is to have students do projects. So what I mean is have students perform a data analysis project on a
+is to have students do projects. So what we mean is have students perform a data analysis project on a
 topic, ideally, if they're choosing if you can make it happen from beginning to end. And, you know,
 this sometimes can feel daunting as an instructor, depending on how many teaching resources you
-have or how much time you have for grading. So that's why I put the word scoped here.
+have or how much time you have for grading. So that's why we put the word scoped here.
 You may have to say that the project has to be about this particular topic, has to use this
 particular data set, or it has to use this particular method, this particular programming language. So you
 can have some homogeneity for grading and making a rubric that's going to apply for everybody. But that can
-help make things scalable. And why do we think this is important? Well, I think it really helps provide
+help make things scalable. And why do we think this is important? Well, we think it really helps provide
 students with motivation. We get lots of good feedback about courses that have projects because
 they have this flexibility and choice aspect that students really like. But it also gives students,
 you know, good experience with messiness of real data. And we all know that in the real world,
 data is quite messy. So here's an example of our project from a collaborative software development
-course that I teach. And in this project in particular, the students have decided to make
+course that we teach. And in this project in particular, the students have decided to make
 an R package that extracts and analyzes song lyrics. And so they go all the way from taking the raw data
 and coming up with outputs from that raw data and all of the software and all of the version control
 and building of an R package that went into that.
@@ -355,7 +357,7 @@ concepts, add on real rich data sets that are more motivational and more real wo
 accessible. Provide cultural and historical context to the software and the tools that you're using to
 avoid frustration and blockers. Build a safe and inclusive welcoming community. Again, that should
 be number one. Use checklist to focus and facilitate peer learning and have students do projects. Have
-them get an idea, get a sense of what the entire workflow is from beginning to end. And as I said,
+them get an idea, get a sense of what the entire workflow is from beginning to end. And as we said,
 I'm standing on the shoulders of many other people giving this talk. I'm really just curating a list of
 good things I've seen in the data science education community that are already being practiced by so many
 other people.
