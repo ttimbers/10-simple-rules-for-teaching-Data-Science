@@ -179,7 +179,7 @@ software packages that work for both R and Python code.
 
 
 # Rule 4: Use tractable or toy data examples {#sec-rule4}
-Our fifth simple rule is to use tractable or toy data examples
+Our fourth simple rule is to use tractable or toy data examples
 when introducing a new tool, a new method or a new algorithm to students.
 tractable or toy data sets have a countable number of things, 
 things that will fit inside of our working memory. 
@@ -289,7 +289,7 @@ And those sorts of things. If you're interested in learning more about the histo
 R program language, Roger Pang has a great section on it in his R programming data science book.
 
 # Rule 7: Build a safe, inclusive and welcoming community {#sec-rule7}
-Number eight is build a safe, inclusive and welcoming community. And we actually think,
+Number seven is build a safe, inclusive and welcoming community. And we actually think,
 you know, practicing this talk a couple of times and giving it now, we might move this to number one.
 This is probably the first thing you need to do when teaching in general at all, but I'm talking
 about data science, so I'm going to include it here. And what do we mean by this? It means that as the
@@ -317,7 +317,7 @@ when instructors are getting together, working on material, at conferences, anyw
 discussion forums, everything is covered by this code of conduct.
 
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
-Number nine for the simple rule is using checklists to focus and facilitate peer learning.
+Number eight for the simple rule is using checklists to focus and facilitate peer learning.
 So the pedagogical literature suggests that, you know, students, we can harness these communities of
 learning by having peers learn from each other. And peer review is one way that that can happen.
 However, peer review can be really hard and difficult if you haven't done it before,
