@@ -36,6 +36,7 @@ and which we have used and tested in our own data science classroom with success
 
 
 # Rule 1: Teach data science by doing data analysis {#sec-rule1}
+
 The first rule is teaching data science by doing data analysis. 
 This means in your first lesson, not in your third lesson, 
 not in your 10th lesson, not at the end of the semester, 
@@ -77,6 +78,7 @@ Do realistic and nonboring tasks and work your way down to it."
 
 
 # Rule 2: Use participatory live coding {#sec-rule2}
+
 The second rule is to use participatory live coding. 
 This means when you are doing something with code in the classroom, 
 instead of showing it in a static slide, 
@@ -109,6 +111,7 @@ and shared as ten quick tips by Nederbragt and colleagues
 
 
 # Rule 3: Give tons and tons of practice and timely feedback {#sec-rule3}
+
 The third simple rule is give tons and tons of practice.
 Give the learners many, many, many problems to solve, probably many,
 many, many more than you think that they might need. 
@@ -179,6 +182,7 @@ software packages that work for both R and Python code.
 
 
 # Rule 4: Use tractable or toy data examples {#sec-rule4}
+
 Our fourth simple rule is to use tractable or toy data examples
 when introducing a new tool, a new method or a new algorithm to students.
 tractable or toy data sets have a countable number of things, 
@@ -215,6 +219,7 @@ and narrates and shows the output of each.
 For learners this becomes much more tractable and easy to understand.
 
 # Rule 5: Use real and rich, but accessible data sets {#sec-rule5}
+
 After you've helped students reach conceptual understanding of the new tool,
 method or algorithm that you are teaching them, 
 the next thing to do is to get students to apply it with 
@@ -267,6 +272,7 @@ because a deep understanding of the data set
 is not what what you are trying to teach at that moment.
 
 # Rule 6: Provide cultural and historical context {#sec-rule6}
+
 Our sixth simple rule is to provide a cultural 
 and historical context for what you're teaching.
 For example, 
@@ -328,6 +334,7 @@ see the "History and Overview of R" chapter
 in Roger Peng's *R programming data science book* [-@peng2016r].
 
 # Rule 7: Build a safe, inclusive and welcoming community {#sec-rule7}
+
 The next rule is to build a safe, inclusive and welcoming community. 
 If we were to rewrite this paper, 
 we would probably move this to rule number one
@@ -369,6 +376,7 @@ One particularly good one is the code of conduct from The Carpentries
 
 
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
+
 Rule number eight is to use checklists to focus and facilitate peer learning.
 A well documented pedagogical best practice 
 is to have peers learn from each other [REFERENCE]. 
@@ -419,14 +427,53 @@ on critical feedback about the issues with those sections.
 
 
 # Rule 9: Teach students to work collaboratively {#sec-rule9}
-- Explicitly teach them best technical (version control tools) and social practices for collaborative work
-- get the students to work collaboratively (in class activities like think-pair-share and pair programming, group assignments & projects)
-- Examples we use with projects:
-  - ice breaker activities to help with team formation (e.g., I used a bunch from Atlassian this past year and they were great, here's an example slide deck I put together: https://docs.google.com/presentation/d/14hojoEdOW_sdGSidFuYZ4EsNKBXsjCdsmIbmW1gEiLs/edit?usp=sharing)
-  - teamwork contracts
-  - teamwork reflection activities
+
+Data science is a highly collaborative discipline. 
+Data scientists often work in teams, 
+or at a minimum need to collaborate with other stakeholders
+(e.g., domain experts, project managers, clients, etc).
+As a consequence,
+it is critical that we teach our students to work collaboratively. 
+To do this effectively we must teach them 
+both the technical tools and skills necessary for collaboration
+(e.g., version control tools, such as Git and GitHub, project boards),
+as well as the social practices that make collaboration effective 
+(e.g., active listening, giving critical feedback, code review).
+We must also give them opportunities to practice collaboration.
+Practice should happen in increasing levels of complexity, 
+starting first with smaller in-class activities, 
+such as think-pair-share and pair programming, 
+moving to larger group assignments and then projects.
+
+When getting students to work collaboratively in longer-scale assignments 
+and projects, it is important to scaffold good practices for collaboration 
+into your assignment or project expectations (and grading).
+In our project courses, 
+we have students spend the first working session 
+almost entirely on group formation activities. 
+In this session we get them to do ice breaker activities
+to get to know each other and build trust.
+After that, we get them to create a teamwork contract
+that outlines their expectations for the project and how they will work together. 
+During the project, we have them have regular team check-ins
+(e.g., stand-ups, meetings) 
+and use project boards to track their tasks and progress.
+At the end of the project, we have them do a teamwork reflection activity
+to reflect on what went well and what could be improved.
+As seasoned collaborators, we often take these practices for granted.
+However, for students who are new to collaboration,
+these practices get missed and s a consequence,
+the collaboration frequently breaks down.
+Even with these scaffolds in place,
+we still see some groups struggle with collaboration.
+To manage this, we recommend talking to students about expecting, 
+not avoiding conflict, 
+and coming up with a plan ahead of time, as a group, 
+for how to manage conflict when it arises.
+
 
 # Rule 10: Have students do projects {#sec-rule10}
+
 Our final simple rule is to have students do projects ---
 create an entire data product 
 (ideally, on a topic of their choosing if feasible) 
