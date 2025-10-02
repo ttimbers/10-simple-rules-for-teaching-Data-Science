@@ -328,32 +328,44 @@ see the "History and Overview of R" chapter
 in Roger Peng's *R programming data science book* [-@peng2016r].
 
 # Rule 7: Build a safe, inclusive and welcoming community {#sec-rule7}
-Number seven is build a safe, inclusive and welcoming community. And we actually think,
-you know, practicing this talk a couple of times and giving it now, we might move this to number one.
-This is probably the first thing you need to do when teaching in general at all, but I'm talking
-about data science, so I'm going to include it here. And what do we mean by this? It means that as the
-instructor, you should be putting in place scaffolding and guidelines to facilitate a safe learning
-environment. And that's your responsibility. And the reason for that is that students can't learn
-effectively if they don't feel safe. So if they don't feel safe to ask the question without being
-made look dumb, they're not going to ask that question, they're not going to be curious. If
-students don't feel safe to show up in the classroom because of maybe how they are talked to, you know,
-just out even just in the hallway, or in, you know, on the course forum, for example, that's,
-that's not setting up a good learning environment. So all of that kind of needs to be in place before
-you can have real expectations of student learning. It's a big responsibility, but it's one that we do
-bear as course instructors, we think. So one example of what we, it's not the only thing we do, but one
-thing that we do in our courses is that we have a code of conduct
-for each course. And that code of conduct holds a place of prevalence in the classroom. So we make
-time in the classroom to be like, here is our code of conduct. And we're going to highlight parts of
-it for you at the beginning of the course. We talk, it's very explicit. It talks about expected
-behavior, behaviors that will not be tolerated. It talks about what is the process for reporting
-something that violates the code of conduct, and who do you talk to? And if it's the instructor who
-violates the course of conduct, who do you talk to then? And all of this, we think, is, is really
-important for at least one piece of scaffolding to help students feel safe.
-Inspiration for me came from the carpentry's code of conduct. So for all of their workshops,
-they take this very seriously, and they apply that not just to their workshop setting,
-but even to with all of the spaces that are considered under the carpentry. So, you know,
-when instructors are getting together, working on material, at conferences, anywhere, their online
-discussion forums, everything is covered by this code of conduct.
+The next rule is to build a safe, inclusive and welcoming community. 
+If we were to rewrite this paper, 
+we would probably move this to rule number one
+given this is the first thing you need to do when teaching any subject.
+The reason for this is that students can't learn
+effectively if they don't feel safe. 
+For example, if they don't feel safe to ask the question 
+without being made to look or feel dumb, 
+then they are not going to ask the question, they are not going to be curious. 
+If students don't feel safe against discrimination or harassment
+in the classroom or related spaces 
+(e.g., office hours, course forums, study groups, etc) 
+they will stop showing up in those places, or if they do show up, 
+they will not be able to be engaged in the learning.
+Creating safe, inclusive 
+and welcoming learning environments is critical for learning,
+and we as instructors have a responsibility to put in place scaffolding 
+and guidelines to make this happen.
+One thing that we do in our courses is to have a course code of conduct,
+and that code of conduct holds a place of prevalence in the classroom 
+and related learning spaces. 
+At the beginning of a new course
+we take time in the first class to present our code of conduct to the learners.
+The codes of conduct we use are very explicit. 
+They talk about expected behavior, behaviors that will not be tolerated, 
+the process for reporting violations, and the consequences for violations.
+We also make sure that there are multiple ways to report violations 
+to ensure students are supported in the unexpected and rare case 
+that the instructor is the one who is violating the code of conduct.
+It is also important when a violation is reported
+that the report is taken seriously and acted upon in a timely manner.
+No student concern should ever be ignored or brushed off.
+For instructors looking to create a code of conduct for their course,
+we recommend looking at existing codes of conduct from other organizations
+and adapting them to your own context.
+One particularly good one is the code of conduct from The Carpentries
+(<https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html>).
+
 
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
 Number eight for the simple rule is using checklists to focus and facilitate peer learning.
