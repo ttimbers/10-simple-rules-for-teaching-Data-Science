@@ -267,39 +267,65 @@ because a deep understanding of the data set
 is not what what you are trying to teach at that moment.
 
 # Rule 6: Provide cultural and historical context {#sec-rule6}
-Our sixth simple rule is to provide a cultural and historical context for what you're teaching.
-And what this kind of like, what do you mean by that? What I'm talking about is sometimes when
-we're teaching things in software, or with software, things might seem weird or odd or
-strange. And it's really helpful to say why they are that way. If you give the history for why,
-and even tell students that like, this was a design choice, people thought about this and decided this
-was the best way to implement this, particularly, you know, maybe for reason X, Y, and Z. It helps
-students understand, A, that, you know, tech software is built by humans, and so it's going
-to be influenced by humans' perspective, human history, and human culture. And it helps prevent
-frustration or annoyances with the software. They can start to see the reason behind that. And
-why we think it's important to help prevent those frustration or annoyances, because we think for
-some people, they can become real blockers and make people maybe like dislike or written up a
-certain piece of software, for example. So an example for this is like when I'm teaching the
-programming language R with the tidyverse, where you see something that's quite different from a lot of
-other programming languages. So what is that? It's the heavy use of unquoted column names. So you think about
-anytime you're accessing a data frame column with the tidyverse, you don't put quotations around it.
-That's actually really strange when you come from other programming languages and actually can make,
-you know, writing functions with the tidyverse a bit more difficult. And so some people coming,
-say, from Python or from, you know, Java or C coming into this situation might be like,
-that's a really dumb idea. But if they understand that, you know, R was written by statisticians for
-statisticians and like with the intent that many, much of the time would be typing things into the
-console or running code interactively and not having to like always keep track of opening and closing those
-quotes and making mistakes, trying to minimize that, then students can be like, oh, we understand why that
-is a good design choice given that situation. Inspiration for this rule came from Colin Fay.
-He's a data scientist at Think R and he wrote a really great post on why in R we use the arrow
-as an assignment operator. So he talks about that. And this can be very, from our experience,
-teaching students R can be very confusing. He talks about like how R comes from another programming
-language named S and then actually S was inspired by another programming language type by called APL.
-And APL was designed for a particular keyboard that had one key that made the assignment operator.
-When you see, when you, when you know that, then it makes a little, it makes a lot more sense as to
-like why that design choice may have been made at the beginning. And maybe a bit more understanding
-and less frustration and maybe kind of digging into like, what does it mean now? And do we have to use it?
-And those sorts of things. If you're interested in learning more about the history of at least the
-R program language, Roger Pang has a great section on it in his R programming data science book.
+Our sixth simple rule is to provide a cultural 
+and historical context for what you're teaching.
+For example, 
+when we are teaching how to use a new software tool,
+or a new feature of a tool students already know how to use,
+and things do not seem optimally designed from the learner perspective,
+it's really helpful to explain why they are that way. 
+If you give the design and historical context, 
+for example, saying people thought about this when they built the tool 
+and decided this was the best way to implement it for reasons X, Y, and Z,
+it helps the students understand that software tools are built by humans, 
+and so they are going to be influenced by humans' perspective, human history, 
+and human culture. 
+Furthermore, it helps prevent frustration or annoyances with the software
+because they can rationalize why it works a certain way.
+We think it is really important to help prevent those frustration or annoyances, 
+because we have observed that for some learners, 
+they can become real blockers 
+and can lead to learners disliking or avoiding a certain piece of software.
+
+For example, when we are teaching the programming language R [@ihaka1996r]
+with the suite of `{tidyverse}` R packages [@tidyverse].
+learners observe the functions from these packages 
+heavily use unquoted column names 
+when referencing data frame columns in their functions calls.
+That is really strange when you come from other programming languages,
+as most other programming languages require quoted strings
+when referencing objects attributes (which is what a data frame column is).
+This can also make writing functions that use the tidyverse functions 
+a bit more difficult because of issues with indirection. 
+For learners who have experience with Python, Java or C, 
+they might initially view this as a really bad idea.
+However, once they learn that R and the suite of `{tidyverse}` R packages 
+were written by statisticians 
+for performing data analysis and graphics [@ihaka1996r; @tidyverse],
+and that they designed the language and packages
+with the expectation that much of the users time 
+would be typing things into the console or running code interactively,
+it makes a lot more sense that they would want to minimize the amount of typing
+and tracking of opening and closing quotations for their users.
+
+Another example comes from the use of the arrow (`<-`) 
+as an assignment operator in R,
+which may to some learners seem odd as it less efficiently uses two characters.
+Again however, when given the historical context that R 
+was derived from another programming language named S, 
+and S was inspired by another programming language, APL, 
+that was designed for a particular keyboard 
+with one key mapped to the assignment operator [@fay2018assignment],
+it makes a lot more sense as to why that design choice was made. 
+Design and historical contexts helps learners understand 
+the rationale behind differnt design choices,
+and allow them to see design choices 
+that they might not initially agree with 
+as an excellent design choice with these added contexts.
+As an aside, for those interested in learning more 
+about the history of the R program language, 
+see the "History and Overview of R" chapter 
+in Roger Peng's *R programming data science book* [-@peng2016r].
 
 # Rule 7: Build a safe, inclusive and welcoming community {#sec-rule7}
 Number seven is build a safe, inclusive and welcoming community. And we actually think,
