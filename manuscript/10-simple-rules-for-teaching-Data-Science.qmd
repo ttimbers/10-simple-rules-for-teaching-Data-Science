@@ -336,12 +336,13 @@ The reason for this is that students can't learn
 effectively if they don't feel safe. 
 For example, if they don't feel safe to ask the question 
 without being made to look or feel dumb, 
-then they are not going to ask the question, they are not going to be curious. 
+then they are not going to ask the question [REFERENCE], 
+they are not going to be curious [REFERENCE]. 
 If students don't feel safe against discrimination or harassment
 in the classroom or related spaces 
 (e.g., office hours, course forums, study groups, etc) 
 they will stop showing up in those places, or if they do show up, 
-they will not be able to be engaged in the learning.
+they will not be able to be engaged in the learning [REFERENCE].
 Creating safe, inclusive 
 and welcoming learning environments is critical for learning,
 and we as instructors have a responsibility to put in place scaffolding 
@@ -368,59 +369,111 @@ One particularly good one is the code of conduct from The Carpentries
 
 
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
-Number eight for the simple rule is using checklists to focus and facilitate peer learning.
-So the pedagogical literature suggests that, you know, students, we can harness these communities of
-learning by having peers learn from each other. And peer review is one way that that can happen.
-However, peer review can be really hard and difficult if you haven't done it before,
-or if it's reviewing something new that you're just learning. It's hard to know, like,
-what should I even be looking at? So what we can do as instructors, we're used to making rubrics for
-these things. So we can kind of hijack those rubrics and come up with review checklists. So here's an
-example of a data analysis checklist, sorry, a data analysis review checklist that we've generated for the
-master of data science program courses. And what it does is it gives kind of the students like a list
-of things to focus in on, you know, we think are important for that assessment being completed to
-high quality. And then when we ask students to give comments and feedback, like written feedback,
-in addition to this checklist, they can focus their feedback in on the things they didn't check off.
-Right. So if there was issues with tests, for example, and issues with the conclusions,
-they would not check those boxes. And then they would, in their review comments,
-really be able to know that that's probably what we should spend our time telling them about.
-Inspiration for this came from the R OpenSci organization. So this is an organization
-that reviews R packages, does peer review and publishing of R packages, and they use checklists
-for their reviewers. I've acted as a reviewer for this organization. And we can say that we personally
-found reviewing for that far easier than maybe we found reviewing for journals that didn't have these
-types of checklists. Because again, it like, it's a great way for editors or publishing organizations
-to communicate to the reviewers, like what is important to them for their publication?
-What is really valuable? And it really helps focus your reviewer. This is becoming more and more
-prevalent in the publishing world. So the Journal of Open Source Software, the Journal of Open Source
-Education used this. There's now a PI OpenSci, Python package organization. And we think there's
-real value in these things in the classroom and outside. 
+Rule number eight is to use checklists to focus and facilitate peer learning.
+A well documented pedagogical best practice 
+is to have peers learn from each other [REFERENCE]. 
+One implementation of this is peer review.
+However, 
+peer review can be really hard and difficult if you haven't done it before,
+or if it's reviewing something new that you are still learning. 
+So what we can do as instructors to facilitate this practice for our learners? 
+Given that we are well practiced with making rubrics for grading student work,
+we can use our rubrics as a starting point to draft peer review checklists. 
+Why checklists? 
+Checklists can help ensure complex tasks are completed successfully 
+and have been successfully used in safety critical systems 
+(like aviation, surgery, or nuclear power).
+They can be particulary helpful in tasks that are complex,
+as well as those that are repetitive, and as a consequence, boring 
+[@gawande2010checklist].
+For these reasons, 
+checklists have recently been adopted in scientific 
+(e.g., PLoS journals, Nature Ecology & Evolution, 
+Journal of Open Source Education, Journal of Open Source Software)
+and software (e.g., ROpenSci, PyOpenSci)
+publishing to help ensure that reviewers and editors 
+increase transparency, decreases bias and
+call attention to essential elements of reviews that are often overlooked 
+[@parker2018empowering].
+As reviewers for some of these journals and organizations,
+the authors have personally found checklists to be extremely helpful
+in focusing our attention on the most important elements of a review,
+as well as helping us ensure we don't miss attending to anything.
+We think this idea has value in training data science students as well.
+Our @sec-supplementary
+shows an example of a data analysis review checklist
+that we have used in our data science courses.
+It serves to communicate the aspects we, as educators, 
+think are important for that assessment being completed to high quality. 
+In addition to checking off the checklist items,
+students are also asked to provide written comments and feedback.
+This checklist helps to focus students' comments and feedback 
+on the things they were not able to check off.
+For example, if there was issues with the software tests 
+(e.g., they were missing) 
+and issues with the discussion section 
+(e.g., they did not mention any limitations of the anlaysis),
+they would not check those boxes 
+and that would help focus their review comments 
+on critical feedback about the issues with those sections.
+
 
 # Rule 9: Teach students to work collaboratively {#sec-rule9}
 
+
+
 # Rule 10: Have students do projects {#sec-rule10}
-And finally, our last simple rule
-is to have students do projects. So what we mean is have students perform a data analysis project on a
-topic, ideally, if they're choosing if you can make it happen from beginning to end. And, you know,
-this sometimes can feel daunting as an instructor, depending on how many teaching resources you
-have or how much time you have for grading. So that's why we put the word scoped here.
-You may have to say that the project has to be about this particular topic, has to use this
-particular data set, or it has to use this particular method, this particular programming language. So you
-can have some homogeneity for grading and making a rubric that's going to apply for everybody. But that can
-help make things scalable. And why do we think this is important? Well, we think it really helps provide
-students with motivation. We get lots of good feedback about courses that have projects because
-they have this flexibility and choice aspect that students really like. But it also gives students,
-you know, good experience with messiness of real data. And we all know that in the real world,
-data is quite messy. So here's an example of our project from a collaborative software development
-course that we teach. And in this project in particular, the students have decided to make
-an R package that extracts and analyzes song lyrics. And so they go all the way from taking the raw data
-and coming up with outputs from that raw data and all of the software and all of the version control
-and building of an R package that went into that.
-The inspiration from this comes from STAT545, which is a course at UBC that Jenny Bryan created that was made
-before the Master of Data Science program. And in the classroom, Jenny would give lots of examples of
-teaching, you know, the new concepts using that kind of like more tractable data set, still rich and interesting. So the gap minor data set.
-But then the students homework was actually wrapped up into a project, which was working on like what
-something related to their thesis project. And so they got to be working in their discipline,
-but applying everything that they were learning in the classroom to that throughout the entire semester
-and wrapping up in a final project at the end of the year.
+Our final simple rule is to have students do projects ---
+create an entire data product 
+(ideally, on a topic of their choosing if feasible) 
+from beginning to end (or from "nachos to cheesecake" to quote Jenny Bryan).
+Projects can be done individually or in groups.
+The main point is that students get to experience 
+the entire data science workflow.
+Doing project work is important 
+because it really helps provide students with motivation. 
+It also gives students good experience with messiness of real data
+(we all know that in the real world data is quite messy).
+Additionally, 
+courses typically focus on just a small part of a data analysis workflow.
+For example, 
+they might focus on data visualization, or data wrangling, or modeling.
+But in a project, they get to see how all these pieces fit together 
+in a more realistic scenario.
+This is critical training for any aspiring data scientist.
+
+From the instructors perspective however, projects can feel daunting,
+particularly when student numbers are large and teaching resources are not. 
+One way to make projects more feasible is to have them be scoped.
+You may want to limit the project to being about a particular topic, 
+or get students to choose a data set from a given list, 
+or a have them use a particular method, or a particular programming language.
+Doing this affords some homogeneity for grading 
+and allow you to create a rubric that's going to apply to all projects. 
+An example of a scoped project 
+from a course on collaborative software development in data science 
+that we teach asks students to create a Python package with *n* functions, 
+where *n* is the number of students in the project group.
+The functions must be related to a common theme, 
+and fall under the umbrealla of data science.
+The students must use the packaging tools 
+and collaborative practices taught in our course.
+This kind of project is very feasible to grade
+because the scope is well defined and limited.
+But it also allows students to be creative
+and to work on something that they are interested in.
+Another way to scope projects is to have students work on projects
+related to their own research or thesis work. 
+This is particularly relevant for graduate students
+who are taking data science courses as part of their degree program.
+For example in the UBC STAT 545 course developed by Jenny Bryan,
+students learn new data science concepts and skills
+using a tractable data set in the classroom  (e.g., the Gapminder data set),
+but their project encompasses applying the newly acquired concepts and skills 
+to their own research or thesis work.
+Again, this approach makes grading more feasible
+and students get to work on something they are deeply interested in 
+and motivated to do.
 
 # Conclusion {#sec-conclusion}
 
@@ -430,3 +483,64 @@ but we hope it provides a useful starting point for new data science educators.
 This list was curated from our own experiences teaching data science,
 as well as from what we've seen being practiced 
 by other leading data science educators.
+
+# Supplementary Materials {#sec-supplementary} 
+
+## Data analysis review checklist
+
+### Reviewer: <GITHUB_USERNAME> 
+
+### Conflict of interest
+
+- [ ] As the reviewer I confirm that I have no conflicts of interest for me to review this work.
+
+### Code of Conduct
+
+- [ ] I confirm that I read and will adhere to the [MDS code of conduct](https://ubc-mds.github.io/resources_pages/code_of_conduct/).
+
+### General checks
+
+- [ ] **Repository:** Is the source code for this data analysis available? Is the repository well organized and easy to navigate?
+- [ ] **License:** Does the repository contain a plain-text LICENSE file with the contents of an [OSI approved](https://opensource.org/licenses/alphabetical) software license?
+
+### Documentation
+
+- [ ] **Installation instructions:** Is there a clearly stated list of dependencies? 
+- [ ] **Example usage:** Do the authors include examples of how to use the software to reproduce the data analysis?
+- [ ] **Functionality documentation:** Is the core functionality of the data analysis software documented to a satisfactory level?
+- [ ] **Community guidelines:** Are there clear guidelines for third parties wishing to 1) Contribute to the software 2) Report issues or problems with the software 3) Seek support
+
+### Code quality
+- [ ] **Readability:** Are scripts, functions, objects, etc., well named? Is it relatively easy to understand the code?
+- [ ] **Style guidelides:** Does the code adhere to well known language style guides?
+- [ ] **Modularity:** Is the code suitably abstracted into scripts and functions?
+- [ ] **Tests:** Are there automated tests or manual steps described so that the function of the software can be verified? Are they of sufficient quality to ensure software robsutness?
+
+### Reproducibility
+ 
+- [ ] **Data:** Is the raw data archived somewhere? Is it accessible?
+- [ ] **Computational methods:** Is all the source code required for the data analysis available?
+- [ ] **Conditions:** Is there a record of the necessary conditions (software dependencies) needed to reproduce the analysis? Does there exist an easy way to obtain the computational environment needed to reproduce the analysis?
+- [ ] **Automation:** Can someone other than the authors easily reproduce the entire data analysis?
+
+### Analysis report
+
+- [ ] **Authors:** Does the report include a list of authors with their affiliations?
+- [ ] **What is the question:** Do the authors clearly state the research question being asked?
+- [ ] **Importance:** Do the authors clearly state the importance for this research question?
+- [ ] **Background**: Do the authors provide sufficient background information so that readers can understand the report?
+- [ ] **Methods:** Do the authors clearly describe and justify the methodology used in the data analysis? Do the authors communicate any assumptions or limitations of their methodologies?
+- [ ] **Results:** Do the authors clearly communicate their findings through writing, tables and figures?
+- [ ] **Conclusions:** Are the conclusions presented by the authors correct? 
+- [ ] **References:** Do all archival references that should have a DOI list one (e.g., papers, datasets, software)?
+- [ ] **Writing quality:** Is the writing of good quality, concise, engaging? 
+
+### Estimated hours spent reviewing: 
+
+### Review Comments: 
+
+Please provide more detailed feedback here on what was done particularly well, and what could be improved. It is especially important to elaborate on items that you were not able to check off in the list above.
+
+### Attribution
+
+This was derived from the [JOSE review checklist](https://openjournals.readthedocs.io/en/jose/review_checklist.html) and the ROpenSci review checklist.
