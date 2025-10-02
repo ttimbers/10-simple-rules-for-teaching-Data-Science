@@ -419,8 +419,12 @@ on critical feedback about the issues with those sections.
 
 
 # Rule 9: Teach students to work collaboratively {#sec-rule9}
-
-
+- Explicitly teach them best technical (version control tools) and social practices for collaborative work
+- get the students to work collaboratively (in class activities like think-pair-share and pair programming, group assignments & projects)
+- Examples we use with projects:
+  - ice breaker activities to help with team formation (e.g., I used a bunch from Atlassian this past year and they were great, here's an example slide deck I put together: https://docs.google.com/presentation/d/14hojoEdOW_sdGSidFuYZ4EsNKBXsjCdsmIbmW1gEiLs/edit?usp=sharing)
+  - teamwork contracts
+  - teamwork reflection activities
 
 # Rule 10: Have students do projects {#sec-rule10}
 Our final simple rule is to have students do projects ---
