@@ -128,7 +128,7 @@ These lived experiences make us generally knowledgeable and interested in asking
 There are many more real and rich data sets that are also accessible and can be used.
 The main point here to keep in mind is that it should not take a lot of time for your students to understand the data set because a deep understanding of the data set is not what you are trying to teach at that moment.
 It can also be helpful to bring in data sets that reflect the local context of your learners (e.g., country, region, culture) and/or current events to increase engagement and relevance.
-It can be difficult to find such data sets in a timely manner, but it's often worth the effort for learners to make connections between what they are learning in their data scieence course and things happening in their own lives and communities outside of the classroom.
+It can be difficult to find such data sets in a timely manner, but it's often worth the effort for learners to make connections between what they are learning in their data science course and things happening in their own lives and communities outside of the classroom.
 
 # Rule 6: Provide cultural and historical context {#sec-rule6}
 
