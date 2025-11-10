@@ -173,7 +173,7 @@ One particularly good one is the code of conduct from The Carpentries (<https://
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
 
 Rule number eight is to use checklists to focus and facilitate peer learning.
-A well-documented pedagogical best practice is to have peers learn from each other \[REFERENCE\].
+A well-documented pedagogical best practice is to have peers learn from each other [@topping1998].
 One implementation of this is peer review.
 However, peer review can be particularly challenging if you haven't done it before, or if it involves reviewing something new that you are still learning.
 So what can we do as instructors to facilitate this practice for our learners?
