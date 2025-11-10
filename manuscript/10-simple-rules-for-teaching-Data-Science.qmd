@@ -67,7 +67,7 @@ For example, when teaching students to read data from a file, don't just give th
 With this approach students have to investigate each file in detail, including: look at what type of file it is, look at the column spacing, check if there's metadata to skip over, whether there are column names, *et cetera*.
 In our courses, they will do these six variants in an in-class worksheet, as well as in a lab assignment, and then again on a quiz.
 Meaning that by the end of the course, they will have practiced this skill over 15 times.
-Many excellent data science educational resources use this pedagogy, including software packages (e.g., the `{swirl}` R package [@swirl]), online courses (e.g., Kaggle Learn [@kaggle_learn]), and popular textbooks (e.g., R for Data Science [@wickham2023]).
+Many excellent data science educational resources use this pedagogy, including software packages (e.g., the swirl R package [@swirl]), online courses (e.g., Kaggle Learn [@kaggle_learn]), and popular textbooks (e.g., R for Data Science [@wickham2023]).
 For those new to designing practice excercises for data science, We recommend looking at the "Exercise Types" chapter of *Teaching Tech Together: How to Make your lessons work* *and build a teaching community around them* by Greg Wilson [-@wilson2019teaching].
 
 When giving lots of practice, you also want to pair that with a lot of timely feedback.
@@ -82,7 +82,7 @@ In this example, a student has rearranged the code, but not entirely correctly, 
 Without timely feedback, the student might not realize that there's a problem with their code until much later, or not at all if they fail to check the feedback and solutions after the assignment is graded and grades are returned (often days or weeks later).
 The use of automated software tests can provide timely feedback while students' focus and attention are on the topic being learned and practiced.
 This pedagogy was first developed and used for teaching programming in computer science courses [reviewed in @wilson2019teaching] and is now being adopted in data science courses.
-There are now many wonderful and popular software packages to do this in the context of data science, including the `{learnr}` R package [@learnr] for R code, and NBgrader [@nbgrader] and Otter Grader [@otter_grader] software packages that work for both R and Python code.
+There are now many wonderful and popular software packages to do this in the context of data science, including the learnr R package [@learnr] for R code, and NBgrader [@nbgrader] and Otter Grader [@otter_grader] software packages that work for both R and Python code.
 
 ![Example of automated software test feedback to students.](figures/tests-as-feedback.png){#fig-code-feedback width="100%"}
 
@@ -94,8 +94,8 @@ This allows students to track the progression of everything through the differen
 For example, in one of our courses, we use the Palmer penguins data set \[horst2020palmerpenguins\] to introduce the students to k-means clustering.
 Instead of giving them the entire data set, which contains hundreds of observations, we first subset the data to just a handful of observations.
 Then we can walk the students through what happens to these observations at each step of the algorithm, building an understanding and intuition for the algorithm.
-Inspiration from this comes from Jenny Bryan's great `{dplyr}` joins cheat sheet [@bryan2015stat545].
-In her cheat sheet, she teaches all the various joins from the `{dplyr}` package [@dplyr].
+Inspiration from this comes from Jenny Bryan's great dplyr joins cheat sheet [@bryan2015stat545].
+In her cheat sheet, she teaches all the various joins from the dplyr package [@dplyr].
 This is a difficult topic for students to understand and memorize, and when instructors teach this with large data sets, it is really hard for students to get an idea of what's going on and all these joins that are also similarly named (e.g, left join, right join, inner join, outer join, etc).
 To address this issue, Jenny's cheat sheet uses two toy data sets on superhero comic characters and publishers.
 The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
@@ -131,12 +131,12 @@ If you give the design and historical context, for example, saying people though
 Furthermore, it helps prevent frustration or annoyance with the software because they can rationalize why it works a certain way.
 We believe it is crucial to help prevent these frustrations or annoyances, as we have observed that for some learners, they can become significant barriers and lead to learners disliking or avoiding a particular piece of software.
 
-For example, when we teach the programming language R [@ihaka1996r] using the suite of `{tidyverse}` R packages [@tidyverse].
+For example, when we teach the programming language R [@ihaka1996r] using the suite of tidyverse R packages [@tidyverse].
 Learners observe that these packages heavily use unquoted column names when referencing data frame columns in their function calls.
 That is really strange when you come from other programming languages, as most other programming languages require quoted strings when referencing object attributes (which is what a data frame column is).
 This can also make writing functions that utilize tidyverse functions a bit more challenging due to issues with indirection.
 For learners who have experience with Python, Java, or C, they might initially view this as a really bad idea.
-However, once they learn that R and the suite of `{tidyverse}` R packages were written by statisticians for performing data analysis and graphics [@ihaka1996r; @tidyverse], and that they designed the language and packages with the expectation that much of the users time would be typing things into the console or running code interactively, it makes a lot more sense that they would want to minimize the amount of typing and tracking of opening and closing quotations for their users.
+However, once they learn that R and the suite of tidyverse R packages were written by statisticians for performing data analysis and graphics [@ihaka1996r; @tidyverse], and that they designed the language and packages with the expectation that much of the users time would be typing things into the console or running code interactively, it makes a lot more sense that they would want to minimize the amount of typing and tracking of opening and closing quotations for their users.
 
 Another example comes from the use of the arrow (`<-`) as an assignment operator in R, which may seem odd to some learners as it uses two characters.
 Again, however, when given the historical context that R was derived from another programming language named S, and S was inspired by another programming language, APL, that was designed for a particular keyboard with one key mapped to the assignment operator [@fay2018assignment], it makes a lot more sense as to why that design choice was made.
