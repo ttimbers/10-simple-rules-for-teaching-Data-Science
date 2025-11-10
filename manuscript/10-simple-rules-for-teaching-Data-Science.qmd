@@ -154,10 +154,12 @@ As an aside, for those interested in learning more about the history of the R pr
 
 The next rule is to build a safe, inclusive, and welcoming community.
 If we were to rewrite this paper, we would probably move this to rule number one, given that this is the first thing you need to do when teaching any subject.
-The reason for this is that students can't learn effectively if they don't feel safe.
-For example, if they don't feel safe to ask the question without being made to look or feel dumb, then they are not going to ask the question \[REFERENCE\], they are not going to be curious \[REFERENCE\].
-If students don't feel safe against discrimination or harassment in the classroom or related spaces (e.g., office hours, course forums, study groups, etc.), they will stop showing up in those places, or if they do show up, they will not be able to be engaged in the learning \[REFERENCE\].
-Creating safe, inclusive, and welcoming learning environments is crucial for effective learning, and as instructors, we have a responsibility to establish scaffolding and guidelines that facilitate this.
+The reason for this is that people do not learn effectively if they don't feel psychologically safe. 
+Pyschological safety is the belief that one can express oneself, through speech or actions,  
+without fear of the negative consequences or feedback [@edmondson1999psychological].
+If learners do not feel safe to ask the questions without being made to look or feel dumb, then they are not going to ask the question, they are not going to be engaged [@lyman2021pre].
+If they don't feel safe from negative perceptions about their intelligence, discrimination or harassment in the classroom (or related spaces such as office hours, course forums, study groups, etc.) it is possible they may become so disengaged that they even stop showing up.
+Thus, creating safe, inclusive, and welcoming learning environments is crucial for effective learning, and as instructors, we have a responsibility to establish scaffolding and guidelines that facilitate this.
 One thing we do in our courses is establish a course code of conduct, which holds a place of prevalence in the classroom and related learning spaces.
 At the beginning of a new course, we take time in the first class to present our code of conduct to the learners.
 The codes of conduct we use are very explicit.
