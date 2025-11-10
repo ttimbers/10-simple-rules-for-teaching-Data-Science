@@ -40,6 +40,8 @@ In this first chapter, we ask learners to load data from a CSV, perform introduc
 Finally, create a plot to answer a question about indigenous languages in Canada: how many people living in Canada speak an indigenous language as their mother tongue?
 Other leading data science educators who advocate and practice this rule include David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing] and Jenny Bryan --- who summed this up nicely in a tweet "\[...\] I REPEAT do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." [-@bryan2017twitter]
 
+**TO DO:** Maybe also cite "cake first" here?
+
 ![Example code from the first chapter of *Data Science: A First Introduction* (@timbers2022data) that gets students doing data analysis on day one.](figures/intro-code.png){#fig-intro-ds-code width="100%"}
 
 # Rule 2: Use participatory live coding {#sec-rule2}
@@ -102,6 +104,9 @@ The superhero dataset has only 7 rows and 4 columns, while the publisher dataset
 These data sets are small enough. The cheat sheet then outlines all the possible joins, narrating and displaying the output of each.
 For learners, this becomes much more tractable and easy to understand.
 
+It is, of course, not feasible to keep learners interested and motivated to learn more if we only use toy data sets.
+So, once students have a conceptual understanding of the tool, method, or algorithm being taught, we can then move on to using real and rich data sets, which is our next rule.
+
 # Rule 5: Use real and rich, but accessible data sets {#sec-rule5}
 
 After you've helped students reach a conceptual understanding of the new tool, method, or algorithm you are teaching them, the next step is to have students apply it to realistic questions and real, rich data.
@@ -115,13 +120,15 @@ It might introduce too much cognitive load for the students, to the extent that 
 We do not want to use up our students' limited cognitive resources just to understand what the data set is about.
 Instead, we want to use something that all our learners can easily understand, including what the observations are and what the columns represent.
 One example from one of the courses that we teach uses Canadian census data about the languages spoken in Canada as a person's mother tongue, at work, and at home, across different regions [@canlang].
-Another example, which is more widely used in teaching data science, is the Gapminder data set [@gapminder].
-This is a particularly nice example because it contains hundreds of observations; however, the observations are something most people can understand: a country, a year, a population, etc.
+Other examples include the Gapminder [@gapminder] and UN Votes [@unvotes] data sets.
+These are particularly nice examples because they contain hundreds of observations; however, the observations are something most people can understand: a country, a year, a population, a vote, etc.
 And with such a dataset, we can ask questions that most learners are interested in, because everybody has grown up in at least one country, or more, in their lifetime.
 And we all grew up at different times in history.
-These lived experiences make us generally knowledgeable and interested in asking questions about the dataset.
+These lived experiences make us generally knowledgeable and interested in asking questions about the datasets.
 There are many more real and rich data sets that are also accessible and can be used.
 The main point here to keep in mind is that it should not take a lot of time for your students to understand the data set because a deep understanding of the data set is not what you are trying to teach at that moment.
+It can also be helpful to bring in data sets that reflect the local context of your learners (e.g., country, region, culture) and/or current events to increase engagement and relevance.
+It can be difficult to find such data sets in a timely manner, but it's often worth the effort for learners to make connections between what they are learning in their data scieence course and things happening in their own lives and communities outside of the classroom.
 
 # Rule 6: Provide cultural and historical context {#sec-rule6}
 
@@ -226,6 +233,8 @@ Another way to scope projects is to have students work on projects related to th
 This is particularly relevant for graduate students enrolled in data science courses as part of their degree program.
 For example, in the UBC STAT 545 course developed by Jenny Bryan, students learn new data science concepts and skills using a tractable dataset in the classroom (e.g., the Gapminder dataset), but their project involves applying the newly acquired concepts and skills to their own research or thesis work.
 Again, this approach makes grading more feasible, and students get to work on something they are deeply interested in and motivated to do.
+
+**TO DO:** Cite <https://www.iase-pub.org/ojs/SERJ/article/view/37>
 
 # Conclusion {#sec-conclusion}
 
