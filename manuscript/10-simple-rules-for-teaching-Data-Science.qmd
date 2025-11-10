@@ -114,7 +114,7 @@ However, as you're doing this, it is critical to ensure that the dataset is also
 The question, as well as the observations (i.e., rows) and variables (i.e., columns) in the dataset, must be things that your learners can quickly understand.
 This can easily become an expert blind spot for us when we are teaching, especially if we have training in a particular domain.
 For example, one of the authors, who is trained in the biological sciences domain, might think that using a deep sequencing data set would be a great and motivating example for a particular algorithm that we want to teach students.
-However, this thought likely stems from the author's deeper understanding of biological processes, which suggests that one needs to understand the data set.
+However, this thought likely stems from the author's deeper understanding of biological processes, which in this example is giving them an expert blindspot. 
 And depending on your learners, that data set might not be appropriate.
 It might introduce too much cognitive load for the students, to the extent that they cannot focus on the task at hand — refining their understanding and application of the tool, method, or algorithm being taught.
 We do not want to use up our students' limited cognitive resources just to understand what the data set is about.
