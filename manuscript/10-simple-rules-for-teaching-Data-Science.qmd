@@ -8,8 +8,8 @@ author:
 date: today
 date-format: long
 format: 
-    pdf:
-      number-sections: false
+  pdf:
+    number-sections: false
 thanks: "Corresponding author: <tiffany.timbers@stat.ubc.ca>."
 execute:
     echo: false
