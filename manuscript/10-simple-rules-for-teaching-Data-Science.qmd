@@ -34,7 +34,7 @@ We call this the "let them eat cake" approach to teaching data science [@ccetink
 Why do we suggest this?
 Because, just like eating cake, it's extremely motivating to students.
 At first, students sign up for a data science course or workshop because they're interested in asking and answering questions about the world using data.
-They may not necessarily have sufficient knowledge to care deeply about detailed, technical aspects, such as object data types, whether to use R versus Python, or, if using R, whether to opt for the tidyverse or base R.
+They likely don't yet have sufficient knowledge to care deeply about detailed, technical aspects, such as object data types, whether to use R versus Python, or, if using R, whether to opt for the tidyverse or base R.
 As a result, we should show them something interesting very early on to hook them.
 After they are hooked, they will be begging you to answer questions about the detailed, technical aspects you intentionally omitted.
 An example of this is shown in Figure @fig-intro-ds-code; code from the first chapter of Data Science: A First Introduction [@timbers2022data].
