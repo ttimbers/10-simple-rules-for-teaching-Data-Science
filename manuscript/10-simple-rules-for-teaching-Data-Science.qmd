@@ -10,6 +10,7 @@ date-format: long
 format: 
   pdf:
     number-sections: false
+    linestretch: 2
 thanks: "Corresponding author: <tiffany.timbers@stat.ubc.ca>."
 execute:
     echo: false
