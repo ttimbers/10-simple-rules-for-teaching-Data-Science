@@ -98,7 +98,8 @@ Instead of giving them the entire data set, which contains hundreds of observati
 Then we can walk the students through what happens to these observations at each step of the algorithm, building an understanding and intuition for the algorithm.
 Inspiration from this comes from Jenny Bryan's great dplyr joins cheat sheet [@bryan2015stat545].
 In her cheat sheet, she teaches all the various joins from the dplyr package [@dplyr].
-This is a difficult topic for students to understand and memorize, and when instructors teach this with large data sets, it is really hard for students to get an idea of what's going on and all these joins that are also similarly named (e.g, left join, right join, inner join, outer join, etc).
+This is a difficult topic for students to understand and memorize, and when instructors teach this with large data sets, it is really hard for students to get an idea of what's going on. 
+To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
 To address this issue, Jenny's cheat sheet uses two toy data sets on superhero comic characters and publishers.
 The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
 These data sets are small enough. The cheat sheet then outlines all the possible joins, narrating and displaying the output of each.
