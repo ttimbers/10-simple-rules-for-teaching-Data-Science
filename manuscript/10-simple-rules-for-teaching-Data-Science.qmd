@@ -158,7 +158,7 @@ The next rule is to build a safe, inclusive, and welcoming community.
 If we were to rewrite this paper, we would probably move this to rule number one, given that this is the first thing you need to do when teaching any subject.
 The reason is that people don't learn effectively when they don't feel psychologically safe.
 Psychological safety is the belief that one can express oneself, through speech or actions,
-without fear of the negative consequences or feedback [@edmondson1999psychological].
+without fear of negative consequences or feedback [@edmondson1999psychological].
 If learners do not feel safe asking questions without being made to look or feel dumb, they are not going to ask questions, and they are not going to be engaged [@lyman2021pre].
 If they don't feel safe from negative perceptions about their intelligence, discrimination, or harassment in the classroom (or related spaces such as office hours, course forums, study groups, etc.), they may become so disengaged that they even stop showing up.
 Thus, creating safe, inclusive, and welcoming learning environments is crucial for effective learning, and as instructors, we have a responsibility to establish scaffolding and guidelines that facilitate this.
