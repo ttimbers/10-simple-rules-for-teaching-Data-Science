@@ -205,7 +205,7 @@ When getting students to work collaboratively on longer-scale assignments and pr
 In our project courses, we have students spend the first working session almost entirely on group formation activities.
 In this session, we have them participate in icebreaker activities to get to know each other and build trust.
 After that, we get them to create a teamwork contract that outlines their expectations for the project and how they will work together.
-During the project, we have them have regular team check-ins (e.g., stand-ups, meetings) and use project boards to track their tasks and progress.
+During the project, we have them hold regular team check-ins (e.g., stand-ups, meetings) and use project boards to track their tasks and progress.
 At the end of the project, we have them do a teamwork reflection activity to reflect on what went well and what could be improved.
 As seasoned collaborators, we often take these practices for granted.
 However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
