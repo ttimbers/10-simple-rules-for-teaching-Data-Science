@@ -165,7 +165,7 @@ Thus, creating safe, inclusive, and welcoming learning environments is crucial f
 One thing we do in our courses is establish a course code of conduct, which holds a place of prevalence in the classroom and related learning spaces.
 At the beginning of a new course, we take time in the first class to present our code of conduct to the learners.
 The codes of conduct we use are very explicit.
-They discuss expected behavior, behaviors that will not be tolerated, the process for reporting violations, and the consequences for violating these rules.
+They discuss expected behaviors, behaviors that will not be tolerated, the process for reporting violations, and the consequences for violating these rules.
 We also ensure that there are multiple ways to report violations, to support students in the unlikely event that the instructor is the one violating the code of conduct.
 It is also important that when a violation is reported, it be taken seriously and acted upon in a timely manner.
 No student concern should ever be ignored or brushed off.
