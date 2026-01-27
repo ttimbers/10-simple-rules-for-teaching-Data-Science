@@ -104,7 +104,10 @@ To make matters worse, all of these joins are also similarly named (e.g, left jo
 To address this issue, Jenny's cheat sheet uses two toy data sets on superhero comic characters and publishers.
 The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
 These data sets are small enough. The cheat sheet then outlines all the possible joins, narrating and displaying the output of each.
-For learners, this becomes much more tractable and easy to understand.
+To address this issue, Jenny Bryan's cheat sheet uses two toy data sets on superhero comic characters and publishers.
+The cheat sheet outlines all the possible joins, narrating and displaying the output of each.
+The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
+These data sets are small enough to fit in learners working memory, making the joins tractable and much easier to understand. 
 
 It is, of course, not feasible to keep learners interested and motivated to learn more if we rely solely on toy datasets.
 So, once students have a conceptual understanding of the tool, method, or algorithm being taught, we can move on to using real, rich datasets, which is our next rule.
