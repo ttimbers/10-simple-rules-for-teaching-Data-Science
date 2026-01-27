@@ -78,7 +78,7 @@ So, how can we provide a wealth of timely feedback, especially with our limited 
 One way we can do this is through automated software tests.
 In data science, many of the problems we assign to students involve writing code.
 As a consequence, we can write software tests that provide feedback to students, letting them know when they give a wrong answer in a particular way, as well as providing a gentle, helpful nudge to solve the problem in a different way.
-Figure @fig-code-feedback shows an example of this in practice.
+@fig-code-feedback shows an example of this in practice.
 Here, students were given some ggplot code in a Parsons problem format (the lines of code were given in the wrong order, and the students needed to rearrange them to the correct order).
 In this example, a student has rearranged the code, but not entirely correctly, and as a result, a plot is created, but it's not quite what we expect.
 Without timely feedback, the student might not realize that there's a problem with their code until much later, or not at all if they fail to check the feedback and solutions after the assignment is graded and grades are returned (often days or weeks later).
