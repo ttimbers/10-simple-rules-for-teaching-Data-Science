@@ -37,7 +37,7 @@ At first, students sign up for a data science course or workshop because they're
 They likely don't yet have sufficient knowledge to care deeply about detailed, technical aspects, such as object data types, whether to use R versus Python, or, if using R, whether to opt for the tidyverse or base R.
 As a result, we should show them something interesting very early on to hook them.
 After they are hooked, they will be begging you to answer questions about the detailed, technical aspects you intentionally omitted.
-An example of this is shown in Figure @fig-intro-ds-code; code from the first chapter of Data Science: A First Introduction [@timbers2022data].
+An example of this is shown in @fig-intro-ds-code; code from the first chapter of Data Science: A First Introduction [@timbers2022data].
 In this first chapter, we ask learners to load data from a CSV file and perform introductory data wrangling using filtering, arranging, and slicing.
 Finally, create a plot to answer a question about indigenous languages in Canada: how many people living in Canada speak an indigenous language as their mother tongue?
 Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan, who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." [-@bryan2017twitter]
