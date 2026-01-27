@@ -210,7 +210,7 @@ At the end of the project, we have them do a teamwork reflection activity to ref
 As seasoned collaborators, we often take these practices for granted.
 However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
 Even with these scaffolds in place, we still see some groups struggle with collaboration.
-To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict and developing, as a group, a plan ahead of time for how to manage it when it arises.
+To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict, and developing, as a group, a plan ahead of time for how to manage it when it arises.
 
 # Rule 10: Have students do projects {#sec-rule10}
 
