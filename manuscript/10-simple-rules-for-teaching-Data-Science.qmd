@@ -233,7 +233,8 @@ The functions must be related to a common theme and fall under the umbrella of d
 Students must utilize the packaging tools and collaborative practices taught in our course.
 This kind of project is very feasible to grade because its scope is well-defined and limited.
 However, it also allows students to be creative and work on something they are interested in.
-Another way to scope projects is to have students work on projects related to their own research or thesis work.
+Another way to scope projects is to have students work on projects that use
+related to their own research or thesis work, but utilize the data science concepts, tools or techniques being taught in the course.
 This is particularly relevant for graduate students enrolled in data science courses as part of their degree program.
 For example, in the UBC STAT 545 course developed by Jenny Bryan, students learn new data science concepts and skills using a tractable dataset in the classroom (e.g., the Gapminder dataset), but their project involves applying the newly acquired concepts and skills to their own research or thesis work.
 Again, this approach makes grading more feasible, and students get to work on something they are deeply interested in and motivated to do.
