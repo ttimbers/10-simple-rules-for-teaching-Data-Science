@@ -170,7 +170,7 @@ We also ensure that there are multiple ways to report violations, to support stu
 It is also important that when a violation is reported, it be taken seriously and acted upon in a timely manner.
 No student concern should ever be ignored or brushed off.
 For instructors seeking to establish a code of conduct for their course, we recommend examining existing codes of conduct from other organizations and tailoring them to your specific context.
-One particularly good one is The Carpentries' code of conduct (<https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html>).
+One particularly good example is The Carpentries' code of conduct (<https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html>).
 
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
 
