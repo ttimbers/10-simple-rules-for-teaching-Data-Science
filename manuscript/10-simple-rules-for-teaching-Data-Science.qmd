@@ -120,7 +120,7 @@ Given that, if learners do not have similar background knowledge, that dataset m
 It might introduce too much cognitive load for the students, to the extent that they cannot focus on the task at hand — refining their understanding and application of the tool, method, or algorithm being taught.
 We do not want to use up our students' limited cognitive resources to understand what the dataset is about.
 Instead, we want to use something that all our learners can easily understand, including what the observations are and what the columns represent.
-One example from one of the courses that we teach uses Canadian census data about the languages spoken in Canada as a person's mother tongue, at work, and at home, across different regions [@canlang].
+One example from one of the courses that we teach uses Canadian census data about the languages spoken in Canada across different regions [@canlang].
 Other examples include the Gapminder [@gapminder] and UN Votes [@robinson2021unvotes] data sets.
 These are particularly nice examples because they contain hundreds of observations; however, the observations are something most people can understand: a country, a year, a population, a vote, etc.
 And with such a dataset, we can ask questions that most learners are interested in, because everyone has grown up in at least one country, and possibly more, in their lifetime.
