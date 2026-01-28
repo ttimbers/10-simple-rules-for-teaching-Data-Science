@@ -4,7 +4,7 @@ author:
   - name: Tiffany A. Timbers
     affiliation: Department of Statistics, The University of British Columbia, Vancouver, BC, Canada
     corresponding: true
-    email: tiffany.timbers@stat.ubc.ca
+    email: tiffany.timbers@stat.ubc.ca (TT)
   - name: Mine Çetinkaya-Rundel
     affiliation: Department of Statistical Sciences, Duke University, Durham, NC, USA
 date: today
@@ -257,12 +257,12 @@ This list of ten simple rules for teaching data science is by no means exhaustiv
 This list was curated from our own experiences teaching data science, as well as from what we've seen other leading data science educators practice.
 
 
-# Supporting Information
+# Supporting information
 
 ::: {.supp}
 ## S1 File. {#s1-file}
 
-`data-analysis-review-checklist.pdf`
+S1_File.pdf. Example data analysis peer review checklist used in data science courses taught by the authors.
 :::
 
 # Acknowledgements
