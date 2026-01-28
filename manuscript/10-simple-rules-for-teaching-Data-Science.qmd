@@ -1,5 +1,5 @@
 ---
-title: "Ten Simple Rules for Teaching Data Science"
+title: "Ten simple rules for teaching data science"
 author: 
   - name: Tiffany A. Timbers
     affiliation: Department of Statistics, The University of British Columbia, Vancouver, BC, Canada
