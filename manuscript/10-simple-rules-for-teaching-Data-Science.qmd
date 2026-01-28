@@ -43,7 +43,7 @@ At first, students sign up for a data science course or workshop because they're
 They likely don't yet have sufficient knowledge to care deeply about detailed, technical aspects, such as object data types, whether to use R versus Python, or, if using R, whether to opt for the tidyverse or base R.
 As a result, we should show them something interesting very early on to hook them.
 After they are hooked, they will be begging you to answer questions about the detailed, technical aspects you intentionally omitted.
-An example of this is shown in @fig-intro-ds-code; code from the first chapter of Data Science: A First Introduction [@timbers2022data].
+An example of this is shown in @fig-intro-ds-code; code from the first chapter of *Data Science: A First Introduction* [@timbers2022data].
 In this first chapter, we ask learners to load data from a CSV file and perform introductory data wrangling using filtering, arranging, and slicing.
 Finally, create a plot to answer a question about indigenous languages in Canada: how many people living in Canada speak an indigenous language as their mother tongue?
 Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan [-@bryan2017twitter], who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." 
@@ -76,7 +76,7 @@ With this approach, students have to investigate each file in detail, including 
 In our courses, they will complete these six variants in an in-class worksheet, a lab assignment, and a quiz.
 Meaning that by the end of the course, they will have practiced this skill over 15 times.
 Many excellent data science educational resources use this pedagogy, including software packages (e.g., the swirl R package [@swirl]), online courses (e.g., Kaggle Learn [@kaggle_learn]), and popular textbooks (e.g., R for Data Science [@wickham2023]).
-For those new to designing practice exercises for data science, we recommend looking at the "Exercise Types" chapter of *Teaching Tech Together: How to Make your lessons work and build a teaching community around them* by Greg Wilson [-@wilson2019teaching].
+For those new to designing practice exercises for data science, we recommend looking at the "Exercise Types" chapter of *Teaching Tech Together: How to make your lessons work and build a teaching community around them* by Greg Wilson [-@wilson2019teaching].
 
 When giving lots of practice, pair it with timely feedback.
 Practice without feedback has limited value.
@@ -101,14 +101,11 @@ Tractable or toy data sets have a countable number of elements, which can fit in
 This allows students to track the progression of everything through the algorithm's steps, see how the elements are manipulated, and gain a deeper understanding of these concepts.
 For example, in one of our courses, we use the Palmer penguins data set [@horst2020palmerpenguins] to introduce the students to k-means clustering.
 Instead of giving them the entire data set, which contains hundreds of observations, we first subset it to just a handful.
-Then we can walk the students through what happens to these observations at each step of the algorithm, building an understanding and intuition for the algorithm.
+Then we can walk the students through what happens to these observations at each step of the algorithm, building understanding and intuition for the algorithm.
 Inspiration from this comes from Jenny Bryan's great dplyr joins cheat sheet [@bryan2015stat545].
 In her cheat sheet, she teaches all the various joins from the dplyr package [@dplyr].
 This is a difficult topic for students to understand and memorize, and when instructors teach this with large data sets, it is really hard for students to get an idea of what's going on. 
 To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
-To address this issue, Jenny's cheat sheet uses two toy data sets on superhero comic characters and publishers.
-The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
-These data sets are small enough. The cheat sheet then outlines all the possible joins, narrating and displaying the output of each.
 To address this issue, Jenny Bryan's cheat sheet uses two toy data sets on superhero comic characters and publishers.
 The cheat sheet outlines all the possible joins, narrating and displaying the output of each.
 The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
@@ -242,7 +239,7 @@ The functions must be related to a common theme and fall under the umbrella of d
 Students must utilize the packaging tools and collaborative practices taught in our course.
 This kind of project is very feasible to grade because its scope is well-defined and limited.
 However, it also allows students to be creative and work on something they are interested in.
-Another way to scope projects is to have students work on projects that use
+Another way to scope projects is to have students work on projects that use data
 related to their own research or thesis work, but utilize the data science concepts, tools or techniques being taught in the course.
 This is particularly relevant for graduate students enrolled in data science courses as part of their degree program.
 For example, in the UBC STAT 545 course developed by Jenny Bryan, students learn new data science concepts and skills using a tractable dataset in the classroom (e.g., the Gapminder dataset), but their project involves applying the newly acquired concepts and skills to their own research or thesis work.
