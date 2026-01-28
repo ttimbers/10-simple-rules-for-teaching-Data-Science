@@ -74,6 +74,39 @@
 \makeatother
 
 
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
 
 
@@ -85,8 +118,6 @@
 
 
  
-\usepackage[numbers,square,comma]{natbib}
-\bibliographystyle{plos2015}
 
 
 % Use adjustwidth environment to exceed column width (see example table in text)
@@ -204,7 +235,7 @@
 \urlstyle{same}
 \hypersetup{
   pdftitle={Ten Simple Rules for Teaching Data Science},
-  pdfauthor={Tiffany Timbers; Mine Çetinkaya-Rundel},
+  pdfauthor={Tiffany A. Timbers; Mine Çetinkaya-Rundel},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
@@ -223,7 +254,7 @@ Science} % Please use "sentence case" for title and headings (capitalize only th
 \newline
 \\
 % Insert author names, affiliations and corresponding author email (do not include titles, positions, or degrees).
-Tiffany Timbers\textsuperscript{1*}, Mine
+Tiffany A. Timbers\textsuperscript{1*}, Mine
 Çetinkaya-Rundel\textsuperscript{2}
 \\
 \bigskip
@@ -252,15 +283,13 @@ Duke University, Durham, NC, USA,
 
 Data science is the study, development, and practice of using
 reproducible and transparent processes to generate insight from data
-\citep{berman2018realizing, Wing2019Data, Irizarry2020Role, timbers2022data}.
-With roots in statistics and computer science, data science educators
-draw on many of the teaching strategies used in those fields
-\citep{carver2016guidelines, zendler2015, fincher2019cambridge}.
-However, data science is a distinct discipline with its own unique
-challenges and opportunities for teaching and learning. Here, we collate
-and present ten simple rules for teaching data science, piloted by
-leading data science educators in the community and successfully applied
-in our own data science classroom.
+{[}1--4{]}. With roots in statistics and computer science, data science
+educators draw on many of the teaching strategies used in those fields
+{[}5--7{]}. However, data science is a distinct discipline with its own
+unique challenges and opportunities for teaching and learning. Here, we
+collate and present ten simple rules for teaching data science, piloted
+by leading data science educators in the community and successfully
+applied in our own data science classroom.
 
 \section{Rule 1: Teach data science by doing data
 analysis}\label{sec-rule1}
@@ -271,7 +300,7 @@ not in your 10th lesson, not at the end of the semester, but in your
 first data science lesson, have the students load some data, perform
 some simple data wrangling, and create a data visualization. We call
 this the ``let them eat cake'' approach to teaching data science
-\citep{ccetinkaya2021fresh}.
+{[}8{]}.
 
 Why do we suggest this? Because, just like eating cake, it's extremely
 motivating to students. At first, students sign up for a data science
@@ -284,19 +313,18 @@ show them something interesting very early on to hook them. After they
 are hooked, they will be begging you to answer questions about the
 detailed, technical aspects you intentionally omitted. An example of
 this is shown in Fig~\ref{fig-intro-ds-code}; code from the first
-chapter of Data Science: A First Introduction \citep{timbers2022data}.
-In this first chapter, we ask learners to load data from a CSV file and
-perform introductory data wrangling using filtering, arranging, and
-slicing. Finally, create a plot to answer a question about indigenous
-languages in Canada: how many people living in Canada speak an
-indigenous language as their mother tongue? Other leading data science
-educators who advocate and practice this rule include Wang and
-colleagues \citeyearpar{wang2017data}, David Robinson in his
-introductory online Data Science course
-\citep{robinson2017tidyverse, robinson2017announcing}, and Jenny Bryan,
-who summed this up nicely in a tweet ``{[}\ldots{]} I REPEAT, do not
-front-load the `boring', foundational stuff. Do realistic and non-boring
-tasks and work your way down to it.'' \citeyearpar{bryan2017twitter}
+chapter of Data Science: A First Introduction {[}4{]}. In this first
+chapter, we ask learners to load data from a CSV file and perform
+introductory data wrangling using filtering, arranging, and slicing.
+Finally, create a plot to answer a question about indigenous languages
+in Canada: how many people living in Canada speak an indigenous language
+as their mother tongue? Other leading data science educators who
+advocate and practice this rule include Wang and colleagues {[}9{]},
+David Robinson in his introductory online Data Science course
+{[}10,11{]}, and Jenny Bryan {[}12{]}, who summed this up nicely in a
+tweet ``{[}\ldots{]} I REPEAT, do not front-load the `boring',
+foundational stuff. Do realistic and non-boring tasks and work your way
+down to it.''
 
 \begin{figure}
 
@@ -307,8 +335,8 @@ tasks and work your way down to it.'' \citeyearpar{bryan2017twitter}
 }
 
 \caption{\label{fig-intro-ds-code}Example code from the first chapter of
-\emph{Data Science: A First Introduction} (\citet{timbers2022data}) that
-gets students doing data analysis on day one.}
+\emph{Data Science: A First Introduction} {[}4{]} that gets students
+doing data analysis on day one.}
 
 \end{figure}%
 
@@ -330,11 +358,10 @@ solve code problems, which they can leverage in their homework and later
 in their work outside the course. Participatory live coding also slows
 you down, so you don't go too fast for the students. This pedagogy
 originates from the ``I do, we do, you do'' method of knowledge transfer
-\citep{fisher2021better}, and its application in teaching programming
-was pioneered by The Carpentries, a global nonprofit
-(\url{https://carpentries.org}). Best practices for doing this have been
-refined and shared as ten quick tips by Nederbragt and colleagues
-\citeyearpar{nederbragt2020ten}.
+{[}13{]}, and its application in teaching programming was pioneered by
+The Carpentries, a global nonprofit (\url{https://carpentries.org}).
+Best practices for doing this have been refined and shared as ten quick
+tips by Nederbragt and colleagues {[}14{]}.
 
 \section{Rule 3: Give tons and tons of practice and timely
 feedback}\label{sec-rule3}
@@ -342,28 +369,26 @@ feedback}\label{sec-rule3}
 The third simple rule is to give tons and tons of practice. Give the
 learners many, many, many problems to solve, probably many, many, many
 more than you think they might need. The reason for this is that
-repetition leads to learning \citep{ebbinghaus1913grundzuge}. That's not
-just in humans; it is more fundamental than that. In the field of animal
-behavior across the animal kingdom, repetition is found to lead to
-learning \citep{harris1943habituatory, shaw1986donald}. Similarly,
-students need to practice tasks many times to understand and then
-perform them effectively. For example, when teaching students to read
-data from a file, don't just give them one file to read; instead, have
-them work with six different variants of a very similar file. With this
-approach, students have to investigate each file in detail, including
-checking the file type, column spacing, whether there's metadata to
-skip, whether there are column names, etc. In our courses, they will
-complete these six variants in an in-class worksheet, a lab assignment,
-and a quiz. Meaning that by the end of the course, they will have
-practiced this skill over 15 times. Many excellent data science
+repetition leads to learning {[}15{]}. That's not just in humans; it is
+more fundamental than that. In the field of animal behavior across the
+animal kingdom, repetition is found to lead to learning {[}16,17{]}.
+Similarly, students need to practice tasks many times to understand and
+then perform them effectively. For example, when teaching students to
+read data from a file, don't just give them one file to read; instead,
+have them work with six different variants of a very similar file. With
+this approach, students have to investigate each file in detail,
+including checking the file type, column spacing, whether there's
+metadata to skip, whether there are column names, etc. In our courses,
+they will complete these six variants in an in-class worksheet, a lab
+assignment, and a quiz. Meaning that by the end of the course, they will
+have practiced this skill over 15 times. Many excellent data science
 educational resources use this pedagogy, including software packages
-(e.g., the swirl R package \citep{swirl}), online courses (e.g., Kaggle
-Learn \citep{kaggle_learn}), and popular textbooks (e.g., R for Data
-Science \citep{wickham2023}). For those new to designing practice
-exercises for data science, we recommend looking at the ``Exercise
-Types'' chapter of \emph{Teaching Tech Together: How to Make your
-lessons work and build a teaching community around them} by Greg Wilson
-\citeyearpar{wilson2019teaching}.
+(e.g., the swirl R package {[}18{]}), online courses (e.g., Kaggle Learn
+{[}19{]}), and popular textbooks (e.g., R for Data Science {[}20{]}).
+For those new to designing practice exercises for data science, we
+recommend looking at the ``Exercise Types'' chapter of \emph{Teaching
+Tech Together: How to Make your lessons work and build a teaching
+community around them} by Greg Wilson {[}21{]}.
 
 When giving lots of practice, pair it with timely feedback. Practice
 without feedback has limited value. So, how can we provide a wealth of
@@ -386,12 +411,11 @@ graded and grades are returned (often days or weeks later). Automated
 software testing can provide timely feedback while students' focus and
 attention are on the topic being learned and practiced. This pedagogy
 was first developed and used for teaching programming in computer
-science courses \citep[reviewed in][]{wilson2019teaching} and is now
-being adopted in data science courses. There are now many wonderful and
-popular software packages for this in the context of data science,
-including the learnr R package \citep{learnr} for R code, and the
-NBgrader \citep{nbgrader} and Otter Grader \citep{otter_grader} software
-packages, which work for both R and Python code.
+science courses {[}reviewed in 21{]} and is now being adopted in data
+science courses. There are now many wonderful and popular software
+packages for this in the context of data science, including the learnr R
+package {[}22{]} for R code, and the NBgrader {[}23{]} and Otter Grader
+{[}24{]} software packages, which work for both R and Python code.
 
 \begin{figure}
 
@@ -415,30 +439,30 @@ working memory. This allows students to track the progression of
 everything through the algorithm's steps, see how the elements are
 manipulated, and gain a deeper understanding of these concepts. For
 example, in one of our courses, we use the Palmer penguins data set
-\citep{horst2020palmerpenguins} to introduce the students to k-means
-clustering. Instead of giving them the entire data set, which contains
-hundreds of observations, we first subset it to just a handful. Then we
-can walk the students through what happens to these observations at each
-step of the algorithm, building an understanding and intuition for the
-algorithm. Inspiration from this comes from Jenny Bryan's great dplyr
-joins cheat sheet \citep{bryan2015stat545}. In her cheat sheet, she
-teaches all the various joins from the dplyr package \citep{dplyr}. This
-is a difficult topic for students to understand and memorize, and when
-instructors teach this with large data sets, it is really hard for
-students to get an idea of what's going on. To make matters worse, all
-of these joins are also similarly named (e.g, left join, right join,
-inner join, outer join, etc). To address this issue, Jenny's cheat sheet
-uses two toy data sets on superhero comic characters and publishers. The
-superhero dataset has only 7 rows and 4 columns, while the publisher
-dataset has 3 rows and 2 columns. These data sets are small enough. The
-cheat sheet then outlines all the possible joins, narrating and
-displaying the output of each. To address this issue, Jenny Bryan's
-cheat sheet uses two toy data sets on superhero comic characters and
-publishers. The cheat sheet outlines all the possible joins, narrating
-and displaying the output of each. The superhero dataset has only 7 rows
+{[}25{]} to introduce the students to k-means clustering. Instead of
+giving them the entire data set, which contains hundreds of
+observations, we first subset it to just a handful. Then we can walk the
+students through what happens to these observations at each step of the
+algorithm, building an understanding and intuition for the algorithm.
+Inspiration from this comes from Jenny Bryan's great dplyr joins cheat
+sheet {[}26{]}. In her cheat sheet, she teaches all the various joins
+from the dplyr package {[}27{]}. This is a difficult topic for students
+to understand and memorize, and when instructors teach this with large
+data sets, it is really hard for students to get an idea of what's going
+on. To make matters worse, all of these joins are also similarly named
+(e.g, left join, right join, inner join, outer join, etc). To address
+this issue, Jenny's cheat sheet uses two toy data sets on superhero
+comic characters and publishers. The superhero dataset has only 7 rows
 and 4 columns, while the publisher dataset has 3 rows and 2 columns.
-These data sets are small enough to fit in learners working memory,
-making the joins tractable and much easier to understand.
+These data sets are small enough. The cheat sheet then outlines all the
+possible joins, narrating and displaying the output of each. To address
+this issue, Jenny Bryan's cheat sheet uses two toy data sets on
+superhero comic characters and publishers. The cheat sheet outlines all
+the possible joins, narrating and displaying the output of each. The
+superhero dataset has only 7 rows and 4 columns, while the publisher
+dataset has 3 rows and 2 columns. These data sets are small enough to
+fit in learners working memory, making the joins tractable and much
+easier to understand.
 
 It is, of course, not feasible to keep learners interested and motivated
 to learn more if we rely solely on toy datasets. So, once students have
@@ -473,26 +497,26 @@ about. Instead, we want to use something that all our learners can
 easily understand, including what the observations are and what the
 columns represent. One example from one of the courses that we teach
 uses Canadian census data about the languages spoken in Canada across
-different regions \citep{canlang}. Other examples include the Gapminder
-\citep{gapminder} and UN Votes \citep{robinson2021unvotes} data sets.
-These are particularly nice examples because they contain hundreds of
-observations; however, the observations are something most people can
-understand: a country, a year, a population, a vote, etc. And with such
-a dataset, we can ask questions that most learners are interested in,
-because everyone has grown up in at least one country, and possibly
-more, in their lifetime. And we all grew up at different times in
-history. These lived experiences make us generally knowledgeable and
-interested in asking questions about the datasets. There are many more
-real and rich data sets that are accessible and usable. The main point
-here is that it shouldn't take your students long to understand the data
-set, because a deep understanding of it isn't what you are trying to
-teach at that moment. It can also be helpful to bring in data sets that
-reflect your learners' local context (e.g., country, region, culture)
-and/or current events to increase engagement and relevance. It can be
-difficult to find such data sets in a timely manner, but it's often
-worth the effort for learners to connect what they are learning in their
-data science course to what's happening in their own lives and
-communities outside the classroom.
+different regions {[}28{]}. Other examples include the Gapminder
+{[}29{]} and UN Votes {[}30{]} data sets. These are particularly nice
+examples because they contain hundreds of observations; however, the
+observations are something most people can understand: a country, a
+year, a population, a vote, etc. And with such a dataset, we can ask
+questions that most learners are interested in, because everyone has
+grown up in at least one country, and possibly more, in their lifetime.
+And we all grew up at different times in history. These lived
+experiences make us generally knowledgeable and interested in asking
+questions about the datasets. There are many more real and rich data
+sets that are accessible and usable. The main point here is that it
+shouldn't take your students long to understand the data set, because a
+deep understanding of it isn't what you are trying to teach at that
+moment. It can also be helpful to bring in data sets that reflect your
+learners' local context (e.g., country, region, culture) and/or current
+events to increase engagement and relevance. It can be difficult to find
+such data sets in a timely manner, but it's often worth the effort for
+learners to connect what they are learning in their data science course
+to what's happening in their own lives and communities outside the
+classroom.
 
 \section{Rule 6: Provide cultural and historical
 context}\label{sec-rule6}
@@ -514,25 +538,25 @@ as we have observed that, for some learners, they can become significant
 barriers and lead to a dislike or avoidance of a particular piece of
 software.
 
-For example, when we teach the programming language R \citep{ihaka1996r}
-using the suite of tidyverse R packages \citep{tidyverse}. Learners
-observe that these packages heavily use unquoted column names when
-referencing data frame columns in their function calls. That is really
-strange when you come from other programming languages, as most other
-programming languages require quoted strings when referencing object
-attributes (which is what a data frame column is). This can also make
-writing functions that utilize tidyverse functions a bit more
-challenging due to issues with indirection. For learners with experience
-in Python, Java, or C, this might initially seem like a really bad idea.
-However, once they learn that R and the suite of tidyverse R packages
-were written by statisticians for performing data analysis and graphics
-\citep{ihaka1996r, tidyverse}, and that they designed the language and
-packages with the expectation that much of the users time would be
-frequently typing things into the console or running code interactively,
-it makes a lot more sense that they would want to minimize the amount of
-typing and tracking of opening and closing quotations for their users.
-Doing this minimizes the potential syntax errors that could be
-introduced by errors in forgetting to open or close quotations.
+For example, when we teach the programming language R {[}31{]} using the
+suite of tidyverse R packages {[}32{]}. Learners observe that these
+packages heavily use unquoted column names when referencing data frame
+columns in their function calls. That is really strange when you come
+from other programming languages, as most other programming languages
+require quoted strings when referencing object attributes (which is what
+a data frame column is). This can also make writing functions that
+utilize tidyverse functions a bit more challenging due to issues with
+indirection. For learners with experience in Python, Java, or C, this
+might initially seem like a really bad idea. However, once they learn
+that R and the suite of tidyverse R packages were written by
+statisticians for performing data analysis and graphics {[}31,32{]}, and
+that they designed the language and packages with the expectation that
+much of the users time would be frequently typing things into the
+console or running code interactively, it makes a lot more sense that
+they would want to minimize the amount of typing and tracking of opening
+and closing quotations for their users. Doing this minimizes the
+potential syntax errors that could be introduced by errors in forgetting
+to open or close quotations.
 
 Another example comes from the use of the arrow (\textless-) as an
 assignment operator in R, which may seem odd to some learners as it uses
@@ -540,14 +564,13 @@ two characters. Again, however, when given the historical context that R
 was derived from another programming language named S, and S was
 inspired by another programming language, APL, that was designed for a
 particular keyboard with one key mapped to the assignment operator
-\citep{fay2018assignment}, it makes a lot more sense as to why that
-design choice was made. Design and historical contexts help learners
-understand the rationale behind different design choices, allowing them
-to see choices they might not initially agree with as excellent within
-these contexts. As an aside, for those interested in learning more about
-the history of the R programming language, see the ``History and
-Overview of R'' chapter in Roger Peng's \emph{R programming data
-science} book \citeyearpar{peng2016r}.
+{[}33{]}, it makes a lot more sense as to why that design choice was
+made. Design and historical contexts help learners understand the
+rationale behind different design choices, allowing them to see choices
+they might not initially agree with as excellent within these contexts.
+As an aside, for those interested in learning more about the history of
+the R programming language, see the ``History and Overview of R''
+chapter in Roger Peng's \emph{R programming data science} book {[}34{]}.
 
 \section{Rule 7: Build a safe, inclusive, and welcoming
 community}\label{sec-rule7}
@@ -558,33 +581,31 @@ number one, given that this is the first thing you need to do when
 teaching any subject. The reason is that people don't learn effectively
 when they don't feel psychologically safe. Psychological safety is the
 belief that one can express oneself, through speech or actions, without
-fear of negative consequences or feedback
-\citep{edmondson1999psychological}. If learners do not feel safe asking
-questions without being made to look or feel dumb, they are not going to
-ask questions, and they are not going to be engaged
-\citep{lyman2021pre}. If they don't feel safe from negative perceptions
-about their intelligence, discrimination, or harassment in the classroom
-(or related spaces such as office hours, course forums, study groups,
-etc.), they may become so disengaged that they even stop showing up.
-Thus, creating safe, inclusive, and welcoming learning environments is
-crucial for effective learning, and as instructors, we have a
-responsibility to establish scaffolding and guidelines that facilitate
-this. One thing we do in our courses is establish a course code of
-conduct, which holds a place of prevalence in the classroom and related
-learning spaces. At the beginning of a new course, we take time in the
-first class to present our code of conduct to the learners. The codes of
-conduct we use are very explicit. They discuss expected behaviors,
-behaviors that will not be tolerated, the process for reporting
-violations, and the consequences for violating these rules. We also
-ensure that there are multiple ways to report violations, to support
-students in the unlikely event that the instructor is the one violating
-the code of conduct. It is also important that when a violation is
-reported, it be taken seriously and acted upon in a timely manner. No
-student concern should ever be ignored or brushed off. For instructors
-seeking to establish a code of conduct for their course, we recommend
-examining existing codes of conduct from other organizations and
-tailoring them to your specific context. One particularly good example
-is The Carpentries' code of conduct
+fear of negative consequences or feedback {[}35{]}. If learners do not
+feel safe asking questions without being made to look or feel dumb, they
+are not going to ask questions, and they are not going to be engaged
+{[}36{]}. If they don't feel safe from negative perceptions about their
+intelligence, discrimination, or harassment in the classroom (or related
+spaces such as office hours, course forums, study groups, etc.), they
+may become so disengaged that they even stop showing up. Thus, creating
+safe, inclusive, and welcoming learning environments is crucial for
+effective learning, and as instructors, we have a responsibility to
+establish scaffolding and guidelines that facilitate this. One thing we
+do in our courses is establish a course code of conduct, which holds a
+place of prevalence in the classroom and related learning spaces. At the
+beginning of a new course, we take time in the first class to present
+our code of conduct to the learners. The codes of conduct we use are
+very explicit. They discuss expected behaviors, behaviors that will not
+be tolerated, the process for reporting violations, and the consequences
+for violating these rules. We also ensure that there are multiple ways
+to report violations, to support students in the unlikely event that the
+instructor is the one violating the code of conduct. It is also
+important that when a violation is reported, it be taken seriously and
+acted upon in a timely manner. No student concern should ever be ignored
+or brushed off. For instructors seeking to establish a code of conduct
+for their course, we recommend examining existing codes of conduct from
+other organizations and tailoring them to your specific context. One
+particularly good example is The Carpentries' code of conduct
 (\url{https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html}).
 
 \section{Rule 8: Use checklists to focus and facilitate peer
@@ -592,8 +613,8 @@ learning}\label{sec-rule8}
 
 Rule number eight is to use checklists to focus and facilitate peer
 learning. A well-documented pedagogical best practice is for peers to
-learn from each other \citep{topping1998}. One implementation of this is
-peer review. However, peer review can be particularly challenging if you
+learn from each other {[}37{]}. One implementation of this is peer
+review. However, peer review can be particularly challenging if you
 haven't done it before, or if it involves reviewing something new that
 you are still learning. So what can we do as instructors to facilitate
 this practice for our learners? Given that we are well-practiced at
@@ -603,28 +624,28 @@ checklists? Checklists can help ensure complex tasks are completed
 successfully and have been used in safety-critical systems (such as
 aviation, surgery, or nuclear power). They can be particularly helpful
 for complex tasks, as well as for repetitive ones that are consequently
-boring \citep{gawande2010checklist}. For these reasons, checklists have
-recently been adopted in scientific (e.g., PLoS journals, Nature Ecology
-\& Evolution, Journal of Open Source Education, Journal of Open Source
-Software) and software (e.g., ROpenSci, PyOpenSci) publishing to help
-ensure that reviewers and editors increase transparency, decreases bias
-and call attention to essential elements of reviews that are often
-overlooked \citep{parker2018empowering}. As reviewers for some of these
-journals and organizations, the authors have found checklists extremely
-helpful for focusing our attention on the most important elements of a
-review and for ensuring we don't miss anything. We believe this idea
-also has value in training data science students. \textbf{S1 File} shows
-an example of a data analysis review checklist that we have used in our
-data science courses. It serves to communicate the aspects that we, as
-educators, believe are important for the assessment to be completed to a
-high quality. In addition to checking off the checklist items, students
-are also asked to provide written comments and feedback. This checklist
-helps focus students' comments and feedback on the items they were
-unable to check off. For example, if there were issues with the software
-tests (e.g., they were missing) and issues with the discussion section
-(e.g., they did not mention any limitations of the analysis), they would
-not check those boxes, and that would help focus their review comments
-on critical feedback about the issues with those sections.
+boring {[}38{]}. For these reasons, checklists have recently been
+adopted in scientific (e.g., PLoS journals, Nature Ecology \& Evolution,
+Journal of Open Source Education, Journal of Open Source Software) and
+software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that
+reviewers and editors increase transparency, decreases bias and call
+attention to essential elements of reviews that are often overlooked
+{[}39{]}. As reviewers for some of these journals and organizations, the
+authors have found checklists extremely helpful for focusing our
+attention on the most important elements of a review and for ensuring we
+don't miss anything. We believe this idea also has value in training
+data science students. \textbf{S1 File} shows an example of a data
+analysis review checklist that we have used in our data science courses.
+It serves to communicate the aspects that we, as educators, believe are
+important for the assessment to be completed to a high quality. In
+addition to checking off the checklist items, students are also asked to
+provide written comments and feedback. This checklist helps focus
+students' comments and feedback on the items they were unable to check
+off. For example, if there were issues with the software tests (e.g.,
+they were missing) and issues with the discussion section (e.g., they
+did not mention any limitations of the analysis), they would not check
+those boxes, and that would help focus their review comments on critical
+feedback about the issues with those sections.
 
 \section{Rule 9: Teach students to work
 collaboratively}\label{sec-rule9}
@@ -679,7 +700,7 @@ typically focus on just a small part of a data analysis workflow. For
 example, they might focus on data visualization, data wrangling, or
 modeling. But in a project, they get to see how all these pieces fit
 together in a more realistic scenario. This is critical training for any
-aspiring data scientist \citep{ccetinkaya20225ws}.
+aspiring data scientist {[}40{]}.
 
 From the instructor's perspective, however, projects can feel daunting,
 particularly when student numbers are large and teaching resources are
@@ -732,9 +753,244 @@ Many thanks to the leading data science educators in our community who
 pioneered the teaching practices outlined in our ten simple rules and
 the students with whom we have tested them on in our own classrooms.
 
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\phantomsection\label{refs}
+\begin{CSLReferences}{0}{1}
+\bibitem[\citeproctext]{ref-berman2018realizing}
+\CSLLeftMargin{1. }%
+\CSLRightInline{Berman F, Rutenbar R, Hailpern B, Christensen H,
+Davidson S, Estrin D, et al. Realizing the potential of data science.
+Communications of the ACM. 2018;61: 67--72. }
+
+\bibitem[\citeproctext]{ref-Wing2019Data}
+\CSLLeftMargin{2. }%
+\CSLRightInline{Wing JM. The {Data} {Life} {Cycle}. Harvard Data Science
+Review. 2019;1.
+doi:\href{https://doi.org/10.1162/99608f92.e26845b4}{10.1162/99608f92.e26845b4}}
+
+\bibitem[\citeproctext]{ref-Irizarry2020Role}
+\CSLLeftMargin{3. }%
+\CSLRightInline{Irizarry RA. {The Role of Academia in Data Science
+Education}. Harvard Data Science Review. 2020;2.
+doi:\href{https://doi.org/10.1162/99608f92.dd363929}{10.1162/99608f92.dd363929}}
+
+\bibitem[\citeproctext]{ref-timbers2022data}
+\CSLLeftMargin{4. }%
+\CSLRightInline{Timbers T, Campbell T, Lee M. Data science: A first
+introduction. Chapman; Hall/CRC; 2022. }
+
+\bibitem[\citeproctext]{ref-carver2016guidelines}
+\CSLLeftMargin{5. }%
+\CSLRightInline{Carver R, Everson M, Gabrosek J, Horton N, Lock R, Mocko
+M, et al. Guidelines for assessment and instruction in statistics
+education (GAISE) college report 2016. AMSTAT; 2016. }
+
+\bibitem[\citeproctext]{ref-zendler2015}
+\CSLLeftMargin{6. }%
+\CSLRightInline{Zendler A, Klaudt D. Instructional methods to computer
+science education as investigated by computer science teachers. Journal
+of Computer Science. 2015;11: 915--927.
+doi:\href{https://doi.org/10.3844/jcssp.2015.915.927}{10.3844/jcssp.2015.915.927}}
+
+\bibitem[\citeproctext]{ref-fincher2019cambridge}
+\CSLLeftMargin{7. }%
+\CSLRightInline{Fincher SA, Robins AV. The cambridge handbook of
+computing education research. Cambridge University Press; 2019. }
+
+\bibitem[\citeproctext]{ref-ccetinkaya2021fresh}
+\CSLLeftMargin{8. }%
+\CSLRightInline{Çetinkaya-Rundel M, Ellison V. A fresh look at
+introductory data science. Journal of Statistics and Data Science
+Education. 2021;29: S16--S26. }
+
+\bibitem[\citeproctext]{ref-wang2017data}
+\CSLLeftMargin{9. }%
+\CSLRightInline{Wang X, Rush C, Horton NJ. Data visualization on day
+one: Bringing big ideas into intro stats early and often. arXiv preprint
+arXiv:170508544. 2017. }
+
+\bibitem[\citeproctext]{ref-robinson2017tidyverse}
+\CSLLeftMargin{10. }%
+\CSLRightInline{Robinson D. Introduction to the tidyverse. DataCamp
+Online Course; 2017. Available:
+\url{https://www.datacamp.com/courses/introduction-to-the-tidyverse}}
+
+\bibitem[\citeproctext]{ref-robinson2017announcing}
+\CSLLeftMargin{11. }%
+\CSLRightInline{Robinson D. Announcing "introduction to the tidyverse",
+my new DataCamp course. Variance Explained (blog); 2017. Available:
+\url{http://varianceexplained.org/r/intro-tidyverse/}}
+
+\bibitem[\citeproctext]{ref-bryan2017twitter}
+\CSLLeftMargin{12. }%
+\CSLRightInline{Bryan J. Tweet about not front-loading boring
+foundational material. Twitter; 2017. }
+
+\bibitem[\citeproctext]{ref-fisher2021better}
+\CSLLeftMargin{13. }%
+\CSLRightInline{Fisher D, Frey N. Better learning through structured
+teaching: A framework for the gradual release of responsibility. ASCD;
+2021. }
+
+\bibitem[\citeproctext]{ref-nederbragt2020ten}
+\CSLLeftMargin{14. }%
+\CSLRightInline{Nederbragt A, Harris RM, Hill AP, Wilson G. Ten quick
+tips for teaching with participatory live coding. PLOS Computational
+Biology. 2020;16: e1008090. }
+
+\bibitem[\citeproctext]{ref-ebbinghaus1913grundzuge}
+\CSLLeftMargin{15. }%
+\CSLRightInline{Ebbinghaus H. Grundzüge der psychologie v. 2, 1913.
+Veit; 1913. }
+
+\bibitem[\citeproctext]{ref-harris1943habituatory}
+\CSLLeftMargin{16. }%
+\CSLRightInline{Harris JD. Habituatory response decrement in the intact
+organism. Psychological bulletin. 1943;40: 385. }
+
+\bibitem[\citeproctext]{ref-shaw1986donald}
+\CSLLeftMargin{17. }%
+\CSLRightInline{Shaw G. Donald hebb: The organization of behavior. Brain
+theory: Proceedings of the first trieste meeting on brain theory,
+october 1--4, 1984. Springer; 1986. pp. 231--233. }
+
+\bibitem[\citeproctext]{ref-swirl}
+\CSLLeftMargin{18. }%
+\CSLRightInline{Carchedi N, Kross S, Bauer B, et al. Swirl: Learn r, in
+r. 2023. Available: \url{https://swirlstats.com}}
+
+\bibitem[\citeproctext]{ref-kaggle_learn}
+\CSLLeftMargin{19. }%
+\CSLRightInline{Kaggle. Kaggle learn. Online learning platform; 2018.
+Available: \url{https://www.kaggle.com/learn}}
+
+\bibitem[\citeproctext]{ref-wickham2023}
+\CSLLeftMargin{20. }%
+\CSLRightInline{Wickham H, Grolemund G, Çetinkaya-Rundel M. R for data
+science. 2nd ed. O'Reilly Media; 2023. }
+
+\bibitem[\citeproctext]{ref-wilson2019teaching}
+\CSLLeftMargin{21. }%
+\CSLRightInline{Wilson G. Teaching tech together: How to make your
+lessons work and build a teaching community around them. Chapman;
+Hall/CRC; 2019. }
+
+\bibitem[\citeproctext]{ref-learnr}
+\CSLLeftMargin{22. }%
+\CSLRightInline{Kross S, Çetinkaya-Rundel M, et al. Learnr: Interactive
+tutorials for r. 2024. Available:
+\url{https://rstudio.github.io/learnr/}}
+
+\bibitem[\citeproctext]{ref-nbgrader}
+\CSLLeftMargin{23. }%
+\CSLRightInline{Hamrick JB et al. Nbgrader: A tool for creating and
+grading assignments in the jupyter notebook. Proceedings of the 19th
+python in science conference. 2016. pp. 68--74.
+doi:\href{https://doi.org/10.25080/Majora-629e541a-00e}{10.25080/Majora-629e541a-00e}}
+
+\bibitem[\citeproctext]{ref-otter_grader}
+\CSLLeftMargin{24. }%
+\CSLRightInline{Kim EJ, Lau S, Hug J, DeNero J. Otter: A tool for
+automated grading of jupyter notebooks and more. Proceedings of the 23rd
+python in science conference. 2022. pp. 120--127.
+doi:\href{https://doi.org/10.25080/majora-2127ed6e-00c}{10.25080/majora-2127ed6e-00c}}
+
+\bibitem[\citeproctext]{ref-horst2020palmerpenguins}
+\CSLLeftMargin{25. }%
+\CSLRightInline{Horst A, Hill A, Gorman K. Palmerpenguins: Data for
+palmer archipelago (antarctica) penguin species. R Journal. 2020;12:
+277--283.
+doi:\href{https://doi.org/10.32614/RJ-2020-043}{10.32614/RJ-2020-043}}
+
+\bibitem[\citeproctext]{ref-bryan2015stat545}
+\CSLLeftMargin{26. }%
+\CSLRightInline{Bryan J. STAT 545: Data wrangling, exploration, and
+analysis with {R}. 2015. Available: \url{https://stat545.com/}}
+
+\bibitem[\citeproctext]{ref-dplyr}
+\CSLLeftMargin{27. }%
+\CSLRightInline{Wickham H, François R, Henry L, Müller K. Dplyr: A
+grammar of data manipulation. 2024. Available:
+\url{https://CRAN.R-project.org/package=dplyr}}
+
+\bibitem[\citeproctext]{ref-canlang}
+\CSLLeftMargin{28. }%
+\CSLRightInline{Timbers T. Canlang: Canadian census language data. 2020.
+Available: \url{https://ttimbers.github.io/canlang/}}
+
+\bibitem[\citeproctext]{ref-gapminder}
+\CSLLeftMargin{29. }%
+\CSLRightInline{Bryan J. Gapminder: Data from gapminder. 2017.
+Available: \url{https://CRAN.R-project.org/package=gapminder}}
+
+\bibitem[\citeproctext]{ref-robinson2021unvotes}
+\CSLLeftMargin{30. }%
+\CSLRightInline{Robinson D. Unvotes: United nations general assembly
+voting data. 2021.
+doi:\href{https://doi.org/10.32614/CRAN.package.unvotes}{10.32614/CRAN.package.unvotes}}
+
+\bibitem[\citeproctext]{ref-ihaka1996r}
+\CSLLeftMargin{31. }%
+\CSLRightInline{Ihaka R, Gentleman R. R: A language for data analysis
+and graphics. Journal of computational and graphical statistics. 1996;5:
+299--314. }
+
+\bibitem[\citeproctext]{ref-tidyverse}
+\CSLLeftMargin{32. }%
+\CSLRightInline{Wickham H, Hester J, Henry L, et al. Tidyverse: Easily
+install and load the 'tidyverse'. 2024. Available:
+\url{https://CRAN.R-project.org/package=tidyverse}}
+
+\bibitem[\citeproctext]{ref-fay2018assignment}
+\CSLLeftMargin{33. }%
+\CSLRightInline{Fay C. Why do we use arrow as an assignment operator?
+Blog post; 2018. Available: \url{https://colinfay.me/r-assignment/}}
+
+\bibitem[\citeproctext]{ref-peng2016r}
+\CSLLeftMargin{34. }%
+\CSLRightInline{Peng RD. R programming for data science. Leanpub
+Victoria, BC, Canada; 2016. }
+
+\bibitem[\citeproctext]{ref-edmondson1999psychological}
+\CSLLeftMargin{35. }%
+\CSLRightInline{Edmondson A. Psychological safety and learning behavior
+in work teams. Administrative science quarterly. 1999;44: 350--383. }
+
+\bibitem[\citeproctext]{ref-lyman2021pre}
+\CSLLeftMargin{36. }%
+\CSLRightInline{Lyman B, Mendon CR. Pre-licensure nursing students'
+experiences of psychological safety: A qualitative descriptive study.
+Nurse education today. 2021;105: 105026. }
+
+\bibitem[\citeproctext]{ref-topping1998}
+\CSLLeftMargin{37. }%
+\CSLRightInline{Topping K. Peer assessment between students in colleges
+and universities. Review of Educational Research. 1998;68: 249--276.
+Available: \url{http://www.jstor.org/stable/1170598}}
+
+\bibitem[\citeproctext]{ref-gawande2010checklist}
+\CSLLeftMargin{38. }%
+\CSLRightInline{Gawande A. Checklist manifesto, the (HB). Penguin Books
+India; 2010. }
+
+\bibitem[\citeproctext]{ref-parker2018empowering}
+\CSLLeftMargin{39. }%
+\CSLRightInline{Parker TH, Griffith SC, Bronstein JL, Fidler F, Foster
+S, Fraser H, et al. Empowering peer reviewers with a checklist to
+improve transparency. Nature ecology \& evolution. 2018;2: 929--935. }
+
+\bibitem[\citeproctext]{ref-ccetinkaya20225ws}
+\CSLLeftMargin{40. }%
+\CSLRightInline{Çetinkaya-Rundel M, Dogucu M, Rummerfield W. The 5Ws and
+1H of term projects in the introductory data science classroom.
+Statistics Education Research Journal. 2022;21: 4--4. }
+
+\end{CSLReferences}
+
 
 \nolinenumbers
-  \bibliography{references.bib}
 
 
 \end{document}

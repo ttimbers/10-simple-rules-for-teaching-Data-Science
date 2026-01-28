@@ -1,7 +1,7 @@
 ---
 title: "Ten Simple Rules for Teaching Data Science"
 author: 
-  - name: Tiffany Timbers
+  - name: Tiffany A. Timbers
     affiliation: Department of Statistics, The University of British Columbia, Vancouver, BC, Canada
     corresponding: true
     email: tiffany.timbers@stat.ubc.ca
@@ -46,9 +46,9 @@ After they are hooked, they will be begging you to answer questions about the de
 An example of this is shown in @fig-intro-ds-code; code from the first chapter of Data Science: A First Introduction [@timbers2022data].
 In this first chapter, we ask learners to load data from a CSV file and perform introductory data wrangling using filtering, arranging, and slicing.
 Finally, create a plot to answer a question about indigenous languages in Canada: how many people living in Canada speak an indigenous language as their mother tongue?
-Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan, who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." [-@bryan2017twitter]
+Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan [-@bryan2017twitter], who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." 
 
-![Example code from the first chapter of *Data Science: A First Introduction* (@timbers2022data) that gets students doing data analysis on day one.](figures/intro-code.png){#fig-intro-ds-code width="100%"}
+![Example code from the first chapter of *Data Science: A First Introduction* @timbers2022data that gets students doing data analysis on day one.](figures/intro-code.png){#fig-intro-ds-code width="100%"}
 
 # Rule 2: Use participatory live coding {#sec-rule2}
 
@@ -268,4 +268,4 @@ Many thanks to the leading data science educators in our community who pioneered
 the teaching practices outlined in our ten simple rules 
 and the students with whom we have tested them on in our own classrooms.
 
-
+# References

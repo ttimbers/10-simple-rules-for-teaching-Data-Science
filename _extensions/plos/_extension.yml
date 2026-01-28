@@ -46,11 +46,11 @@ contributes:
       # Using some package that may require pdflatex
       pdf-engine: pdflatex
       # biblatex is not supported
-      cite-method: natbib
+      #cite-method: natbib
       # number is required for plos2015.bst style
       # and square,comma for correct guideline style
       # https://tex.stackexchange.com/questions/376662/how-do-i-create-plosone-bib-references
-      natbiboptions: "numbers,square,comma"
+      #natbiboptions: "numbers,square,comma"
       # tcolorbox is not working ok with breakable for code blocks so deactivate this Quarto feature
       # https://github.com/quarto-journals/article-format-template/issues/2
       code-block-border-left: false
