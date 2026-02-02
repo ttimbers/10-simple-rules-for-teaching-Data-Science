@@ -18,6 +18,8 @@ format:
       text: |
         \usepackage{setspace} 
         \doublespacing
+        \usepackage{microtype}
+        \microtypesetup{protrusion=true, expansion=true}
     keep-tex: true
 execute:
     echo: false
