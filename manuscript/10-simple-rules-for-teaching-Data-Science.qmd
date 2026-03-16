@@ -31,9 +31,47 @@ With roots in statistics and computer science, data science educators draw on ma
 However, data science is a distinct discipline with its own unique challenges and opportunities for teaching and learning.
 Here, we collate and present ten simple rules for teaching data science, piloted by leading data science educators in the community and successfully applied in our own data science classroom.
 
-# Rule 1: Teach data science by doing data analysis {#sec-rule1}
+# Rule 1: Build a safe, inclusive, and welcoming community {#sec-rule1}
 
-The first rule is teaching data science by doing data analysis.
+The first rule is to build a safe, inclusive, and welcoming community.
+The reason is that people don't learn effectively when they don't feel psychologically safe.
+Psychological safety is the belief that one can express oneself, through speech or actions,
+without fear of negative consequences or feedback [@edmondson1999psychological].
+If learners do not feel safe asking questions without being made to look or feel dumb, they are not going to ask questions, and they are not going to be engaged [@lyman2021pre].
+If they don't feel safe from negative perceptions about their intelligence, discrimination, or harassment in the classroom (or related spaces such as office hours, course forums, study groups, etc.), they may become so disengaged that they even stop showing up.
+Thus, creating safe, inclusive, and welcoming learning environments is crucial for effective learning, and as instructors, we have a responsibility to establish scaffolding and guidelines that facilitate this.
+One thing we do in our courses is establish a course code of conduct, which holds a place of prevalence in the classroom and related learning spaces.
+At the beginning of a new course, we take time in the first class to present our code of conduct to the learners.
+The codes of conduct we use are very explicit.
+They discuss expected behaviors, behaviors that will not be tolerated, the process for reporting violations, and the consequences for violating these rules.
+We also ensure that there are multiple ways to report violations, to support students in the unlikely event that the instructor is the one violating the code of conduct.
+It is also important that when a violation is reported, it be taken seriously and acted upon in a timely manner.
+No student concern should ever be ignored or brushed off.
+For instructors seeking to establish a code of conduct for their course, we recommend examining existing codes of conduct from other organizations and tailoring them to your specific context.
+One particularly good example is The Carpentries' code of conduct (<https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html>).
+
+This rule is likely important for teaching any subject, 
+but we strongly feel that it must be included here as a first, 
+and perhaps ground rule, 
+for data science in particular for two reasons.
+First, data science involves a lot of interactions and collaboration in online spaces.
+It is well documented that people are less inhibited in their online interactions,
+and that this disinhibition can manifest in toxic forms, 
+including rude language, harsh criticisms, expressions of anger or hatred, and even threats [@suler2004]. 
+Second, at present data science,
+suffers from significant deficits in diversity, equity and inclusion [@young2023mind].
+Each of these factors independently pose challenges to creating safe, 
+inclusive and welcoming learning environments; 
+in combination, their effects are compounded.
+That is why we believe it essential to be proactive in establishing norms of behaviour 
+from the outset of a course.
+This is not merely good pedagogical practice; 
+it is an act of structural intervention in a field that has 
+historically failed to welcome many of the people who deserve to be in it.
+
+# Rule 2: Teach data science by doing data analysis {#sec-rule2}
+
+The second rule is teaching data science by doing data analysis.
 This means that in your first data science lesson, not in your third lesson, not in your 10th lesson, not at the end of the semester, but in your first data science lesson, have the students load some data, perform some simple data wrangling, and create a data visualization.
 We call this the "let them eat cake" approach to teaching data science [@ccetinkaya2021fresh].
 
@@ -54,9 +92,9 @@ Other leading data science educators who advocate and practice this rule include
 ![Example code from the first chapter of *Data Science: A First Introduction* @timbers2022data that gets students doing data analysis on day one.](figures/intro-fig.png){#fig-intro-ds-code width="100%"}
 :::
 
-# Rule 2: Use participatory live coding {#sec-rule2}
+# Rule 3: Use participatory live coding {#sec-rule3}
 
-The second rule is to use participatory live coding.
+The third rule is to use participatory live coding.
 This means that when you are working with code in the classroom, instead of showing it on a static slide or just running it in an executable slide or an IDE, actually type the code and narrate it as you teach.
 Have the participants follow along as well.
 The reason is that it demonstrates your best practices for processes and workflows, topics that are important in practice but, unfortunately, are often just an afterthought in teaching computational subjects.
@@ -67,9 +105,9 @@ Participatory live coding also slows you down, so you don't go too fast for the 
 This pedagogy originates from the "I do, we do, you do" method of knowledge transfer [@fisher2021better], and its application in teaching programming was pioneered by The Carpentries, a global nonprofit (<https://carpentries.org>).
 Best practices for doing this have been refined and shared as ten quick tips by Nederbragt and colleagues [-@nederbragt2020ten].
 
-# Rule 3: Give tons and tons of practice and timely feedback {#sec-rule3}
+# Rule 4: Give tons and tons of practice and timely feedback {#sec-rule4}
 
-The third simple rule is to give tons and tons of practice.
+The fourth simple rule is to give tons and tons of practice.
 Give the learners many, many, many problems to solve, probably many, many, many more than you think they might need.
 The reason for this is that repetition leads to learning [@ebbinghaus1913grundzuge].
 That's not just in humans; it is more fundamental than that.
@@ -99,9 +137,9 @@ There are now many wonderful and popular software packages for this in the conte
 
 ![Example of automated software test feedback to students.](figures/tests-as-feedback.png){#fig-code-feedback width="100%"}
 
-# Rule 4: Use tractable or toy data examples {#sec-rule4}
+# Rule 5: Use tractable or toy data examples {#sec-rule5}
 
-Our fourth simple rule is to use tractable or toy data examples when introducing a new tool, method, or algorithm to students.
+Our fifth simple rule is to use tractable or toy data examples when introducing a new tool, method, or algorithm to students.
 Tractable or toy data sets have a countable number of elements, which can fit in our working memory.
 This allows students to track the progression of everything through the algorithm's steps, see how the elements are manipulated, and gain a deeper understanding of these concepts.
 For example, in one of our courses, we use the Palmer penguins data set [@horst2020palmerpenguins] to introduce the students to k-means clustering.
@@ -119,7 +157,7 @@ These data sets are small enough to fit in learners working memory, making the j
 It is, of course, not feasible to keep learners interested and motivated to learn more if we rely solely on toy datasets.
 So, once students have a conceptual understanding of the tool, method, or algorithm being taught, we can move on to using real, rich datasets, which is our next rule.
 
-# Rule 5: Use real and rich, but accessible data sets {#sec-rule5}
+# Rule 6: Use real and rich, but accessible data sets {#sec-rule6}
 
 After you've helped students develop a conceptual understanding of the new tool, method, or algorithm you are teaching, the next step is to have students apply it to realistic questions and real, rich data.
 However, as you're doing this, it is critical to ensure that the dataset is also accessible to all your learners.
@@ -142,9 +180,9 @@ The main point here is that it shouldn't take your students long to understand t
 It can also be helpful to bring in data sets that reflect your learners' local context (e.g., country, region, culture) and/or current events to increase engagement and relevance.
 It can be difficult to find such data sets in a timely manner, but it's often worth the effort for learners to connect what they are learning in their data science course to what's happening in their own lives and communities outside the classroom.
 
-# Rule 6: Provide cultural and historical context {#sec-rule6}
+# Rule 7: Provide cultural and historical context {#sec-rule7}
 
-Our sixth simple rule is to provide a cultural and historical context for what you're teaching.
+Our seventh simple rule is to provide a cultural and historical context for what you're teaching.
 For example, when teaching how to use a new software tool or a new feature of a tool that students already know how to use, and things do not seem optimally designed from the learner's perspective, it's really helpful to explain why they are that way.
 If you give the design and historical context, for example, saying people thought about this when they built the tool and decided this was the best way to implement it for reasons X, Y, and Z, it helps the students understand that software tools are built by humans, and so they are going to be influenced by humans' perspective, human history, and human culture.
 Furthermore, it helps prevent frustration or annoyance with the software because they can rationalize why it works the way it does.
@@ -162,26 +200,6 @@ Another example comes from the use of the arrow (<-) as an assignment operator i
 Again, however, when given the historical context that R was derived from another programming language named S, and S was inspired by another programming language, APL, that was designed for a particular keyboard with one key mapped to the assignment operator [@fay2018assignment], it makes a lot more sense as to why that design choice was made.
 Design and historical contexts help learners understand the rationale behind different design choices, allowing them to see choices they might not initially agree with as excellent within these contexts.
 As an aside, for those interested in learning more about the history of the R programming language, see the "History and Overview of R" chapter in Roger Peng's *R programming data science* book [-@peng2016r].
-
-# Rule 7: Build a safe, inclusive, and welcoming community {#sec-rule7}
-
-The next rule is to build a safe, inclusive, and welcoming community.
-If we were to rewrite this paper, we would probably move this to rule number one, given that this is the first thing you need to do when teaching any subject.
-The reason is that people don't learn effectively when they don't feel psychologically safe.
-Psychological safety is the belief that one can express oneself, through speech or actions,
-without fear of negative consequences or feedback [@edmondson1999psychological].
-If learners do not feel safe asking questions without being made to look or feel dumb, they are not going to ask questions, and they are not going to be engaged [@lyman2021pre].
-If they don't feel safe from negative perceptions about their intelligence, discrimination, or harassment in the classroom (or related spaces such as office hours, course forums, study groups, etc.), they may become so disengaged that they even stop showing up.
-Thus, creating safe, inclusive, and welcoming learning environments is crucial for effective learning, and as instructors, we have a responsibility to establish scaffolding and guidelines that facilitate this.
-One thing we do in our courses is establish a course code of conduct, which holds a place of prevalence in the classroom and related learning spaces.
-At the beginning of a new course, we take time in the first class to present our code of conduct to the learners.
-The codes of conduct we use are very explicit.
-They discuss expected behaviors, behaviors that will not be tolerated, the process for reporting violations, and the consequences for violating these rules.
-We also ensure that there are multiple ways to report violations, to support students in the unlikely event that the instructor is the one violating the code of conduct.
-It is also important that when a violation is reported, it be taken seriously and acted upon in a timely manner.
-No student concern should ever be ignored or brushed off.
-For instructors seeking to establish a code of conduct for their course, we recommend examining existing codes of conduct from other organizations and tailoring them to your specific context.
-One particularly good example is The Carpentries' code of conduct (<https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html>).
 
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
 
@@ -212,22 +230,7 @@ To do this effectively, we must teach them both the technical tools and skills n
 We must also give them opportunities to practice collaboration.
 Practice should occur at increasing levels of complexity, starting with smaller in-class activities, such as think-pair-share and pair programming, progressing to larger group assignments, and then culminating in projects.
 
-When getting students to work collaboratively on longer-scale assignments and projects, it is important to scaffold good collaboration practices into your assignment or project expectations (and grading).
-In our project courses, we have students spend the first working session almost entirely on group formation activities.
-In this session, we have them participate in icebreaker activities to get to know each other and build trust.
-After that, we get them to create a teamwork contract that outlines their expectations for the project and how they will work together.
-During the project, we have them hold regular team check-ins (e.g., stand-ups, meetings) and use project boards to track their tasks and progress.
-At the end of the project, we have them do a teamwork reflection activity to reflect on what went well and what could be improved.
-As seasoned collaborators, we often take these practices for granted.
-However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
-Even with these scaffolds in place, we still see some groups struggle with collaboration.
-To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict, and developing, as a group, a plan ahead of time for how to manage it when it arises.
-
-# Rule 10: Have students do projects {#sec-rule10}
-
-Our final simple rule is to have students complete projects — create an entire data product (ideally, on a topic of their choosing, if feasible) from beginning to end (or from "nachos to cheesecake," to quote Jenny Bryan).
-Projects can be done individually or in groups.
-The main point is that students have the opportunity to experience the entire data science workflow.
+Projects give afford students the opportunity to experience the entire data science workflow.
 Doing project work is important because it really helps motivate students.
 It also provides students with valuable experience in dealing with the messiness of real data (we all know that in the real world, data is often quite messy).
 Additionally, courses typically focus on just a small part of a data analysis workflow.
@@ -246,10 +249,78 @@ This kind of project is very feasible to grade because its scope is well-defined
 However, it also allows students to be creative and work on something they are interested in.
 Another way to scope projects is to have students work on projects that use data
 related to their own research or thesis work, but utilize the data science concepts, tools or techniques being taught in the course.
-This is particularly relevant for graduate students enrolled in data science courses as part of their degree program.
-For example, in the UBC STAT 545 course developed by Jenny Bryan, students learn new data science concepts and skills using a tractable dataset in the classroom (e.g., the Gapminder dataset), but their project involves applying the newly acquired concepts and skills to their own research or thesis work.
-The project complexity builds week-by-week along with what is being taught in the course syllabus.
-Again, this approach makes grading more feasible by creating homogeneity with what data science techniques and methods the students use in their projects, and students get to work on something they are deeply interested in and motivated to do.
+
+When getting students to work collaboratively on longer-scale assignments and projects, it is important to scaffold good collaboration practices into your assignment or project expectations (and grading).
+In our project courses, we have students spend the first working session almost entirely on group formation activities.
+In this session, we have them participate in icebreaker activities to get to know each other and build trust.
+After that, we get them to create a teamwork contract that outlines their expectations for the project and how they will work together.
+During the project, we have them hold regular team check-ins (e.g., stand-ups, meetings) and use project boards to track their tasks and progress.
+At the end of the project, we have them do a teamwork reflection activity to reflect on what went well and what could be improved.
+As seasoned collaborators, we often take these practices for granted.
+However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
+Even with these scaffolds in place, we still see some groups struggle with collaboration.
+To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict, and developing, as a group, a plan ahead of time for how to manage it when it arises.
+
+# Rule 10: Keep up to date with modern tooling {#sec-rule10}
+
+And finally, our tenth simple rule is to keep up to date with modern tooling.
+Data science is a rapidly evolving field, and new tools and technologies are constantly emerging.
+Educators should stay informed about developments in data science tools and incorporate relevant ones into teaching.
+This helps ensure students gain in-demand skills and allows instructors to enhance their teaching with new features.
+How can data science educators keep up to do with modern tooling?
+The first step is to stay informed. 
+Data science educators need to be actively connected 
+and engaged with the data science communities in some way
+so that they can become informed of new changes in to the field in a timely manner.
+There are many ways in which this can be done, 
+including attending in-person or virtual events (e.g., meetups, conferences),
+reading blogs and preprints and papers, 
+and following data scientists on social media.
+Educators do not need to do all we list, 
+and they should choose the method(s) that best fit them.
+What is most important is that data science educators must not become siloed.
+The second step is for data science educators to incorporate the new methods 
+and tools into their own workflows to learn about them more deeply and experience them. 
+This could mean using the tool in their research, 
+or even if the instructor is not a researcher, 
+they can and should test the tool out in their data science teaching workflows. 
+This allows educators to develop more informed decisions and opinions about the new tool,
+which they can share with their students when teaching about them. 
+Doing this also helps build the instructor's credibility 
+and ability to answer questions about them. 
+Once well informed and experienced with the new tool, 
+data science educators must finally evaluate and carefully consider how (and if) 
+to use and teach new modern tooling 
+by considering its place in the data science ecosystem and in society, 
+culture and human (and environmental) ethics. 
+These considerations should be shared with students when teaching new tooling, 
+as well as when asking students not to use particular new tooling, 
+or alternatives from what the most popular mainstream thing may be at the time.
+
+A timely example of this (when this paper was written) 
+is generative artificial intelligence (AI).
+Both chatbots like ChatGPT, 
+but also agentic code-generation tools such as Claude Code, which can write, debug, 
+and suggest code for students' assignments.
+Students are already using these tools, and perhaps not in the best way(s) possible.
+For example, many are using them to take shortcuts on their assignments, which is not ideal for their learning.
+However, these tools also offer opportunities to enhance learning.
+For instance, they can give students more timely feedback, which is vital for learning.
+They also help students learn to debug code, a key data science skill.
+We need to understand these tools' capabilities and use them creatively to benefit learning.
+Additionally, these tools are used by industry and academic data scientists, so it is just as important for our students to learn to use them effectively as it is to learn to use other data science tools.
+The landscape is a lot more complicated, though.
+First, all the rules we've outlined in this paper so far can be met with free and/or open-source tools and resources.
+However, the use of Generative AI tools, particularly agentic code-generation tools, often requires a paid subscription.
+In a university setting, unless the institution has a site license, this can create equity issues for students who cannot afford these tools.
+In a workshop setting, this would require either learners to pay for the tool themselves or for the workshop organizers to cover the cost for all learners, which may not be feasible.
+Ongoing use of these tools depends on continued access to payment resources.
+Second, there are ethical and privacy issues around the use of Generative AI tools.
+Some students may not be willing to engage with them, which is a choice they should be able to make without fear of negative consequences.
+Third, the line between code generated with an AI tool and plagiarism is blurry, which can create challenges for instructors when grading assignments and projects.
+These tools are evolving quickly, and their long-term impact on data science and education is uncertain.
+Given all these complexities, we strongly urge educators to proactively stay informed about these tools and to directly engage their students in open, honest discussions about the ethical and practical implications of using generative AI in their learning
+ and work.
 
 # Conclusion {#sec-conclusion}
 
