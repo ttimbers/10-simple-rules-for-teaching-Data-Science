@@ -32,7 +32,7 @@
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \IfFileExists{microtype.sty}{% use microtype if available
-  \usepackage[]{microtype}
+  \usepackage[protrusion=true,expansion=false]{microtype}
   \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
 \makeatletter
@@ -133,12 +133,13 @@
 % Use nameref to cite supporting information files (see Supporting Information section for more info)
 \usepackage{nameref,hyperref}
 
-% line numbers
-\usepackage[right]{lineno}
+% line numbers (disabled for arXiv)
+%\usepackage[right]{lineno}
 
 % ligatures disabled
-\usepackage{microtype}
-\DisableLigatures[f]{encoding = *, family = * }
+\ifx\XeTeXversion\@undefined
+  \DisableLigatures[f]{encoding = *, family = * }
+\fi
 
 % create "+" rule type for thick vertical lines
 \newcolumntype{+}{!{\vrule width 2pt}}
@@ -189,6 +190,7 @@
 \lfoot{\today}
 \usepackage{setspace}
 \doublespacing
+\microtypesetup{protrusion=true, expansion=false}
 \makeatletter
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \AtBeginDocument{%
@@ -277,7 +279,7 @@ Duke University, Durham, NC, USA,
 
 
 
-\linenumbers
+%\linenumbers
 
 \section{Introduction}\label{sec-intro}
 
@@ -998,7 +1000,7 @@ Statistics Education Research Journal. 2022;21: 4--4. }
 \end{CSLReferences}
 
 
-\nolinenumbers
+%\nolinenumbers
 
 
 \end{document}
