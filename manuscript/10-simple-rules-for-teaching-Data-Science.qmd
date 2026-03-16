@@ -297,30 +297,26 @@ These considerations should be shared with students when teaching new tooling,
 as well as when asking students not to use particular new tooling, 
 or alternatives from what the most popular mainstream thing may be at the time.
 
-A timely example of this (when this paper was written) 
-is generative artificial intelligence (AI).
-Both chatbots like ChatGPT, 
-but also agentic code-generation tools such as Claude Code, which can write, debug, 
-and suggest code for students' assignments.
-Students are already using these tools, and perhaps not in the best way(s) possible.
-For example, many are using them to take shortcuts on their assignments, which is not ideal for their learning.
-However, these tools also offer opportunities to enhance learning.
-For instance, they can give students more timely feedback, which is vital for learning.
-They also help students learn to debug code, a key data science skill.
-We need to understand these tools' capabilities and use them creatively to benefit learning.
-Additionally, these tools are used by industry and academic data scientists, so it is just as important for our students to learn to use them effectively as it is to learn to use other data science tools.
-The landscape is a lot more complicated, though.
-First, all the rules we've outlined in this paper so far can be met with free and/or open-source tools and resources.
-However, the use of Generative AI tools, particularly agentic code-generation tools, often requires a paid subscription.
-In a university setting, unless the institution has a site license, this can create equity issues for students who cannot afford these tools.
-In a workshop setting, this would require either learners to pay for the tool themselves or for the workshop organizers to cover the cost for all learners, which may not be feasible.
-Ongoing use of these tools depends on continued access to payment resources.
-Second, there are ethical and privacy issues around the use of Generative AI tools.
-Some students may not be willing to engage with them, which is a choice they should be able to make without fear of negative consequences.
-Third, the line between code generated with an AI tool and plagiarism is blurry, which can create challenges for instructors when grading assignments and projects.
-These tools are evolving quickly, and their long-term impact on data science and education is uncertain.
-Given all these complexities, we strongly urge educators to proactively stay informed about these tools and to directly engage their students in open, honest discussions about the ethical and practical implications of using generative AI in their learning
- and work.
+At the time of writing, a timely example is generative artificial intelligence (AI); 
+both chatbots and agentic code-generation tools, which can write, debug, and suggest code. 
+Students are already using these tools, often not in the most effective ways, 
+such as taking shortcuts that undermine their learning. 
+Yet these tools also offer real opportunities: 
+more timely feedback, support for debugging, 
+and practice with tools increasingly standard in industry and academia. 
+The landscape is complicated, however. 
+First, unlike the other tools discussed in this paper, 
+generative AI tools — particularly agentic ones — often require paid subscriptions, 
+raising equity concerns in university and workshop settings where not all learners can afford access. 
+Second, ethical and privacy concerns mean some students may reasonably choose not to use them, 
+a choice that should carry no penalty. 
+Third, the line between AI-assisted work and plagiarism remains blurry, 
+creating grading challenges for instructors. 
+Without staying informed, and experimenting with these new generative AI tools, 
+data science educators cannot make educated and good pedagogical choices 
+on how to incorporate them into the classroom and their teaching, 
+nor can they engage students in open, 
+honest discussions about their ethical and practical implications.
 
 # Conclusion {#sec-conclusion}
 
