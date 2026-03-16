@@ -229,8 +229,11 @@ Consequently, it is essential that we teach our students to work collaboratively
 To do this effectively, we must teach them both the technical tools and skills necessary for collaboration (e.g., version control tools, such as Git and GitHub, project boards), as well as the social practices that make collaboration effective (e.g., active listening, giving critical feedback, code review).
 We must also give them opportunities to practice collaboration.
 Practice should occur at increasing levels of complexity, starting with smaller in-class activities, such as think-pair-share and pair programming, progressing to larger group assignments, and then culminating in projects.
+By projects, we mean an entire data product 
+(ideally, on a topic of their choosing, if feasible) 
+from beginning to end (or from “nachos to cheesecake,” to quote Jenny Bryan). 
 
-Projects give afford students the opportunity to experience the entire data science workflow.
+Projects give students the opportunity to experience the entire data science workflow.
 Doing project work is important because it really helps motivate students.
 It also provides students with valuable experience in dealing with the messiness of real data (we all know that in the real world, data is often quite messy).
 Additionally, courses typically focus on just a small part of a data analysis workflow.
