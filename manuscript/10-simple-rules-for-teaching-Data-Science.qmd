@@ -90,7 +90,10 @@ After they are hooked, they will be begging you to answer questions about the de
 An example of this is shown in @fig-intro-ds-code; code from the first chapter of *Data Science: A First Introduction* [@timbers2022data].
 There, we ask learners to load data from a CSV file and perform introductory data wrangling using filtering, arranging, and slicing.
 Finally, create a plot to answer a question about indigenous languages in Canada: how many people living in Canada speak an indigenous language as their mother tongue?
-Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan [-@bryan2017twitter], who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." 
+Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], 
+and Jenny Bryan [-@bryan2017twitter], 
+a software engineer at Posit (formerly RStudio) and renowned data science educator, 
+who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." 
 
 ::: {layout-nrow=2}
 ![](figures/intro-code-only.png)
@@ -117,7 +120,7 @@ The fourth simple rule is to give tons of practice.
 Give the learners many, many, many problems to solve, probably many, many, many more than you think they might need.
 The reason for this is that repetition leads to learning [@ebbinghaus1913grundzuge].
 That's not just in humans; it is more fundamental than that.
-In the field of animal behavior across the animal kingdom, repetition is found to lead to learning [@harris1943habituatory; @hebb2005organization].
+In the field of animal behavior across the animal kingdom, repetition is found to lead to learning [@harris1943habituatory; @hebb1949organization].
 Similarly, students need to practice tasks many times to understand and then perform them effectively.
 For example, when teaching students to read data from a file, don't just give them one file to read; instead, have them work with six different variants of a very similar file.
 With this approach, students have to investigate each file in detail, including checking the file type, column spacing, whether there's metadata to skip, whether there are column names, etc.
@@ -134,7 +137,7 @@ instead of using the entire class time lecturing for knowledge dissemination.
 Allowing time for practice in class is extremely valuable 
 as the instructors and teaching assistants are present to help get students unstuck 
 when they run into struggles.
-This is often referred to as flipping the classroom, or blended learning [@ref].
+This is often referred to as flipping the classroom [@King01011993].
 We also recommend taking a critical look at the list of topics to be taught
 and asking the hard question of what is essential for that course or workshop.
 As there is strong evidence that little to no learning happens without 
@@ -144,15 +147,17 @@ when there can be no time allotted for practice.
 
 When giving lots of practice, pair it with timely feedback.
 Practice without feedback has limited value.
-So, how can we provide a wealth of timely feedback, especially with our limited teaching capacity and resources?
+So, how can we provide a wealth of opportune feedback, especially with our limited teaching capacity and resources?
 One way we can do this is through automated software tests.
 In data science, many of the problems we assign to students involve writing code.
 As a consequence, we can write software tests that provide feedback to students, letting them know when they give a wrong answer in a particular way, as well as providing a gentle, helpful nudge to solve the problem in a different way.
+
 @fig-code-feedback shows an example of this in practice.
 Here, students were given some ggplot code in a Parsons problem format (the lines of code were given in the wrong order, and the students needed to rearrange them to the correct order).
 In this example, a student has rearranged the code, but while doing so has introduced a syntax error. 
 As a result, a plot is created, but it's not quite what we expect.
 Without timely feedback, the student might not realize that there's a problem with their code until much later, or not at all if they fail to check the feedback and solutions after the assignment is graded and grades are returned (often days or weeks later).
+
 Automated software testing can provide timely feedback while students' focus and attention are on the topic being learned and practiced.
 This pedagogy was first developed and used for teaching programming in computer science courses [reviewed in @wilson2019teaching] and is now being adopted in data science courses.
 There are now many wonderful and popular software packages for this in the context of data science, including the learnr R package [@learnr] for R code, and the NBgrader [@nbgrader] and Otter Grader [@otter_grader] software packages, which work for both R and Python code.
@@ -184,11 +189,16 @@ So, once students have a conceptual understanding of the tool, method, or algori
 After you've helped students develop a conceptual understanding of the new tool, method, or algorithm you are teaching, the next step is to have students apply it to realistic questions and real, rich data.
 However, as you're doing this, it is critical to ensure that the dataset is also accessible to all your learners.
 The question, as well as the observations (i.e., rows) and variables (i.e., columns) in the dataset, must be things that your learners can quickly understand.
+
 This can easily become an expert blind spot for us when we are teaching, especially if we have training in a particular domain.
+An expert blind spot is a habit many experts have, 
+whereby they tend to teach from the subject's deep principles 
+as opposed to buiding on the learner's more basic existing knowledge [@nathan2003expert].
 For example, one of the authors, who is trained in the biological sciences, might think that using a deep sequencing data set would be a great and motivating example for a particular algorithm we want to teach students.
 However, this thought likely stems from the author's deeper understanding of biological processes, which, in this example, gives them an expert blind spot.
 Given that, if learners do not have similar background knowledge, that dataset might not be appropriate.
 It might introduce too much cognitive load for the students, to the extent that they cannot focus on the task at hand — refining their understanding and application of the tool, method, or algorithm being taught.
+
 We do not want to use up our students' limited cognitive resources to understand what the dataset is about.
 Instead, we want to use something that all our learners can easily understand, including what the observations are and what the columns represent.
 One example from one of the courses that we teach uses Canadian census data about the languages spoken in Canada across different regions [@canlang].
@@ -197,6 +207,7 @@ These are particularly nice examples because they contain hundreds of observatio
 And with such a dataset, we can ask questions that most learners are interested in, because everyone has grown up in at least one country, and possibly more, in their lifetime.
 And we all grew up at different times in history.
 These lived experiences make us generally knowledgeable and interested in asking questions about the datasets.
+
 There are many more real and rich data sets that are accessible and usable.
 The main point here is that it shouldn't take your students long to understand the data set, because a deep understanding of it isn't what you are trying to teach at that moment.
 It can also be helpful to bring in data sets that reflect your learners' local context (e.g., country, region, culture) and/or current events to increase engagement and relevance.
@@ -210,7 +221,7 @@ If you give the design and historical context, for example, saying people though
 Furthermore, it helps prevent frustration or annoyance with the software because they can rationalize why it works the way it does.
 We believe it is crucial to help prevent these frustrations or annoyances, as we have observed that, for some learners, they can become significant barriers and lead to a dislike or avoidance of a particular piece of software.
 
-For example, when we teach the programming language R [@ihaka1996r] using the suite of tidyverse R packages [@tidyverse].
+For example, when we teach the programming language R [@ihaka1996r] we use the suite of tidyverse R packages [@tidyverse].
 Learners observe that these packages heavily use unquoted column names when referencing data frame columns in their function calls.
 That is really strange when you come from other programming languages, as most other programming languages require quoted strings when referencing object attributes (which is what a data frame column is).
 This can also make writing functions that utilize tidyverse functions a bit more challenging due to issues with indirection.
@@ -249,6 +260,12 @@ Data science is a highly collaborative discipline.
 Data scientists often work in teams or, at a minimum, need to collaborate with other stakeholders (e.g., domain experts, project managers, clients).
 Consequently, it is essential that we teach our students to work collaboratively.
 To do this effectively, we must teach them both the technical tools and skills necessary for collaboration (e.g., version control tools, such as Git and GitHub, project boards), as well as the social practices that make collaboration effective (e.g., active listening, giving critical feedback, code review).
+We understand that adding collaboration to an already full curriculum 
+requires difficult decisions about what to drop. 
+We argue, however, that foundational collaborative skills 
+are as important for students as traditional statistical topics, 
+though the emphasis will ultimately depend on the goals of the course.
+
 We must also give them opportunities to practice collaboration.
 Practice should occur at increasing levels of complexity, starting with smaller in-class activities, such as think-pair-share and pair programming, progressing to larger group assignments, and then culminating in projects.
 By projects, we mean an entire data product 

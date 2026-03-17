@@ -346,36 +346,39 @@ failed to welcome many of the people who deserve to be in it.
 analysis}\label{sec-rule2}
 
 The second rule is teaching data science by doing data analysis. This
-means that in your first data science lesson, not in your third lesson,
-not in your 10th lesson, not at the end of the semester, but in your
-first data science lesson, have the students load some data, perform
-some simple data wrangling, and create a data visualization. We call
-this the ``let them eat cake'' approach to teaching data science
-{[}12{]}.
+means that in your first data science lesson, not your third or 10th
+lesson, have the students load some data, perform some simple data
+wrangling, and create a data visualization. We call this the ``let them
+eat cake'' approach to teaching data science {[}12{]}.
 
 Why do we suggest this? Because, just like eating cake, it's extremely
-motivating to students. At first, students sign up for a data science
-course or workshop because they're interested in asking and answering
-questions about the world using data. They likely don't yet have
-sufficient knowledge to care deeply about detailed, technical aspects,
-such as object data types, whether to use R versus Python, or, if using
-R, whether to opt for the tidyverse or base R. As a result, we should
-show them something interesting very early on to hook them. After they
-are hooked, they will be begging you to answer questions about the
-detailed, technical aspects you intentionally omitted. An example of
-this is shown in Fig~\ref{fig-intro-ds-code}; code from the first
-chapter of \emph{Data Science: A First Introduction} {[}4{]}. In this
-first chapter, we ask learners to load data from a CSV file and perform
+motivating to students. Most students sign up for a data science course
+or workshop because they're interested in asking and answering questions
+about the world using data, or because it's a degree requirement. In
+either case, they likely don't yet have sufficient knowledge to care
+deeply about detailed, technical aspects, such as object data types,
+whether to use R versus Python, or, if using R, whether to opt for the
+tidyverse or base R. As a result, we should show them something
+interesting very early on to hook them (this is especially important for
+the group who are taking the course primarily due to it being a degree
+requirement).
+
+After they are hooked, they will be begging you to answer questions
+about the detailed, technical aspects you intentionally omitted. An
+example of this is shown in Fig~\ref{fig-intro-ds-code}; code from the
+first chapter of \emph{Data Science: A First Introduction} {[}4{]}.
+There, we ask learners to load data from a CSV file and perform
 introductory data wrangling using filtering, arranging, and slicing.
 Finally, create a plot to answer a question about indigenous languages
 in Canada: how many people living in Canada speak an indigenous language
 as their mother tongue? Other leading data science educators who
 advocate and practice this rule include Wang and colleagues {[}13{]},
 David Robinson in his introductory online Data Science course
-{[}14,15{]}, and Jenny Bryan {[}16{]}, who summed this up nicely in a
-tweet ``{[}\ldots{]} I REPEAT, do not front-load the `boring',
-foundational stuff. Do realistic and non-boring tasks and work your way
-down to it.''
+{[}14,15{]}, and Jenny Bryan {[}16{]}, a software engineer at Posit
+(formerly RStudio) and renowned data science educator, who summed this
+up nicely in a tweet ``{[}\ldots{]} I REPEAT, do not front-load the
+`boring', foundational stuff. Do realistic and non-boring tasks and work
+your way down to it.''
 
 \begin{figure}
 
@@ -425,60 +428,78 @@ The Carpentries, a global nonprofit (\url{https://carpentries.org}).
 Best practices for doing this have been refined and shared as ten quick
 tips by Nederbragt and colleagues {[}18{]}.
 
-\section{Rule 4: Give tons and tons of practice and timely
+\section{Rule 4: Give tons of practice and timely
 feedback}\label{sec-rule4}
 
-The fourth simple rule is to give tons and tons of practice. Give the
-learners many, many, many problems to solve, probably many, many, many
-more than you think they might need. The reason for this is that
-repetition leads to learning {[}19{]}. That's not just in humans; it is
-more fundamental than that. In the field of animal behavior across the
-animal kingdom, repetition is found to lead to learning {[}20,21{]}.
-Similarly, students need to practice tasks many times to understand and
-then perform them effectively. For example, when teaching students to
-read data from a file, don't just give them one file to read; instead,
-have them work with six different variants of a very similar file. With
-this approach, students have to investigate each file in detail,
-including checking the file type, column spacing, whether there's
-metadata to skip, whether there are column names, etc. In our courses,
-they will complete these six variants in an in-class worksheet, a lab
-assignment, and a quiz. Meaning that by the end of the course, they will
-have practiced this skill over 15 times. Many excellent data science
-educational resources use this pedagogy, including software packages
-(e.g., the swirl R package {[}22{]}), online courses (e.g., Kaggle Learn
-{[}23{]}), and popular textbooks (e.g., R for Data Science {[}24{]}).
-For those new to designing practice exercises for data science, we
-recommend looking at the ``Exercise Types'' chapter of \emph{Teaching
-Tech Together: How to make your lessons work and build a teaching
-community around them} by Greg Wilson {[}25{]}.
+The fourth simple rule is to give tons of practice. Give the learners
+many, many, many problems to solve, probably many, many, many more than
+you think they might need. The reason for this is that repetition leads
+to learning {[}19{]}. That's not just in humans; it is more fundamental
+than that. In the field of animal behavior across the animal kingdom,
+repetition is found to lead to learning {[}20,21{]}. Similarly, students
+need to practice tasks many times to understand and then perform them
+effectively. For example, when teaching students to read data from a
+file, don't just give them one file to read; instead, have them work
+with six different variants of a very similar file. With this approach,
+students have to investigate each file in detail, including checking the
+file type, column spacing, whether there's metadata to skip, whether
+there are column names, etc. In our courses, they will complete these
+six variants in an in-class worksheet, a lab assignment, and a quiz.
+Meaning that by the end of the course, they will have practiced this
+skill over 15 times. Many excellent data science educational resources
+use this pedagogy, including software packages (e.g., the swirl R
+package {[}22{]}), online courses (e.g., Kaggle Learn {[}23{]}), and
+popular textbooks (e.g., R for Data Science {[}24{]}). For those new to
+designing practice exercises for data science, we recommend looking at
+the ``Exercise Types'' chapter of \emph{Teaching Tech Together: How to
+make your lessons work and build a teaching community around them} by
+Greg Wilson {[}25{]}.
+
+An excellent question instructors may ask in response to reading this
+rule is ``how do we make time in class and across the curriculum for
+practice as well as knowledge dissemination?'' One strategy that we
+often employ is assigning reading or videos as pre-class homework
+instead of using the entire class time lecturing for knowledge
+dissemination. Allowing time for practice in class is extremely valuable
+as the instructors and teaching assistants are present to help get
+students unstuck when they run into struggles. This is often referred to
+as flipping the classroom {[}26{]}. We also recommend taking a critical
+look at the list of topics to be taught and asking the hard question of
+what is essential for that course or workshop. As there is strong
+evidence that little to no learning happens without practice and
+repetition, there seems to be little point in teaching topics when there
+can be no time allotted for practice.
 
 When giving lots of practice, pair it with timely feedback. Practice
 without feedback has limited value. So, how can we provide a wealth of
-timely feedback, especially with our limited teaching capacity and
+opportune feedback, especially with our limited teaching capacity and
 resources? One way we can do this is through automated software tests.
 In data science, many of the problems we assign to students involve
 writing code. As a consequence, we can write software tests that provide
 feedback to students, letting them know when they give a wrong answer in
 a particular way, as well as providing a gentle, helpful nudge to solve
-the problem in a different way. Fig~\ref{fig-code-feedback} shows an
-example of this in practice. Here, students were given some ggplot code
-in a Parsons problem format (the lines of code were given in the wrong
-order, and the students needed to rearrange them to the correct order).
-In this example, a student has rearranged the code, but while doing so
-has introduced a syntax error. As a result, a plot is created, but it's
-not quite what we expect. Without timely feedback, the student might not
-realize that there's a problem with their code until much later, or not
-at all if they fail to check the feedback and solutions after the
-assignment is graded and grades are returned (often days or weeks
-later). Automated software testing can provide timely feedback while
-students' focus and attention are on the topic being learned and
-practiced. This pedagogy was first developed and used for teaching
-programming in computer science courses {[}reviewed in 25{]} and is now
-being adopted in data science courses. There are now many wonderful and
-popular software packages for this in the context of data science,
-including the learnr R package {[}26{]} for R code, and the NBgrader
-{[}27{]} and Otter Grader {[}28{]} software packages, which work for
-both R and Python code.
+the problem in a different way.
+
+Fig~\ref{fig-code-feedback} shows an example of this in practice. Here,
+students were given some ggplot code in a Parsons problem format (the
+lines of code were given in the wrong order, and the students needed to
+rearrange them to the correct order). In this example, a student has
+rearranged the code, but while doing so has introduced a syntax error.
+As a result, a plot is created, but it's not quite what we expect.
+Without timely feedback, the student might not realize that there's a
+problem with their code until much later, or not at all if they fail to
+check the feedback and solutions after the assignment is graded and
+grades are returned (often days or weeks later).
+
+Automated software testing can provide timely feedback while students'
+focus and attention are on the topic being learned and practiced. This
+pedagogy was first developed and used for teaching programming in
+computer science courses {[}reviewed in 25{]} and is now being adopted
+in data science courses. There are now many wonderful and popular
+software packages for this in the context of data science, including the
+learnr R package {[}27{]} for R code, and the NBgrader {[}28{]} and
+Otter Grader {[}29{]} software packages, which work for both R and
+Python code.
 
 \begin{figure}
 
@@ -502,14 +523,14 @@ working memory. This allows students to track the progression of
 everything through the algorithm's steps, see how the elements are
 manipulated, and gain a deeper understanding of these concepts. For
 example, in one of our courses, we use the Palmer penguins data set
-{[}29{]} to introduce the students to k-means clustering. Instead of
+{[}30{]} to introduce the students to k-means clustering. Instead of
 giving them the entire data set, which contains hundreds of
 observations, we first subset it to just a handful. Then we can walk the
 students through what happens to these observations at each step of the
 algorithm, building understanding and intuition for the algorithm.
 Inspiration from this comes from Jenny Bryan's great dplyr joins cheat
-sheet {[}30{]}. In her cheat sheet, she teaches all the various joins
-from the dplyr package {[}31{]}. This is a difficult topic for students
+sheet {[}31{]}. In her cheat sheet, she teaches all the various joins
+from the dplyr package {[}32{]}. This is a difficult topic for students
 to understand and memorize, and when instructors teach this with large
 data sets, it is really hard for students to get an idea of what's going
 on. To make matters worse, all of these joins are also similarly named
@@ -537,44 +558,50 @@ have students apply it to realistic questions and real, rich data.
 However, as you're doing this, it is critical to ensure that the dataset
 is also accessible to all your learners. The question, as well as the
 observations (i.e., rows) and variables (i.e., columns) in the dataset,
-must be things that your learners can quickly understand. This can
-easily become an expert blind spot for us when we are teaching,
-especially if we have training in a particular domain. For example, one
-of the authors, who is trained in the biological sciences, might think
-that using a deep sequencing data set would be a great and motivating
-example for a particular algorithm we want to teach students. However,
-this thought likely stems from the author's deeper understanding of
-biological processes, which, in this example, gives them an expert blind
-spot. Given that, if learners do not have similar background knowledge,
-that dataset might not be appropriate. It might introduce too much
-cognitive load for the students, to the extent that they cannot focus on
-the task at hand --- refining their understanding and application of the
-tool, method, or algorithm being taught. We do not want to use up our
-students' limited cognitive resources to understand what the dataset is
-about. Instead, we want to use something that all our learners can
-easily understand, including what the observations are and what the
-columns represent. One example from one of the courses that we teach
-uses Canadian census data about the languages spoken in Canada across
-different regions {[}32{]}. Other examples include the Gapminder
-{[}33{]} and UN Votes {[}34{]} data sets. These are particularly nice
-examples because they contain hundreds of observations; however, the
-observations are something most people can understand: a country, a
-year, a population, a vote, etc. And with such a dataset, we can ask
-questions that most learners are interested in, because everyone has
-grown up in at least one country, and possibly more, in their lifetime.
-And we all grew up at different times in history. These lived
-experiences make us generally knowledgeable and interested in asking
-questions about the datasets. There are many more real and rich data
-sets that are accessible and usable. The main point here is that it
-shouldn't take your students long to understand the data set, because a
-deep understanding of it isn't what you are trying to teach at that
-moment. It can also be helpful to bring in data sets that reflect your
-learners' local context (e.g., country, region, culture) and/or current
-events to increase engagement and relevance. It can be difficult to find
-such data sets in a timely manner, but it's often worth the effort for
-learners to connect what they are learning in their data science course
-to what's happening in their own lives and communities outside the
-classroom.
+must be things that your learners can quickly understand.
+
+This can easily become an expert blind spot for us when we are teaching,
+especially if we have training in a particular domain. An expert blind
+spot is a habit many experts have, whereby they tend to teach from the
+subject's deep principles as opposed to buiding on the learner's more
+basic existing knowledge {[}33{]}. For example, one of the authors, who
+is trained in the biological sciences, might think that using a deep
+sequencing data set would be a great and motivating example for a
+particular algorithm we want to teach students. However, this thought
+likely stems from the author's deeper understanding of biological
+processes, which, in this example, gives them an expert blind spot.
+Given that, if learners do not have similar background knowledge, that
+dataset might not be appropriate. It might introduce too much cognitive
+load for the students, to the extent that they cannot focus on the task
+at hand --- refining their understanding and application of the tool,
+method, or algorithm being taught.
+
+We do not want to use up our students' limited cognitive resources to
+understand what the dataset is about. Instead, we want to use something
+that all our learners can easily understand, including what the
+observations are and what the columns represent. One example from one of
+the courses that we teach uses Canadian census data about the languages
+spoken in Canada across different regions {[}34{]}. Other examples
+include the Gapminder {[}35{]} and UN Votes {[}36{]} data sets. These
+are particularly nice examples because they contain hundreds of
+observations; however, the observations are something most people can
+understand: a country, a year, a population, a vote, etc. And with such
+a dataset, we can ask questions that most learners are interested in,
+because everyone has grown up in at least one country, and possibly
+more, in their lifetime. And we all grew up at different times in
+history. These lived experiences make us generally knowledgeable and
+interested in asking questions about the datasets.
+
+There are many more real and rich data sets that are accessible and
+usable. The main point here is that it shouldn't take your students long
+to understand the data set, because a deep understanding of it isn't
+what you are trying to teach at that moment. It can also be helpful to
+bring in data sets that reflect your learners' local context (e.g.,
+country, region, culture) and/or current events to increase engagement
+and relevance. It can be difficult to find such data sets in a timely
+manner, but it's often worth the effort for learners to connect what
+they are learning in their data science course to what's happening in
+their own lives and communities outside the classroom.
 
 \section{Rule 7: Provide cultural and historical
 context}\label{sec-rule7}
@@ -596,8 +623,8 @@ as we have observed that, for some learners, they can become significant
 barriers and lead to a dislike or avoidance of a particular piece of
 software.
 
-For example, when we teach the programming language R {[}35{]} using the
-suite of tidyverse R packages {[}36{]}. Learners observe that these
+For example, when we teach the programming language R {[}37{]} we use
+the suite of tidyverse R packages {[}38{]}. Learners observe that these
 packages heavily use unquoted column names when referencing data frame
 columns in their function calls. That is really strange when you come
 from other programming languages, as most other programming languages
@@ -607,7 +634,7 @@ utilize tidyverse functions a bit more challenging due to issues with
 indirection. For learners with experience in Python, Java, or C, this
 might initially seem like a really bad idea. However, once they learn
 that R and the suite of tidyverse R packages were written by
-statisticians for performing data analysis and graphics {[}35,36{]}, and
+statisticians for performing data analysis and graphics {[}37,38{]}, and
 that they designed the language and packages with the expectation that
 much of the users time would be frequently typing things into the
 console or running code interactively, it makes a lot more sense that
@@ -622,20 +649,20 @@ two characters. Again, however, when given the historical context that R
 was derived from another programming language named S, and S was
 inspired by another programming language, APL, that was designed for a
 particular keyboard with one key mapped to the assignment operator
-{[}37{]}, it makes a lot more sense as to why that design choice was
+{[}39{]}, it makes a lot more sense as to why that design choice was
 made. Design and historical contexts help learners understand the
 rationale behind different design choices, allowing them to see choices
 they might not initially agree with as excellent within these contexts.
 As an aside, for those interested in learning more about the history of
 the R programming language, see the ``History and Overview of R''
-chapter in Roger Peng's \emph{R programming data science} book {[}38{]}.
+chapter in Roger Peng's \emph{R programming data science} book {[}40{]}.
 
 \section{Rule 8: Use checklists to focus and facilitate peer
 learning}\label{sec-rule8}
 
 Rule number eight is to use checklists to focus and facilitate peer
 learning. A well-documented pedagogical best practice is for peers to
-learn from each other {[}39{]}. One implementation of this is peer
+learn from each other {[}41{]}. One implementation of this is peer
 review. However, peer review can be particularly challenging if you
 haven't done it before, or if it involves reviewing something new that
 you are still learning. So what can we do as instructors to facilitate
@@ -646,13 +673,13 @@ checklists? Checklists can help ensure complex tasks are completed
 successfully and have been used in safety-critical systems (such as
 aviation, surgery, or nuclear power). They can be particularly helpful
 for complex tasks, as well as for repetitive ones that are consequently
-boring {[}40{]}. For these reasons, checklists have recently been
+boring {[}42{]}. For these reasons, checklists have recently been
 adopted in scientific (e.g., PLoS journals, Nature Ecology \& Evolution,
 Journal of Open Source Education, Journal of Open Source Software) and
 software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that
 reviewers and editors increase transparency, decreases bias and call
 attention to essential elements of reviews that are often overlooked
-{[}41{]}. As reviewers for some of these journals and organizations, the
+{[}43{]}. As reviewers for some of these journals and organizations, the
 authors have found checklists extremely helpful for focusing our
 attention on the most important elements of a review and for ensuring we
 don't miss anything. We believe this idea also has value in training
@@ -680,14 +707,20 @@ collaboratively. To do this effectively, we must teach them both the
 technical tools and skills necessary for collaboration (e.g., version
 control tools, such as Git and GitHub, project boards), as well as the
 social practices that make collaboration effective (e.g., active
-listening, giving critical feedback, code review). We must also give
-them opportunities to practice collaboration. Practice should occur at
-increasing levels of complexity, starting with smaller in-class
-activities, such as think-pair-share and pair programming, progressing
-to larger group assignments, and then culminating in projects. By
-projects, we mean an entire data product (ideally, on a topic of their
-choosing, if feasible) from beginning to end (or from ``nachos to
-cheesecake,'' to quote Jenny Bryan).
+listening, giving critical feedback, code review). We understand that
+adding collaboration to an already full curriculum requires difficult
+decisions about what to drop. We argue, however, that foundational
+collaborative skills are as important for students as traditional
+statistical topics, though the emphasis will ultimately depend on the
+goals of the course.
+
+We must also give them opportunities to practice collaboration. Practice
+should occur at increasing levels of complexity, starting with smaller
+in-class activities, such as think-pair-share and pair programming,
+progressing to larger group assignments, and then culminating in
+projects. By projects, we mean an entire data product (ideally, on a
+topic of their choosing, if feasible) from beginning to end (or from
+``nachos to cheesecake,'' to quote Jenny Bryan).
 
 Projects give students the opportunity to experience the entire data
 science workflow. Doing project work is important because it really
@@ -698,7 +731,7 @@ typically focus on just a small part of a data analysis workflow. For
 example, they might focus on data visualization, data wrangling, or
 modeling. But in a project, they get to see how all these pieces fit
 together in a more realistic scenario. This is critical training for any
-aspiring data scientist {[}42{]}.
+aspiring data scientist {[}44{]}.
 
 From the instructor's perspective, however, projects can feel daunting,
 particularly when student numbers are large and teaching resources are
@@ -938,11 +971,10 @@ Veit; 1913. }
 \CSLRightInline{Harris JD. Habituatory response decrement in the intact
 organism. Psychological bulletin. 1943;40: 385. }
 
-\bibitem[\citeproctext]{ref-shaw1986donald}
+\bibitem[\citeproctext]{ref-hebb1949organization}
 \CSLLeftMargin{21. }%
-\CSLRightInline{Shaw G. Donald hebb: The organization of behavior. Brain
-theory: Proceedings of the first trieste meeting on brain theory,
-october 1--4, 1984. Springer; 1986. pp. 231--233. }
+\CSLRightInline{Hebb DO. The organization of behavior: A
+neuropsychological theory. John Wiley \& Sons; 1949. }
 
 \bibitem[\citeproctext]{ref-swirl}
 \CSLLeftMargin{22. }%
@@ -965,101 +997,113 @@ science. 2nd ed. O'Reilly Media; 2023. }
 lessons work and build a teaching community around them. Chapman;
 Hall/CRC; 2019. }
 
-\bibitem[\citeproctext]{ref-learnr}
+\bibitem[\citeproctext]{ref-King01011993}
 \CSLLeftMargin{26. }%
+\CSLRightInline{King A. From sage on the stage to guide on the side.
+College Teaching. 1993;41: 30--35.
+doi:\href{https://doi.org/10.1080/87567555.1993.9926781}{10.1080/87567555.1993.9926781}}
+
+\bibitem[\citeproctext]{ref-learnr}
+\CSLLeftMargin{27. }%
 \CSLRightInline{Kross S, Çetinkaya-Rundel M, et al. Learnr: Interactive
 tutorials for r. 2024. Available:
 \url{https://rstudio.github.io/learnr/}}
 
 \bibitem[\citeproctext]{ref-nbgrader}
-\CSLLeftMargin{27. }%
+\CSLLeftMargin{28. }%
 \CSLRightInline{Hamrick JB et al. Nbgrader: A tool for creating and
 grading assignments in the jupyter notebook. Proceedings of the 19th
 python in science conference. 2016. pp. 68--74.
 doi:\href{https://doi.org/10.25080/Majora-629e541a-00e}{10.25080/Majora-629e541a-00e}}
 
 \bibitem[\citeproctext]{ref-otter_grader}
-\CSLLeftMargin{28. }%
+\CSLLeftMargin{29. }%
 \CSLRightInline{Kim EJ, Lau S, Hug J, DeNero J. Otter: A tool for
 automated grading of jupyter notebooks and more. Proceedings of the 23rd
 python in science conference. 2022. pp. 120--127.
 doi:\href{https://doi.org/10.25080/majora-2127ed6e-00c}{10.25080/majora-2127ed6e-00c}}
 
 \bibitem[\citeproctext]{ref-horst2020palmerpenguins}
-\CSLLeftMargin{29. }%
+\CSLLeftMargin{30. }%
 \CSLRightInline{Horst A, Hill A, Gorman K. Palmerpenguins: Data for
 palmer archipelago (antarctica) penguin species. R Journal. 2020;12:
 277--283.
 doi:\href{https://doi.org/10.32614/RJ-2020-043}{10.32614/RJ-2020-043}}
 
 \bibitem[\citeproctext]{ref-bryan2015stat545}
-\CSLLeftMargin{30. }%
+\CSLLeftMargin{31. }%
 \CSLRightInline{Bryan J. STAT 545: Data wrangling, exploration, and
 analysis with {R}. 2015. Available: \url{https://stat545.com/}}
 
 \bibitem[\citeproctext]{ref-dplyr}
-\CSLLeftMargin{31. }%
+\CSLLeftMargin{32. }%
 \CSLRightInline{Wickham H, François R, Henry L, Müller K. Dplyr: A
 grammar of data manipulation. 2024. Available:
 \url{https://CRAN.R-project.org/package=dplyr}}
 
+\bibitem[\citeproctext]{ref-nathan2003expert}
+\CSLLeftMargin{33. }%
+\CSLRightInline{Nathan MJ, Petrosino A. Expert blind spot among
+preservice teachers. American educational research journal. 2003;40:
+905--928. }
+
 \bibitem[\citeproctext]{ref-canlang}
-\CSLLeftMargin{32. }%
+\CSLLeftMargin{34. }%
 \CSLRightInline{Timbers T. Canlang: Canadian census language data. 2020.
 Available: \url{https://ttimbers.github.io/canlang/}}
 
 \bibitem[\citeproctext]{ref-gapminder}
-\CSLLeftMargin{33. }%
+\CSLLeftMargin{35. }%
 \CSLRightInline{Bryan J. Gapminder: Data from gapminder. 2017.
 Available: \url{https://CRAN.R-project.org/package=gapminder}}
 
 \bibitem[\citeproctext]{ref-robinson2021unvotes}
-\CSLLeftMargin{34. }%
+\CSLLeftMargin{36. }%
 \CSLRightInline{Robinson D. Unvotes: United nations general assembly
 voting data. 2021.
 doi:\href{https://doi.org/10.32614/CRAN.package.unvotes}{10.32614/CRAN.package.unvotes}}
 
 \bibitem[\citeproctext]{ref-ihaka1996r}
-\CSLLeftMargin{35. }%
+\CSLLeftMargin{37. }%
 \CSLRightInline{Ihaka R, Gentleman R. R: A language for data analysis
 and graphics. Journal of computational and graphical statistics. 1996;5:
 299--314. }
 
 \bibitem[\citeproctext]{ref-tidyverse}
-\CSLLeftMargin{36. }%
+\CSLLeftMargin{38. }%
 \CSLRightInline{Wickham H, Hester J, Henry L, et al. Tidyverse: Easily
 install and load the 'tidyverse'. 2024. Available:
 \url{https://CRAN.R-project.org/package=tidyverse}}
 
 \bibitem[\citeproctext]{ref-fay2018assignment}
-\CSLLeftMargin{37. }%
+\CSLLeftMargin{39. }%
 \CSLRightInline{Fay C. Why do we use arrow as an assignment operator?
 Blog post; 2018. Available: \url{https://colinfay.me/r-assignment/}}
 
 \bibitem[\citeproctext]{ref-peng2016r}
-\CSLLeftMargin{38. }%
+\CSLLeftMargin{40. }%
 \CSLRightInline{Peng RD. R programming for data science. Leanpub
 Victoria, BC, Canada; 2016. }
 
 \bibitem[\citeproctext]{ref-topping1998}
-\CSLLeftMargin{39. }%
+\CSLLeftMargin{41. }%
 \CSLRightInline{Topping K. Peer assessment between students in colleges
 and universities. Review of Educational Research. 1998;68: 249--276.
 Available: \url{http://www.jstor.org/stable/1170598}}
 
 \bibitem[\citeproctext]{ref-gawande2010checklist}
-\CSLLeftMargin{40. }%
+\CSLLeftMargin{42. }%
 \CSLRightInline{Gawande A. Checklist manifesto, the (HB). Penguin Books
 India; 2010. }
 
 \bibitem[\citeproctext]{ref-parker2018empowering}
-\CSLLeftMargin{41. }%
+\CSLLeftMargin{43. }%
 \CSLRightInline{Parker TH, Griffith SC, Bronstein JL, Fidler F, Foster
 S, Fraser H, et al. Empowering peer reviewers with a checklist to
 improve transparency. Nature ecology \& evolution. 2018;2: 929--935. }
 
 \bibitem[\citeproctext]{ref-ccetinkaya20225ws}
-\CSLLeftMargin{42. }%
+\CSLLeftMargin{44. }%
 \CSLRightInline{Çetinkaya-Rundel M, Dogucu M, Rummerfield W. The 5Ws and
 1H of term projects in the introductory data science classroom.
 Statistics Education Research Journal. 2022;21: 4--4. }
