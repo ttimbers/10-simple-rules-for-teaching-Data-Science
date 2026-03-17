@@ -30,6 +30,8 @@ Data science is the study, development, and practice of using reproducible and t
 With roots in statistics and computer science, data science educators draw on many of the teaching strategies used in those fields [@carver2016guidelines; @zendler2015; @fincher2019cambridge].
 However, data science is a distinct discipline with its own unique challenges and opportunities for teaching and learning.
 Here, we collate and present ten simple rules for teaching data science, piloted by leading data science educators in the community and successfully applied in our own data science classroom.
+We believe these rules are relevant for data science instructors 
+teaching in both formal credit courses and workshop settings.
 
 # Rule 1: Build a safe, inclusive, and welcoming community {#sec-rule1}
 
@@ -164,6 +166,29 @@ This pedagogy was first developed and used for teaching programming in computer 
 There are now many wonderful and popular software packages for this in the context of data science, including the learnr R package [@learnr] for R code, and the NBgrader [@nbgrader] and Otter Grader [@otter_grader] software packages, which work for both R and Python code.
 
 ![Example of automated software test feedback to students.](figures/tests-as-feedback.png){#fig-code-feedback width="100%"}
+
+Most recently, advances in generative artificial intelligence (AI) 
+have provided another possible tool to provide students with timely feedback: 
+large language models (LLM).
+There is much excitement and promise for using LLMs in this way for teaching, 
+as they are more flexible than software tests 
+and have the possibility of providing feedback on narrative and visualizations, 
+in addition to code.
+One of the authors of this paper has successfully piloted this recently,
+and many other educators in many fields are also exploring this
+(as evidenced by a growing body of literature exploring LLMs in education).
+One note of caution for instructors interested in heading out 
+on this brave new journey is the high risk of inequitable access to models.
+The use of LLMs often requires a paid subscription.
+In a university setting, unless the institution has a site license 
+or locally hosts open source models, 
+this can create equity issues for students who cannot afford these tools.
+As the tooling around LLMs continues to mature rapidly, 
+instructors who invest in learning about LLMs and how to use them, 
+are likely to find themselves well-positioned to make informed decisions 
+about when and how to adopt these tools as they evolve.
+This connects naturally to our final rule:
+*Keep up to date with modern tooling*.
 
 # Rule 5: Use tractable or toy data examples {#sec-rule5}
 
