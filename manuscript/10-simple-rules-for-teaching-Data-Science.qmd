@@ -40,6 +40,7 @@ without fear of negative consequences or feedback [@edmondson1999psychological].
 If learners do not feel safe asking questions without being made to look or feel dumb, they are not going to ask questions, and they are not going to be engaged [@lyman2021pre].
 If they don't feel safe from negative perceptions about their intelligence, discrimination, or harassment in the classroom (or related spaces such as office hours, course forums, study groups, etc.), they may become so disengaged that they even stop showing up.
 Thus, creating safe, inclusive, and welcoming learning environments is crucial for effective learning, and as instructors, we have a responsibility to establish scaffolding and guidelines that facilitate this.
+
 One thing we do in our courses is establish a course code of conduct, which holds a place of prevalence in the classroom and related learning spaces.
 At the beginning of a new course, we take time in the first class to present our code of conduct to the learners.
 The codes of conduct we use are very explicit.
@@ -176,7 +177,7 @@ Inspiration from this comes from Jenny Bryan's great dplyr joins cheat sheet [@b
 In her cheat sheet, she teaches all the various joins from the dplyr package [@dplyr].
 This is a difficult topic for students to understand and memorize, and when instructors teach this with large data sets, it is really hard for students to get an idea of what's going on. 
 To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
-To address this issue, Jenny Bryan's cheat sheet uses two toy data sets on superhero comic characters and publishers.
+To address this issue, Jenny Bryan's cheat sheet uses two constructed toy data sets on superhero comic characters and publishers.
 The cheat sheet outlines all the possible joins, narrating and displaying the output of each.
 The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
 These data sets are small enough to fit in learners working memory, making the joins tractable and much easier to understand. 
@@ -210,7 +211,8 @@ These lived experiences make us generally knowledgeable and interested in asking
 
 There are many more real and rich data sets that are accessible and usable.
 The main point here is that it shouldn't take your students long to understand the data set, because a deep understanding of it isn't what you are trying to teach at that moment.
-It can also be helpful to bring in data sets that reflect your learners' local context (e.g., country, region, culture) and/or current events to increase engagement and relevance.
+Beyond accessibility, it is also worth thinking about relevance:
+varying topics across a course ensures all learners encounter data they find genuinely interesting, and bringing in data that reflects your learners' local context (e.g., country, region, culture) and/or current events can deepen that connection further. 
 It can be difficult to find such data sets in a timely manner, but it's often worth the effort for learners to connect what they are learning in their data science course to what's happening in their own lives and communities outside the classroom.
 
 # Rule 7: Provide cultural and historical context {#sec-rule7}
@@ -267,7 +269,11 @@ are as important for students as traditional statistical topics,
 though the emphasis will ultimately depend on the goals of the course.
 
 We must also give them opportunities to practice collaboration.
-Practice should occur at increasing levels of complexity, starting with smaller in-class activities, such as think-pair-share and pair programming, progressing to larger group assignments, and then culminating in projects.
+Practice should occur at increasing levels of complexity, 
+starting with smaller in-class activities, 
+such as think-pair-share [@lyman1981responsive] 
+and pair programming [@HANNAY20091110], 
+progressing to larger group assignments, and then culminating in projects.
 By projects, we mean an entire data product 
 (ideally, on a topic of their choosing, if feasible) 
 from beginning to end (or from “nachos to cheesecake,” to quote Jenny Bryan). 
@@ -302,6 +308,8 @@ As seasoned collaborators, we often take these practices for granted.
 However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
 Even with these scaffolds in place, we still see some groups struggle with collaboration.
 To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict, and developing, as a group, a plan ahead of time for how to manage it when it arises.
+Beyond Intractability has a useful conflict resolution guide 
+for students doing group projects [@burgess_group_projects].
 
 # Rule 10: Keep up to date with modern tooling {#sec-rule10}
 
