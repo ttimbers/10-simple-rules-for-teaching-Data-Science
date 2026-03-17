@@ -107,9 +107,9 @@ who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'bor
 # Rule 3: Use participatory live coding {#sec-rule3}
 
 The third rule is to use participatory live coding.
-This means that when you are working with code in the classroom, instead of showing it on a static slide or just running it in an executable slide or an IDE, actually type the code and narrate it as you teach.
+This means that when you are working with code in the classroom, instead of showing it on a static slide or just running it in an executable slide or an integrated development environment (IDE; a tool for developing software code), actually type the code and narrate it as you teach.
 Have the participants follow along as well.
-The reason is that it demonstrates your best practices for processes and workflows, topics that are important in practice but, unfortunately, are often just an afterthought in teaching computational subjects.
+The reason is that it give you the opportunity to demonstrate your best practices for processes and workflows, topics that are important in practice but, unfortunately, are often just an afterthought in teaching computational subjects.
 You can discuss why you're approaching things differently as you go. You are also likely to make mistakes as you live-code, and that's actually a good thing.
 It helps you appear human to students because they, too, will make mistakes.
 More importantly, it allows you to demonstrate how you approach debugging to solve code problems, which they can leverage in their homework and later in their work outside the course.
@@ -243,7 +243,10 @@ It can be difficult to find such data sets in a timely manner, but it's often wo
 # Rule 7: Provide cultural and historical context {#sec-rule7}
 
 Our seventh simple rule is to provide a cultural and historical context for what you're teaching.
-For example, when teaching how to use a new software tool or a new feature of a tool that students already know how to use, and things do not seem optimally designed from the learner's perspective, it's really helpful to explain why they are that way.
+For example, consider teaching a new software tool, or a new feature of a tool they are familiar with,
+whose design does not seem optimal from the learner's perspective.
+Rather than leaving students to feel confused or frustrated, 
+it is helpful to explain why the tool was built the way it was.
 If you give the design and historical context, for example, saying people thought about this when they built the tool and decided this was the best way to implement it for reasons X, Y, and Z, it helps the students understand that software tools are built by humans, and so they are going to be influenced by humans' perspective, human history, and human culture.
 Furthermore, it helps prevent frustration or annoyance with the software because they can rationalize why it works the way it does.
 We believe it is crucial to help prevent these frustrations or annoyances, as we have observed that, for some learners, they can become significant barriers and lead to a dislike or avoidance of a particular piece of software.
@@ -266,13 +269,21 @@ As an aside, for those interested in learning more about the history of the R pr
 Rule number eight is to use checklists to focus and facilitate peer learning.
 A well-documented pedagogical best practice is for peers to learn from each other [@topping1998].
 One implementation of this is peer review.
+In peer review, 
+learners benefit from getting feedback on their own work prior to submission. 
+This gives them the opportunity to learn and work to improve it. 
+Learners also benefit from reviewing the work of others, 
+as they will see examples of things they are working on, 
+some stronger and some weaker than their own. 
+This helps them refine their vision for what “good” is for the task they are working on.
+
 However, peer review can be particularly challenging if you haven't done it before, or if it involves reviewing something new that you are still learning.
 So what can we do as instructors to facilitate this practice for our learners?
 Given that we are well-practiced at creating rubrics for grading student work, we can use our existing rubrics as a starting point for drafting peer-review checklists.
 Why checklists?
 Checklists can help ensure complex tasks are completed successfully and have been used in safety-critical systems (such as aviation, surgery, or nuclear power).
 They can be particularly helpful for complex tasks, as well as for repetitive ones that are consequently boring [@gawande2010checklist].
-For these reasons, checklists have recently been adopted in scientific (e.g., PLoS journals, Nature Ecology & Evolution, Journal of Open Source Education, Journal of Open Source Software) and software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that reviewers and editors increase transparency, decreases bias and call attention to essential elements of reviews that are often overlooked [@parker2018empowering].
+For these reasons, checklists have recently been adopted in scientific (e.g., PLoS journals, Nature Ecology & Evolution, Journal of Open Source Education, Journal of Open Source Software) and software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that reviewers and editors increase transparency, decrease bias and call attention to essential elements of reviews that are often overlooked [@parker2018empowering].
 As reviewers for some of these journals and organizations, the authors have found checklists extremely helpful for focusing our attention on the most important elements of a review and for ensuring we don't miss anything.
 We believe this idea also has value in training data science students.
 **S1 File** shows an example of a data analysis review checklist that we have used in our data science courses.
@@ -306,7 +317,7 @@ from beginning to end (or from “nachos to cheesecake,” to quote Jenny Bryan)
 Projects give students the opportunity to experience the entire data science workflow.
 Doing project work is important because it really helps motivate students.
 It also provides students with valuable experience in dealing with the messiness of real data (we all know that in the real world, data is often quite messy).
-Additionally, courses typically focus on just a small part of a data analysis workflow.
+Additionally, courses typically focus on just a small part of a data analysis workflow at a time.
 For example, they might focus on data visualization, data wrangling, or modeling.
 But in a project, they get to see how all these pieces fit together in a more realistic scenario.
 This is critical training for any aspiring data scientist [@ccetinkaya20225ws].
@@ -327,7 +338,9 @@ When getting students to work collaboratively on longer-scale assignments and pr
 In our project courses, we have students spend the first working session almost entirely on group formation activities.
 In this session, we have them participate in icebreaker activities to get to know each other and build trust.
 After that, we get them to create a teamwork contract that outlines their expectations for the project and how they will work together.
-During the project, we have them hold regular team check-ins (e.g., stand-ups, meetings) and use project boards to track their tasks and progress.
+During the project, we have them hold regular team check-ins 
+(e.g., meetings, written updates and progress reports) 
+and use project boards to track their tasks and progress.
 At the end of the project, we have them do a teamwork reflection activity to reflect on what went well and what could be improved.
 As seasoned collaborators, we often take these practices for granted.
 However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
