@@ -109,7 +109,7 @@ who summed this up nicely in a tweet "[…] I REPEAT, do not front-load the 'bor
 The third rule is to use participatory live coding.
 This means that when you are working with code in the classroom, instead of showing it on a static slide or just running it in an executable slide or an integrated development environment (IDE; a tool for developing software code), actually type the code and narrate it as you teach.
 Have the participants follow along as well.
-The reason is that it give you the opportunity to demonstrate your best practices for processes and workflows, topics that are important in practice but, unfortunately, are often just an afterthought in teaching computational subjects.
+The reason is that it gives you the opportunity to demonstrate your best practices for processes and workflows, topics that are important in practice but, unfortunately, are often just an afterthought in teaching computational subjects.
 You can discuss why you're approaching things differently as you go. You are also likely to make mistakes as you live-code, and that's actually a good thing.
 It helps you appear human to students because they, too, will make mistakes.
 More importantly, it allows you to demonstrate how you approach debugging to solve code problems, which they can leverage in their homework and later in their work outside the course.
