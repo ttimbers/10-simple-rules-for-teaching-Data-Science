@@ -198,13 +198,11 @@ This allows students to track the progression of everything through the algorith
 For example, in one of our courses, we use the Palmer penguins data set [@horst2020palmerpenguins] to introduce the students to k-means clustering.
 Instead of giving them the entire data set, which contains hundreds of observations, we first subset it to just a handful.
 Then we can walk the students through what happens to these observations at each step of the algorithm, building understanding and intuition for the algorithm.
-Inspiration from this comes from Jenny Bryan's great dplyr joins cheat sheet [@bryan2015stat545].
-In her cheat sheet, she teaches all the various joins from the dplyr package [@dplyr].
-This is a difficult topic for students to understand and memorize, and when instructors teach this with large data sets, it is really hard for students to get an idea of what's going on. 
+Inspiration from this comes from the STA 545 dplyr joins cheat sheet [@bryan2015stat545], which teaches various joins from the dplyr package [@dplyr].
+This is a difficult topic for students to wrap their heads around, and when instructors teach this with large data sets, it is really hard for students to concretely see the differences between the different types of joins and understand how they work.
 To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
-To address this issue, Jenny Bryan's cheat sheet uses two constructed toy data sets on superhero comic characters and publishers.
+The cheat sheet addresses this issue by using two toy data sets on superhero comic characters and publishers; the superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
 The cheat sheet outlines all the possible joins, narrating and displaying the output of each.
-The superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
 **S1 File** shows an excerpt of this cheat sheet.
 These data sets are small enough to fit in learners working memory, making the joins tractable and much easier to understand. 
 
@@ -418,7 +416,7 @@ This list was curated from our own experiences teaching data science, as well as
 ::: {.supp}
 ## S1 File. {#s1-file}
 
-S1_File.pdf. Excerpt of the STAT 545 `{dplyr}` joins cheatsheet created by Jenny Bryan.
+S1_File.pdf. Excerpt of the STAT 545 `{dplyr}` joins cheatsheet [@bryan2015stat545].
 :::
 
 ::: {.supp}
