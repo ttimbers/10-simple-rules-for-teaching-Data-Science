@@ -243,7 +243,7 @@ It can be difficult to find such data sets in a timely manner, but it's often wo
 
 # Rule 7: Provide cultural and historical context {#sec-rule7}
 
-Our seventh simple rule is to provide a cultural and historical context for what you're teaching.
+Our seventh rule is to provide a cultural and historical context for what you're teaching.
 For example, consider teaching a new software tool, or a new feature of a tool they are familiar with,
 whose design does not seem optimal from the learner's perspective.
 Rather than leaving students to feel confused or frustrated, 
