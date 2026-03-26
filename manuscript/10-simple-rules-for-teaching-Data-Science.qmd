@@ -218,7 +218,7 @@ However, as you're doing this, it is critical to ensure that the dataset is also
 The question, as well as the observations (i.e., rows) and variables (i.e., columns) in the dataset, must be things that your learners can quickly understand.
 
 This can easily become an expert blind spot for us when we are teaching, especially if we have training in a particular domain.
-An expert blind spot is a habit many experts have, 
+Educators, like all experts, have blind spots, 
 whereby they tend to teach from the subject's deep principles 
 as opposed to buiding on the learner's more basic existing knowledge [@nathan2003expert].
 For example, one of the authors, who is trained in the biological sciences, might think that using a deep sequencing data set would be a great and motivating example for a particular algorithm we want to teach students.
