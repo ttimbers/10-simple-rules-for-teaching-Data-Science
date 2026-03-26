@@ -181,7 +181,7 @@ One note of caution for instructors interested in heading out
 on this brave new journey is the high risk of inequitable access to models.
 The use of LLMs often requires a paid subscription.
 In a university setting, unless the institution has a site license 
-or locally hosts open source models, 
+or locally hosts open source models and provides unlimited access to them for their students, 
 this can create equity issues for students who cannot afford these tools.
 As the tooling around LLMs continues to mature rapidly, 
 instructors who invest in learning about LLMs and how to use them, 
