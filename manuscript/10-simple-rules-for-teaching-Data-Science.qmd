@@ -252,7 +252,7 @@ If you give the design and historical context, for example, saying people though
 Furthermore, it helps prevent frustration or annoyance with the software because they can rationalize why it works the way it does.
 We believe it is crucial to help prevent these frustrations or annoyances, as we have observed that, for some learners, they can become significant barriers and lead to a dislike or avoidance of a particular piece of software.
 
-For example, when we teach the programming language R [@ihaka1996r] we use the suite of tidyverse R packages [@tidyverse].
+For example, when we teach the programming language R [@ihaka1996r], we use the suite of tidyverse R packages [@tidyverse].
 Learners observe that these packages heavily use unquoted column names when referencing data frame columns in their function calls.
 That is really strange when you come from other programming languages, as most other programming languages require quoted strings when referencing object attributes (which is what a data frame column is).
 This can also make writing functions that utilize tidyverse functions a bit more challenging due to issues with indirection.
