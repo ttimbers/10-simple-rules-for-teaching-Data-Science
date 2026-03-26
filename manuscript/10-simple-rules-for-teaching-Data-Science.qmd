@@ -192,7 +192,7 @@ This connects naturally to our final rule:
 
 # Rule 5: Use tractable or toy data examples {#sec-rule5}
 
-Our fifth simple rule is to use tractable or toy data examples when introducing a new tool, method, or algorithm to students.
+Our fifth rule is to use tractable or toy data examples when introducing a new tool, method, or algorithm to students.
 Tractable or toy data sets have a countable number of elements, which can fit in our working memory.
 This allows students to track the progression of everything through the algorithm's steps, see how the elements are manipulated, and gain a deeper understanding of these concepts.
 For example, in one of our courses, we use the Palmer penguins data set [@horst2020palmerpenguins] to introduce the students to k-means clustering.
@@ -350,7 +350,7 @@ for students doing group projects [@burgess_group_projects].
 
 # Rule 10: Keep up to date with modern tooling {#sec-rule10}
 
-And finally, our tenth simple rule is to keep up to date with modern tooling.
+And finally, our tenth rule is to keep up to date with modern tooling.
 Data science is a rapidly evolving field, and new tools and technologies are constantly emerging.
 Educators should stay informed about developments in data science tools and incorporate relevant ones into teaching.
 This helps ensure students gain in-demand skills and allows instructors to enhance their teaching with new features.
