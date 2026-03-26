@@ -119,7 +119,7 @@ Best practices for doing this have been refined and shared as ten quick tips by 
 
 # Rule 4: Give tons of practice and timely feedback {#sec-rule4}
 
-The fourth simple rule is to give tons of practice.
+The fourth rule is to give tons of practice.
 Give the learners many, many, many problems to solve, probably many, many, many more than you think they might need.
 The reason for this is that repetition leads to learning [@ebbinghaus1913grundzuge].
 That's not just in humans; it is more fundamental than that.
