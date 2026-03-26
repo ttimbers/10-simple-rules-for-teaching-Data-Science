@@ -313,7 +313,7 @@ and pair programming [@HANNAY20091110],
 progressing to larger group assignments, and then culminating in projects.
 By projects, we mean an entire data product 
 (ideally, on a topic of their choosing, if feasible) 
-from beginning to end (or from “nachos to cheesecake,” to quote Jenny Bryan). 
+from beginning to end. 
 
 Projects give students the opportunity to experience the entire data science workflow.
 Doing project work is important because it really helps motivate students.
