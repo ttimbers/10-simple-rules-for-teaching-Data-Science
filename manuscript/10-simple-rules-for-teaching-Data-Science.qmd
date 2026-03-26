@@ -39,7 +39,7 @@ The first rule is to build a safe, inclusive, and welcoming community.
 The reason is that people don't learn effectively when they don't feel psychologically safe.
 Psychological safety is the belief that one can express oneself, through speech or actions,
 without fear of negative consequences or feedback [@edmondson1999psychological].
-If learners do not feel safe asking questions without being made to look or feel dumb, they are not going to ask questions, and they are not going to be engaged [@lyman2021pre].
+If learners do not feel safe asking questions without being made to look or feel dumb, they are not going to ask questions or be engaged [@lyman2021pre].
 If they don't feel safe from negative perceptions about their intelligence, discrimination, or harassment in the classroom (or related spaces such as office hours, course forums, study groups, etc.), they may become so disengaged that they even stop showing up.
 Thus, creating safe, inclusive, and welcoming learning environments is crucial for effective learning, and as instructors, we have a responsibility to establish scaffolding and guidelines that facilitate this.
 
@@ -55,18 +55,18 @@ One particularly good example is The Carpentries' code of conduct (<https://docs
 
 This rule is likely important for teaching any subject, 
 but we strongly feel that it must be included here as a first, 
-and perhaps ground rule, 
-for data science in particular for two reasons.
-First, data science involves a lot of interactions and collaboration in online spaces.
+and perhaps a ground rule, 
+for data science in particular, for two reasons.
+First, data science involves extensive interaction and collaboration in online spaces.
 It is well documented that people are less inhibited in their online interactions,
 and that this disinhibition can manifest in toxic forms, 
 including rude language, harsh criticisms, expressions of anger or hatred, and even threats [@suler2004]. 
-Second, at present data science,
-suffers from significant deficits in diversity, equity and inclusion [@young2023mind].
-Each of these factors independently pose challenges to creating safe, 
+Second, at present, data science,
+suffers from significant deficits in diversity, equity, and inclusion [@young2023mind].
+Each of these factors independently poses challenges to creating safe, 
 inclusive and welcoming learning environments; 
 in combination, their effects are compounded.
-That is why we believe it essential to be proactive in establishing norms of behaviour 
+That is why we believe it is essential to be proactive in establishing norms of behaviour 
 from the outset of a course.
 This is not merely good pedagogical practice; 
 it is an act of structural intervention in a field that has 
@@ -76,7 +76,7 @@ historically failed to welcome many of the people who deserve to be in it.
 
 The second rule is teaching data science by doing data analysis.
 This means that in your first data science lesson, not your third or 10th lesson, 
-have the students load some data, perform some simple data wrangling, and create a data visualization.
+have students load data, perform simple data wrangling, and create a data visualization.
 We call this the "let them eat cake" approach to teaching data science [@ccetinkaya2021fresh].
 
 Why do we suggest this?
@@ -85,9 +85,9 @@ Most students sign up for a data science course or workshop
 because they're interested in asking and answering questions about the world using data, 
 or because it's a degree requirement.
 In either case, they likely don't yet have sufficient knowledge to care deeply about detailed, technical aspects, such as object data types, whether to use R versus Python, or, if using R, whether to opt for the tidyverse or base R.
-As a result, we should show them something interesting very early on to hook them 
-(this is especially important for the group 
-who are taking the course primarily due to it being a degree requirement).
+As a result, we should show them something interesting very early on to hook them --  
+this is especially important for the group 
+who are taking the course primarily because it is a degree requirement).
 
 After they are hooked, they will be begging you to answer questions about the detailed, technical aspects you intentionally omitted.
 An example of this is shown in @fig-intro-ds-code; code from the first chapter of *Data Science: A First Introduction* [@timbers2022data].
@@ -157,7 +157,7 @@ As a consequence, we can write software tests that provide feedback to students,
 
 @fig-code-feedback shows an example of this in practice.
 Here, students were given some ggplot code in a Parsons problem format (the lines of code were given in the wrong order, and the students needed to rearrange them to the correct order).
-In this example, a student has rearranged the code, but while doing so has introduced a syntax error. 
+In this example, a student has rearranged the code but, while doing so, has introduced a syntax error. 
 As a result, a plot is created, but it's not quite what we expect.
 Without timely feedback, the student might not realize that there's a problem with their code until much later, or not at all if they fail to check the feedback and solutions after the assignment is graded and grades are returned (often days or weeks later).
 
@@ -199,12 +199,12 @@ For example, in one of our courses, we use the Palmer penguins data set [@horst2
 Instead of giving them the entire data set, which contains hundreds of observations, we first subset it to just a handful.
 Then we can walk the students through what happens to these observations at each step of the algorithm, building understanding and intuition for the algorithm.
 Inspiration from this comes from the STA 545 dplyr joins cheat sheet [@bryan2015stat545], which teaches various joins from the dplyr package [@dplyr].
-This is a difficult topic for students to wrap their heads around, and when instructors teach this with large data sets, it is really hard for students to concretely see the differences between the different types of joins and understand how they work.
+This is a difficult topic for students to wrap their heads around, and when instructors teach it with large data sets, it is really hard for students to see the differences between the types of joins and understand how they work.
 To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
 The cheat sheet addresses this issue by using two toy data sets on superhero comic characters and publishers; the superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
 The cheat sheet outlines all the possible joins, narrating and displaying the output of each.
 **S1 File** shows an excerpt of this cheat sheet.
-These data sets are small enough to fit in learners working memory, making the joins tractable and much easier to understand. 
+These data sets are small enough to fit in learners' working memory, making the joins tractable and much easier to understand. 
 
 It is, of course, not feasible to keep learners interested and motivated to learn more if we rely solely on toy datasets.
 So, once students have a conceptual understanding of the tool, method, or algorithm being taught, we can move on to using real, rich datasets, which is our next rule.
@@ -212,21 +212,21 @@ So, once students have a conceptual understanding of the tool, method, or algori
 # Rule 6: Use real and rich, but accessible data sets {#sec-rule6}
 
 After you've helped students develop a conceptual understanding of the new tool, method, or algorithm you are teaching, the next step is to have students apply it to realistic questions and real, rich data.
-However, as you're doing this, it is critical to ensure that the dataset is also accessible to all your learners.
+However, as you do this, it is critical to ensure the dataset is also accessible to all your learners.
 The question, as well as the observations (i.e., rows) and variables (i.e., columns) in the dataset, must be things that your learners can quickly understand.
 
 This can easily become an expert blind spot for us when we are teaching, especially if we have training in a particular domain.
 Educators, like all experts, have blind spots, 
 whereby they tend to teach from the subject's deep principles 
-as opposed to buiding on the learner's more basic existing knowledge [@nathan2003expert].
+as opposed to building on the learner's more basic existing knowledge [@nathan2003expert].
 For example, one of the authors, who is trained in the biological sciences, might think that using a deep sequencing data set would be a great and motivating example for a particular algorithm we want to teach students.
 However, this thought likely stems from the author's deeper understanding of biological processes, which, in this example, gives them an expert blind spot.
 Given that, if learners do not have similar background knowledge, that dataset might not be appropriate.
 It might introduce too much cognitive load for the students, to the extent that they cannot focus on the task at hand — refining their understanding and application of the tool, method, or algorithm being taught.
 
-We do not want to use up our students' limited cognitive resources to understand what the dataset is about.
+We do not want to use up our students' limited cognitive resources to understand the dataset.
 Instead, we want to use something that all our learners can easily understand, including what the observations are and what the columns represent.
-One example from one of the courses that we teach uses Canadian census data about the languages spoken in Canada across different regions [@canlang].
+One example from one of the courses we teach uses Canadian census data on languages spoken across different regions [@canlang].
 Other examples include the Gapminder [@gapminder] and UN Votes [@robinson2021unvotes] data sets.
 These are particularly nice examples because they contain hundreds of observations; however, the observations are something most people can understand: a country, a year, a population, a vote, etc.
 And with such a dataset, we can ask questions that most learners are interested in, because everyone has grown up in at least one country, and possibly more, in their lifetime.
@@ -256,7 +256,7 @@ That is really strange when you come from other programming languages, as most o
 This can also make writing functions that utilize tidyverse functions a bit more challenging due to issues with indirection.
 For learners with experience in Python, Java, or C, this might initially seem like a really bad idea.
 However, once they learn that R and the suite of tidyverse R packages were written by statisticians for performing data analysis and graphics [@ihaka1996r; @tidyverse], and that they designed the language and packages with the expectation that much of the users time would be frequently typing things into the console or running code interactively, it makes a lot more sense that they would want to minimize the amount of typing and tracking of opening and closing quotations for their users. 
-Doing this minimizes the potential syntax errors that could be introduced by errors in forgetting to open or close quotations.
+Doing this minimizes the potential syntax errors that could be introduced by forgetting to open or close quotations.
 
 Another example comes from the use of the arrow (<-) as an assignment operator in R, which may seem odd to some learners as it uses two characters.
 Again, however, when given the historical context that R was derived from another programming language named S, and S was inspired by another programming language, APL, that was designed for a particular keyboard with one key mapped to the assignment operator [@fay2018assignment], it makes a lot more sense as to why that design choice was made.
@@ -269,11 +269,11 @@ Rule number eight is to use checklists to focus and facilitate peer learning.
 A well-documented pedagogical best practice is for peers to learn from each other [@topping1998].
 One implementation of this is peer review.
 In peer review, 
-learners benefit from getting feedback on their own work prior to submission. 
+learners benefit from receiving feedback on their own work before submission. 
 This gives them the opportunity to learn and work to improve it. 
 Learners also benefit from reviewing the work of others, 
 as they will see examples of things they are working on, 
-some stronger and some weaker than their own. 
+some stronger and some are weaker than their own. 
 This helps them refine their vision for what “good” is for the task they are working on.
 
 However, peer review can be particularly challenging if you haven't done it before, or if it involves reviewing something new that you are still learning.
@@ -281,7 +281,7 @@ So what can we do as instructors to facilitate this practice for our learners?
 Given that we are well-practiced at creating rubrics for grading student work, we can use our existing rubrics as a starting point for drafting peer-review checklists.
 Why checklists?
 Checklists can help ensure complex tasks are completed successfully and have been used in safety-critical systems (such as aviation, surgery, or nuclear power).
-They can be particularly helpful for complex tasks, as well as for repetitive ones that are consequently boring [@gawande2010checklist].
+They can be particularly helpful for complex tasks as well as for repetitive ones that can become boring [@gawande2010checklist].
 For these reasons, checklists have recently been adopted in scientific (e.g., PLoS journals, Nature Ecology & Evolution, Journal of Open Source Education, Journal of Open Source Software) and software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that reviewers and editors increase transparency, decrease bias, and call attention to essential elements of reviews that are often overlooked [@parker2018empowering].
 As reviewers for some of these journals and organizations, the authors have found checklists extremely helpful for focusing our attention on the most important elements of a review and for ensuring we don't miss anything.
 We believe this idea also has value in training data science students.
@@ -338,13 +338,13 @@ In our project courses, we have students spend the first working session almost 
 In this session, we have them participate in icebreaker activities to get to know each other and build trust.
 After that, we get them to create a teamwork contract that outlines their expectations for the project and how they will work together.
 During the project, we have them hold regular team check-ins 
-(e.g., meetings, written updates and progress reports) 
+(e.g., meetings, written updates, and progress reports) 
 and use project boards to track their tasks and progress.
 At the end of the project, we have them do a teamwork reflection activity to reflect on what went well and what could be improved.
 As seasoned collaborators, we often take these practices for granted.
 However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
 Even with these scaffolds in place, we still see some groups struggle with collaboration.
-To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict, and developing, as a group, a plan ahead of time for how to manage it when it arises.
+To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict and, as a group, developing a plan ahead of time for how to manage it when it arises.
 Beyond Intractability has a useful conflict resolution guide 
 for students doing group projects [@burgess_group_projects].
 
@@ -354,11 +354,11 @@ And finally, our tenth rule is to keep up to date with modern tooling.
 Data science is a rapidly evolving field, and new tools and technologies are constantly emerging.
 Educators should stay informed about developments in data science tools and incorporate relevant ones into teaching.
 This helps ensure students gain in-demand skills and allows instructors to enhance their teaching with new features.
-How can data science educators keep up to do with modern tooling?
+How can data science educators keep up with modern tooling?
 The first step is to stay informed. 
 Data science educators need to be actively connected 
 and engaged with the data science communities in some way
-so that they can become informed of new changes in to the field in a timely manner.
+so they can stay informed about new developments in the field in a timely manner.
 There are many ways in which this can be done, 
 including attending in-person or virtual events (e.g., meetups, conferences),
 reading blogs and preprints and papers, 
@@ -375,14 +375,14 @@ This allows educators to develop more informed decisions and opinions about the 
 which they can share with their students when teaching about them. 
 Doing this also helps build the instructor's credibility 
 and ability to answer questions about them. 
-Once well informed and experienced with the new tool, 
+Once well-informed and experienced with the new tool, 
 data science educators must finally evaluate and carefully consider how (and if) 
 to use and teach new modern tooling 
 by considering its place in the data science ecosystem and in society, 
 culture and human (and environmental) ethics. 
 These considerations should be shared with students when teaching new tooling, 
 as well as when asking students not to use particular new tooling, 
-or alternatives from what the most popular mainstream thing may be at the time.
+or alternatives to what the most popular mainstream thing may be at the time.
 
 At the time of writing, a timely example is generative artificial intelligence (AI); 
 both chatbots and agentic code-generation tools, which can write, debug, and suggest code. 
@@ -394,12 +394,12 @@ and practice with tools increasingly standard in industry and academia.
 The landscape is complicated, however. 
 First, unlike the other tools discussed in this paper, 
 generative AI tools — particularly agentic ones — often require paid subscriptions, 
-raising equity concerns in university and workshop settings where not all learners can afford access. 
+raising equity concerns in university and workshop settings, where not all learners can afford access. 
 Second, ethical and privacy concerns mean some students may reasonably choose not to use them, 
 a choice that should carry no penalty. 
 Third, the line between AI-assisted work and plagiarism remains blurry, 
 creating grading challenges for instructors. 
-Without staying informed, and experimenting with these new generative AI tools, 
+Without staying informed and experimenting with these new generative AI tools, 
 data science educators cannot make educated and good pedagogical choices 
 on how to incorporate them into the classroom and their teaching, 
 nor can they engage students in open, 
@@ -422,12 +422,12 @@ S1_File.pdf. Excerpt of the STAT 545 `{dplyr}` joins cheatsheet [@bryan2015stat5
 ::: {.supp}
 ## S2 File. {#s2-file}
 
-S2_File.pdf. Example data analysis peer review checklist used in data science courses taught by the authors. 
+S2_File.pdf. Example peer-review checklist for data analysis used in data science courses taught by the authors. 
 :::
 
 # Acknowledgements
 Many thanks to the leading data science educators in our community who pioneered 
 the teaching practices outlined in our ten simple rules 
-and the students with whom we have tested them on in our own classrooms.
+and the students with whom we have tested them in our own classrooms.
 
 # References
