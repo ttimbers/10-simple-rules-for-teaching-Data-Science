@@ -87,7 +87,7 @@ or because it's a degree requirement.
 In either case, they likely don't yet have sufficient knowledge to care deeply about detailed, technical aspects, such as object data types, whether to use R versus Python, or, if using R, whether to opt for the tidyverse or base R.
 As a result, we should show them something interesting very early on to hook them --  
 this is especially important for the group 
-who are taking the course primarily because it is a degree requirement).
+who are taking the course primarily because it is a degree requirement.
 
 After they are hooked, they will be begging you to answer questions about the detailed, technical aspects you intentionally omitted.
 An example of this is shown in @fig-intro-ds-code; code from the first chapter of *Data Science: A First Introduction* [@timbers2022data].
@@ -355,6 +355,7 @@ Data science is a rapidly evolving field, and new tools and technologies are con
 Educators should stay informed about developments in data science tools and incorporate relevant ones into teaching.
 This helps ensure students gain in-demand skills and allows instructors to enhance their teaching with new features.
 How can data science educators keep up with modern tooling?
+
 The first step is to stay informed. 
 Data science educators need to be actively connected 
 and engaged with the data science communities in some way
@@ -366,6 +367,7 @@ and following data scientists on social media.
 Educators do not need to do all we list, 
 and they should choose the method(s) that best fit them.
 What is most important is that data science educators must not become siloed.
+
 The second step is for data science educators to incorporate the new methods 
 and tools into their own workflows to learn about them more deeply and experience them. 
 This could mean using the tool in their research, 
