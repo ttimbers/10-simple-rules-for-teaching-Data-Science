@@ -635,24 +635,43 @@ in their own lives and communities outside the classroom.
 context}\label{sec-rule7}
 
 Our seventh rule is to provide a cultural and historical context for
-what you're teaching. For example, consider teaching a new software
-tool, or a new feature of a tool they are familiar with, whose design
-does not seem optimal from the learner's perspective. Rather than
-leaving students to feel confused or frustrated, it is helpful to
-explain why the tool was built the way it was. If you give the design
-and historical context, for example, saying people thought about this
-when they built the tool and decided this was the best way to implement
-it for reasons X, Y, and Z, it helps the students understand that
-software tools are built by humans, and so they are going to be
-influenced by humans' perspective, human history, and human culture.
-Furthermore, it helps prevent frustration or annoyance with the software
-because they can rationalize why it works the way it does. We believe it
-is crucial to help prevent these frustrations or annoyances, as we have
-observed that, for some learners, they can become significant barriers
-and lead to a dislike or avoidance of a particular piece of software.
+what you're teaching. For example, if you decide to teach a data science
+topic using Anderson's well-known iris data set, it is critically
+important to educate students about the first published use of this data
+set by R. A. Fisher in the Annals of Eugenics {[}37{]}. There he used
+the iris data set to advance eugenic methodology. Thus, the iris data
+set has a documented history in eugenics research, a difficult fact to
+be addressed and not swept under the rug. Alternatively, even if
+educators choose to use a more modern alternative (e.g., the Palmer
+Penguins data set {[}30{]}), it is still important to discuss this
+difficult history of the field. The history of the field matters
+regardless of which dataset you use. Eugenics caused real harm to real
+people, and statistics played a role in that history. These
+conversations are not always easy, and few of us received explicit
+training in how to hold them. But acknowledging the harm caused by
+eugenics and its place in the history of our field is part of
+responsible teaching. Helping students understand this history is how we
+equip them to think critically about the methods and data they inherit.
+It also helps ensure new generations do not repeat mistakes of the past
 
-For example, when we teach the programming language R {[}37{]}, we use
-the suite of tidyverse R packages {[}38{]}. Learners observe that these
+This rule also applies when teaching a new software tool, or a new
+feature of a tool they are familiar with, whose design does not seem
+optimal from the learner's perspective. Rather than leaving students to
+feel confused or frustrated, it is helpful to explain why the tool was
+built the way it was. If you give the design and historical context, for
+example, saying people thought about this when they built the tool and
+decided this was the best way to implement it for reasons X, Y, and Z,
+it helps the students understand that software tools are built by
+humans, and so they are going to be influenced by humans' perspective,
+human history, and human culture. Furthermore, it helps prevent
+frustration or annoyance with the software because they can rationalize
+why it works the way it does. We believe it is crucial to help prevent
+these frustrations or annoyances, as we have observed that, for some
+learners, they can become significant barriers and lead to a dislike or
+avoidance of a particular piece of software.
+
+For example, when we teach the programming language R {[}38{]}, we use
+the suite of tidyverse R packages {[}39{]}. Learners observe that these
 packages heavily use unquoted column names when referencing data frame
 columns in their function calls. That is really strange when you come
 from other programming languages, as most other programming languages
@@ -662,7 +681,7 @@ utilize tidyverse functions a bit more challenging due to issues with
 indirection. For learners with experience in Python, Java, or C, this
 might initially seem like a really bad idea. However, once they learn
 that R and the suite of tidyverse R packages were written by
-statisticians for performing data analysis and graphics {[}37,38{]}, and
+statisticians for performing data analysis and graphics {[}38,39{]}, and
 that they designed the language and packages with the expectation that
 much of the users time would be frequently typing things into the
 console or running code interactively, it makes a lot more sense that
@@ -677,20 +696,20 @@ two characters. Again, however, when given the historical context that R
 was derived from another programming language named S, and S was
 inspired by another programming language, APL, that was designed for a
 particular keyboard with one key mapped to the assignment operator
-{[}39{]}, it makes a lot more sense as to why that design choice was
+{[}40{]}, it makes a lot more sense as to why that design choice was
 made. Design and historical contexts help learners understand the
 rationale behind different design choices, allowing them to see choices
 they might not initially agree with as excellent within these contexts.
 As an aside, for those interested in learning more about the history of
 the R programming language, see the ``History and Overview of R''
-chapter in Roger Peng's \emph{R programming data science} book {[}40{]}.
+chapter in Roger Peng's \emph{R programming data science} book {[}41{]}.
 
 \section{Rule 8: Use checklists to focus and facilitate peer
 learning}\label{sec-rule8}
 
 Rule number eight is to use checklists to focus and facilitate peer
 learning. A well-documented pedagogical best practice is for peers to
-learn from each other {[}41{]}. One implementation of this is peer
+learn from each other {[}42{]}. One implementation of this is peer
 review. In peer review, learners benefit from receiving feedback on
 their own work before submission. This gives them the opportunity to
 learn and work to improve it. Learners also benefit from reviewing the
@@ -707,13 +726,13 @@ point for drafting peer-review checklists. Why checklists? Checklists
 can help ensure complex tasks are completed successfully and have been
 used in safety-critical systems (such as aviation, surgery, or nuclear
 power). They can be particularly helpful for complex tasks as well as
-for repetitive ones that can become boring {[}42{]}. For these reasons,
+for repetitive ones that can become boring {[}43{]}. For these reasons,
 checklists have recently been adopted in scientific (e.g., PLoS
 journals, Nature Ecology \& Evolution, Journal of Open Source Education,
 Journal of Open Source Software) and software (e.g., ROpenSci,
 PyOpenSci) publishing to help ensure that reviewers and editors increase
 transparency, decrease bias, and call attention to essential elements of
-reviews that are often overlooked {[}43{]}. As reviewers for some of
+reviews that are often overlooked {[}44{]}. As reviewers for some of
 these journals and organizations, the authors have found checklists
 extremely helpful for focusing our attention on the most important
 elements of a review and for ensuring we don't miss anything. We believe
@@ -751,8 +770,8 @@ goals of the course.
 
 We must also give them opportunities to practice collaboration. Practice
 should occur at increasing levels of complexity, starting with smaller
-in-class activities, such as think-pair-share {[}44{]} and pair
-programming {[}45{]}, progressing to larger group assignments, and then
+in-class activities, such as think-pair-share {[}45{]} and pair
+programming {[}46{]}, progressing to larger group assignments, and then
 culminating in projects. By projects, we mean an entire data product
 (ideally, on a topic of their choosing, if feasible) from beginning to
 end.
@@ -766,7 +785,7 @@ typically focus on just a small part of a data analysis workflow at a
 time. For example, they might focus on data visualization, data
 wrangling, or modeling. But in a project, they get to see how all these
 pieces fit together in a more realistic scenario. This is critical
-training for any aspiring data scientist {[}46{]}.
+training for any aspiring data scientist {[}47{]}.
 
 From the instructor's perspective, however, projects can feel daunting,
 particularly when student numbers are large and teaching resources are
@@ -808,7 +827,7 @@ some groups struggle with collaboration. To manage this, we recommend
 discussing with students the importance of expecting, rather than
 avoiding, conflict and, as a group, developing a plan ahead of time for
 how to manage it when it arises. Beyond Intractability has a useful
-conflict resolution guide for students doing group projects {[}47{]}.
+conflict resolution guide for students doing group projects {[}48{]}.
 
 \section{Rule 10: Keep up to date with modern tooling}\label{sec-rule10}
 
@@ -1107,65 +1126,71 @@ Available: \url{https://CRAN.R-project.org/package=gapminder}}
 voting data. 2021.
 doi:\href{https://doi.org/10.32614/CRAN.package.unvotes}{10.32614/CRAN.package.unvotes}}
 
-\bibitem[\citeproctext]{ref-ihaka1996r}
+\bibitem[\citeproctext]{ref-fisher_use_1936}
 \CSLLeftMargin{37. }%
+\CSLRightInline{Fisher RA. The use of multiple measurements in taxonomic
+problems. Annals of Eugenics. 1936;7: 179--188.
+doi:\href{https://doi.org/10.1111/j.1469-1809.1936.tb02137.x}{10.1111/j.1469-1809.1936.tb02137.x}}
+
+\bibitem[\citeproctext]{ref-ihaka1996r}
+\CSLLeftMargin{38. }%
 \CSLRightInline{Ihaka R, Gentleman R. R: A language for data analysis
 and graphics. Journal of computational and graphical statistics. 1996;5:
 299--314. }
 
 \bibitem[\citeproctext]{ref-tidyverse}
-\CSLLeftMargin{38. }%
+\CSLLeftMargin{39. }%
 \CSLRightInline{Wickham H, Hester J, Henry L, et al. Tidyverse: Easily
 install and load the 'tidyverse'. 2024. Available:
 \url{https://CRAN.R-project.org/package=tidyverse}}
 
 \bibitem[\citeproctext]{ref-fay2018assignment}
-\CSLLeftMargin{39. }%
+\CSLLeftMargin{40. }%
 \CSLRightInline{Fay C. Why do we use arrow as an assignment operator?
 Blog post; 2018. Available: \url{https://colinfay.me/r-assignment/}}
 
 \bibitem[\citeproctext]{ref-peng2016r}
-\CSLLeftMargin{40. }%
+\CSLLeftMargin{41. }%
 \CSLRightInline{Peng RD. R programming for data science. Leanpub
 Victoria, BC, Canada; 2016. }
 
 \bibitem[\citeproctext]{ref-topping1998}
-\CSLLeftMargin{41. }%
+\CSLLeftMargin{42. }%
 \CSLRightInline{Topping K. Peer assessment between students in colleges
 and universities. Review of Educational Research. 1998;68: 249--276.
 Available: \url{http://www.jstor.org/stable/1170598}}
 
 \bibitem[\citeproctext]{ref-gawande2010checklist}
-\CSLLeftMargin{42. }%
+\CSLLeftMargin{43. }%
 \CSLRightInline{Gawande A. Checklist manifesto, the (HB). Penguin Books
 India; 2010. }
 
 \bibitem[\citeproctext]{ref-parker2018empowering}
-\CSLLeftMargin{43. }%
+\CSLLeftMargin{44. }%
 \CSLRightInline{Parker TH, Griffith SC, Bronstein JL, Fidler F, Foster
 S, Fraser H, et al. Empowering peer reviewers with a checklist to
 improve transparency. Nature ecology \& evolution. 2018;2: 929--935. }
 
 \bibitem[\citeproctext]{ref-lyman1981responsive}
-\CSLLeftMargin{44. }%
+\CSLLeftMargin{45. }%
 \CSLRightInline{Lyman FT. The responsive classroom discussion: The
 inclusion of all students. Mainstreaming digest. 1981; 109--113. }
 
 \bibitem[\citeproctext]{ref-HANNAY20091110}
-\CSLLeftMargin{45. }%
+\CSLLeftMargin{46. }%
 \CSLRightInline{Hannay JE, Dybå T, Arisholm E, Sjøberg DIK. The
 effectiveness of pair programming: A meta-analysis. Information and
 Software Technology. 2009;51: 1110--1122.
 doi:\url{https://doi.org/10.1016/j.infsof.2009.02.001}}
 
 \bibitem[\citeproctext]{ref-ccetinkaya20225ws}
-\CSLLeftMargin{46. }%
+\CSLLeftMargin{47. }%
 \CSLRightInline{Çetinkaya-Rundel M, Dogucu M, Rummerfield W. The 5Ws and
 1H of term projects in the introductory data science classroom.
 Statistics Education Research Journal. 2022;21: 4--4. }
 
 \bibitem[\citeproctext]{ref-burgess_group_projects}
-\CSLLeftMargin{47. }%
+\CSLLeftMargin{48. }%
 \CSLRightInline{Burgess H. Group projects: A conflict resolution guide
 for students. Beyond Intractability; n.d. {[}cited 17 Mar 2026{]}.
 Available:

@@ -242,7 +242,28 @@ It can be difficult to find such data sets in a timely manner, but it's often wo
 # Rule 7: Provide cultural and historical context {#sec-rule7}
 
 Our seventh rule is to provide a cultural and historical context for what you're teaching.
-For example, consider teaching a new software tool, or a new feature of a tool they are familiar with,
+For example, if you decide to teach a data science topic using Anderson's 
+well-known iris data set, it is critically important to educate students about the 
+first published use of this data set by R. A. Fisher in the Annals of Eugenics [@fisher_use_1936].
+There he used the iris data set to advance eugenic methodology.
+Thus, the iris data set has a documented history in eugenics research, 
+a difficult fact to be addressed and not swept under the rug.
+Alternatively, even if educators choose to use a more modern alternative 
+(e.g., the Palmer Penguins data set [@horst2020palmerpenguins]),
+it is still important to discuss this difficult history of the field.
+The history of the field matters regardless of which dataset you use.
+Eugenics caused real harm to real people, 
+and statistics played a role in that history.
+These conversations are not always easy, 
+and few of us received explicit training in how to hold them. 
+But acknowledging the harm caused by eugenics 
+and its place in the history of our field is part of responsible teaching. 
+Helping students understand this history 
+is how we equip them to think critically about the methods and data they inherit.
+It also helps ensure new generations do not repeat mistakes of the past
+
+This rule also applies when teaching a new software tool, 
+or a new feature of a tool they are familiar with,
 whose design does not seem optimal from the learner's perspective.
 Rather than leaving students to feel confused or frustrated, 
 it is helpful to explain why the tool was built the way it was.
