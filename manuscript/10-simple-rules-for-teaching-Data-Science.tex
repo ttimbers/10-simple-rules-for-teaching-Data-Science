@@ -48,6 +48,7 @@
 
 
 \usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -386,10 +387,17 @@ your way down to it.''
 
 \begin{figure}
 
-\begin{minipage}{\linewidth}
-\pandocbounded{\includegraphics[keepaspectratio]{figures/intro-code-only.png}}\end{minipage}%
+\begin{minipage}[t]{\linewidth}
+
+\raisebox{-\height}{
+
+\pandocbounded{\includegraphics[keepaspectratio]{figures/intro-code-only.png}}
+
+}
+
+\end{minipage}%
 \newline
-\begin{minipage}{\linewidth}
+\begin{minipage}[t]{\linewidth}
 
 \begin{figure}[H]
 
@@ -916,12 +924,12 @@ the students with whom we have tested them in our own classrooms.
 \section*{References}\label{references}
 \addcontentsline{toc}{section}{References}
 
-\phantomsection\label{refs}
+\protect\phantomsection\label{refs}
 \begin{CSLReferences}{0}{1}
 \bibitem[\citeproctext]{ref-berman2018realizing}
 \CSLLeftMargin{1. }%
-\CSLRightInline{Berman F, Rutenbar R, Hailpern B, Christensen H,
-Davidson S, Estrin D, et al. Realizing the potential of data science.
+\CSLRightInline{{Berman F, Rutenbar R, Hailpern B, Christensen H,
+Davidson S, Estrin D, et al.} Realizing the potential of data science.
 Communications of the ACM. 2018;61: 67--72. }
 
 \bibitem[\citeproctext]{ref-Wing2019Data}
@@ -943,8 +951,8 @@ introduction. Chapman; Hall/CRC; 2022. }
 
 \bibitem[\citeproctext]{ref-carver2016guidelines}
 \CSLLeftMargin{5. }%
-\CSLRightInline{Carver R, Everson M, Gabrosek J, Horton N, Lock R, Mocko
-M, et al. Guidelines for assessment and instruction in statistics
+\CSLRightInline{{Carver R, Everson M, Gabrosek J, Horton N, Lock R,
+Mocko M, et al.} Guidelines for assessment and instruction in statistics
 education (GAISE) college report 2016. AMSTAT; 2016. }
 
 \bibitem[\citeproctext]{ref-zendler2015}
@@ -1041,8 +1049,8 @@ neuropsychological theory. John Wiley \& Sons; 1949. }
 
 \bibitem[\citeproctext]{ref-swirl}
 \CSLLeftMargin{22. }%
-\CSLRightInline{Carchedi N, Kross S, Bauer B, et al. Swirl: Learn r, in
-r. 2023. Available: \url{https://swirlstats.com}}
+\CSLRightInline{{Carchedi N, Kross S, Bauer B, et al.} Swirl: Learn r,
+in r. 2023. Available: \url{https://swirlstats.com}}
 
 \bibitem[\citeproctext]{ref-kaggle_learn}
 \CSLLeftMargin{23. }%
@@ -1068,13 +1076,13 @@ doi:\href{https://doi.org/10.1080/87567555.1993.9926781}{10.1080/87567555.1993.9
 
 \bibitem[\citeproctext]{ref-learnr}
 \CSLLeftMargin{27. }%
-\CSLRightInline{Kross S, Çetinkaya-Rundel M, et al. Learnr: Interactive
-tutorials for r. 2024. Available:
+\CSLRightInline{{Kross S, Çetinkaya-Rundel M, et al.} Learnr:
+Interactive tutorials for r. 2024. Available:
 \url{https://rstudio.github.io/learnr/}}
 
 \bibitem[\citeproctext]{ref-nbgrader}
 \CSLLeftMargin{28. }%
-\CSLRightInline{Hamrick JB et al. Nbgrader: A tool for creating and
+\CSLRightInline{{Hamrick JB et al.} Nbgrader: A tool for creating and
 grading assignments in the jupyter notebook. Proceedings of the 19th
 python in science conference. 2016. pp. 68--74.
 doi:\href{https://doi.org/10.25080/Majora-629e541a-00e}{10.25080/Majora-629e541a-00e}}
@@ -1140,7 +1148,7 @@ and graphics. Journal of computational and graphical statistics. 1996;5:
 
 \bibitem[\citeproctext]{ref-tidyverse}
 \CSLLeftMargin{39. }%
-\CSLRightInline{Wickham H, Hester J, Henry L, et al. Tidyverse: Easily
+\CSLRightInline{{Wickham H, Hester J, Henry L, et al.} Tidyverse: Easily
 install and load the 'tidyverse'. 2024. Available:
 \url{https://CRAN.R-project.org/package=tidyverse}}
 
@@ -1167,8 +1175,8 @@ India; 2010. }
 
 \bibitem[\citeproctext]{ref-parker2018empowering}
 \CSLLeftMargin{44. }%
-\CSLRightInline{Parker TH, Griffith SC, Bronstein JL, Fidler F, Foster
-S, Fraser H, et al. Empowering peer reviewers with a checklist to
+\CSLRightInline{{Parker TH, Griffith SC, Bronstein JL, Fidler F, Foster
+S, Fraser H, et al.} Empowering peer reviewers with a checklist to
 improve transparency. Nature ecology \& evolution. 2018;2: 929--935. }
 
 \bibitem[\citeproctext]{ref-lyman1981responsive}
