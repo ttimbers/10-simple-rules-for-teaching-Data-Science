@@ -244,7 +244,7 @@ They can be particularly helpful for complex tasks as well as for repetitive one
 For these reasons, checklists have recently been adopted in scientific (e.g., PLoS journals, Nature Ecology & Evolution, Journal of Open Source Education, Journal of Open Source Software) and software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that reviewers and editors increase transparency, decrease bias, and call attention to essential elements of reviews that are often overlooked [@parker2018empowering].
 As reviewers for some of these journals and organizations, the authors have found checklists extremely helpful for focusing our attention on the most important elements of a review and for ensuring we don't miss anything.
 We believe this idea also has value in training data science students.
-**S2 Text** shows an example of a data analysis review checklist that we have used in our data science courses.
+**S2 Checklist** shows an example of a data analysis review checklist that we have used in our data science courses.
 It serves to communicate the aspects that we, as educators, believe are important for the assessment to be completed to a high quality.
 In addition to checking off the checklist items, students are also asked to provide written comments and feedback.
 This checklist helps focus students' comments and feedback on the items they were unable to check off.
