@@ -7,3 +7,5 @@
 air.toml
 /.quarto/
 **/*.quarto_ipynb
+
+/.luarc.json
