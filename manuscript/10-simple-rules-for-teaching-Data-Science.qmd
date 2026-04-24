@@ -73,16 +73,11 @@ In either case, they likely don't yet have sufficient knowledge to care deeply a
 As a result, we should show them something interesting very early on to hook them – this is especially important for the group who are taking the course primarily because it is a degree requirement.
 
 After they are hooked, they will be begging you to answer questions about the detailed, technical aspects you intentionally omitted.
-An example of this is shown in @fig-intro-ds-code; code from the first chapter of *Data Science: A First Introduction* [@timbers2022data].
+An example of this is the first chapter of *Data Science: A First Introduction* [@timbers2022data],
+a textbook one of the authors uses to teach introductory data science.
 There, we ask learners to load data from a CSV file and perform introductory data wrangling using filtering, arranging, and slicing.
 Finally, create a plot to answer a question about indigenous languages in Canada: how many people living in Canada speak an indigenous language as their mother tongue?
 Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan [-@bryan2017twitter], a software engineer at Posit (formerly RStudio) and renowned data science educator, who summed this up nicely in a tweet "\[…\] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it."
-
-::: {layout-nrow="2"}
-![](figures/intro-code-only.png)
-
-![Example code from the first chapter of *Data Science: A First Introduction* @timbers2022data that gets students doing data analysis on day one.](figures/intro-fig.png){#fig-intro-ds-code width="100%"}
-:::
 
 # Rule 3: Use participatory live coding {#sec-rule3}
 
@@ -157,7 +152,6 @@ This is a difficult topic for students to wrap their heads around, and when inst
 To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
 The cheat sheet addresses this issue by using two toy data sets on superhero comic characters and publishers; the superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
 The cheat sheet outlines all the possible joins, narrating and displaying the output of each.
-**S1 Text** shows an excerpt of this cheat sheet.
 These data sets are small enough to fit in learners' working memory, making the joins tractable and much easier to understand.
 
 It is, of course, not feasible to keep learners interested and motivated to learn more if we rely solely on toy datasets.
@@ -244,7 +238,7 @@ They can be particularly helpful for complex tasks as well as for repetitive one
 For these reasons, checklists have recently been adopted in scientific (e.g., PLoS journals, Nature Ecology & Evolution, Journal of Open Source Education, Journal of Open Source Software) and software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that reviewers and editors increase transparency, decrease bias, and call attention to essential elements of reviews that are often overlooked [@parker2018empowering].
 As reviewers for some of these journals and organizations, the authors have found checklists extremely helpful for focusing our attention on the most important elements of a review and for ensuring we don't miss anything.
 We believe this idea also has value in training data science students.
-**S2 Checklist** shows an example of a data analysis review checklist that we have used in our data science courses.
+**S1 Checklist** shows an example of a data analysis review checklist that we have used in our data science courses.
 It serves to communicate the aspects that we, as educators, believe are important for the assessment to be completed to a high quality.
 In addition to checking off the checklist items, students are also asked to provide written comments and feedback.
 This checklist helps focus students' comments and feedback on the items they were unable to check off.
