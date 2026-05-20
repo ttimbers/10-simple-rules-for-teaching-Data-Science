@@ -4,9 +4,9 @@ author:
   - name: Tiffany A. Timbers
     affiliation: Department of Statistics, The University of British Columbia, Vancouver, BC, Canada
     corresponding: true
-    email: tiffany.timbers@stat.ubc.ca (TT)
+    email: "Corresponding author \\newline{}E-mail: tiffany.timbers@stat.ubc.ca (TT)"
   - name: Mine Çetinkaya-Rundel
-    affiliation: Department of Statistical Sciences, Duke University, Durham, NC, USA
+    affiliation: Department of Statistical Sciences, Duke University, Durham, North Carolina, USA
 date: today
 date-format: long
 format: 
