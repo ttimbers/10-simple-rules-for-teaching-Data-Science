@@ -129,7 +129,7 @@ Without timely feedback, the student might not realize that there's a problem wi
 
 Automated software testing can provide timely feedback while students' focus and attention are on the topic being learned and practiced.
 This pedagogy was first developed and used for teaching programming in computer science courses [reviewed in @wilson2019teaching] and is now being adopted in data science courses.
-There are now many wonderful and popular software packages for this in the context of data science, including the learnr R package [@learnr] for R code and the NBgrader \[\@nbgrader\] and Otter Grader \[\@otter_grader\] packages, which work with both R and Python code.
+There are now many wonderful and popular software packages for this in the context of data science, including the learnr R package [@learnr] for R code and the NBgrader [@nbgrader] and Otter Grader [@otter_grader] packages, which work with both R and Python code.
 
 ![Example of automated software test feedback to students.](figures/tests-as-feedback.png){#fig-code-feedback width="100%"}
 
@@ -147,7 +147,7 @@ This connects naturally to our final rule: *Keep up to date with modern tooling*
 Our fifth rule is to use tractable or toy data examples when introducing a new tool, method, or algorithm to students.
 Tractable or toy data sets have a countable number of elements, which can fit in our working memory.
 This allows students to track the progression of everything through the algorithm's steps, see how the elements are manipulated, and gain a deeper understanding of these concepts.
-For example, in one of our courses, we use the Palmer Penguins dataset \[\@horst2020palmerpenguins\] to introduce k-means clustering. Instead of giving them the entire data set, which contains hundreds of observations, we first subset it to just a handful. Then we can walk the students through what happens to these observations at each step of the algorithm, building their understanding and intuition. Inspiration for this comes from the STA 545 dplyr joins cheat sheet [\@bryan2015stat545], which covers various joins in the dplyr package [@dplyr].
+For example, in one of our courses, we use the Palmer Penguins dataset [@horst2020palmerpenguins] to introduce k-means clustering. Instead of giving them the entire data set, which contains hundreds of observations, we first subset it to just a handful. Then we can walk the students through what happens to these observations at each step of the algorithm, building their understanding and intuition. Inspiration for this comes from the STA 545 dplyr joins cheat sheet [@bryan2015stat545], which covers various joins in the dplyr package [@dplyr].
 This is a difficult topic for students to wrap their heads around, and when instructors teach it using large datasets, it is really hard for students to see the differences between the types of joins and to understand how they work.
 To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
 The cheat sheet addresses this issue by using two toy data sets on superhero comic characters and publishers; the superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
