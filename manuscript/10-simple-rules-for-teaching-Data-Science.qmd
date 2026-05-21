@@ -19,6 +19,9 @@ format:
         \usepackage{setspace} 
         \doublespacing
     keep-tex: true
+    include-before-body:
+      text: |
+        \renewcommand{\figurename}{Fig}
     include-after-body: supporting-information.tex
 execute:
     echo: false
