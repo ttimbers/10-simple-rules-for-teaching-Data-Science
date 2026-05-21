@@ -220,7 +220,7 @@ Doing this minimizes the potential syntax errors that could be introduced by for
 Another example is the use of the arrow (\<-) as an assignment operator in R, which may seem odd to some learners because it uses two characters.
 Again, however, when given the historical context that R was derived from another programming language named S, and S was inspired by another programming language, APL, that was designed for a particular keyboard with one key mapped to the assignment operator [@fay2018assignment], it makes a lot more sense as to why that design choice was made.
 Design and historical contexts help learners understand the rationale behind different design choices, allowing them to see choices they might not initially agree with as excellent within these contexts.
-As an aside, for those interested in learning more about the history of the R programming language, see the "History and Overview of R" chapter in @peng2016r.
+As an aside, for those interested in learning more about the history of the R programming language, see the "History and Overview of R" chapter in [@peng2016r].
 
 # Rule 8: Use checklists to focus and facilitate peer learning {#sec-rule8}
 
