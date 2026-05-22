@@ -80,7 +80,7 @@ An example of this is the first chapter of *Data Science: A First Introduction* 
 a textbook one of the authors uses to teach introductory data science.
 There, we ask learners to load data from a CSV file and perform introductory data wrangling using filtering, arranging, and slicing.
 Finally, create a plot to answer a question about indigenous languages in Canada: how many people living in Canada speak an indigenous language as their mother tongue?
-Other leading data science educators who advocate and practice this rule include Wang and colleagues [-@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan [-@bryan2017twitter], a software engineer at Posit (formerly RStudio) and renowned data science educator, who summed this up nicely in a tweet "\[…\] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it."
+Other leading data science educators who advocate and practice this rule include Wang and colleagues [@wang2017data], David Robinson in his introductory online Data Science course [@robinson2017tidyverse; @robinson2017announcing], and Jenny Bryan, a software engineer at Posit (formerly RStudio) and renowned data science educator, who summed this up nicely in a tweet "\[…\] I REPEAT, do not front-load the 'boring', foundational stuff. Do realistic and non-boring tasks and work your way down to it." [@bryan2017twitter]
 
 # Rule 3: Use participatory live coding {#sec-rule3}
 
@@ -94,7 +94,7 @@ It helps you appear human to students because they, too, will make mistakes.
 More importantly, it allows you to demonstrate how you approach debugging to solve code problems, which they can leverage in their homework and later in their work outside the course.
 Participatory live coding also slows you down, so you don't go too fast for the students.
 This pedagogy originates from the "I do, we do, you do" method of knowledge transfer [@fisher2021better], and its application in teaching programming was pioneered by The Carpentries, a global nonprofit (<https://carpentries.org>).
-Best practices for doing this have been refined and shared as ten quick tips by Nederbragt and colleagues [-@nederbragt2020ten].
+Best practices for doing this have been refined and shared as ten quick tips by Nederbragt and colleagues [@nederbragt2020ten].
 
 # Rule 4: Give tons of practice and timely feedback {#sec-rule4}
 
@@ -109,7 +109,7 @@ With this approach, students have to investigate each file in detail, including 
 In our courses, they will complete these six variants in an in-class worksheet, a lab assignment, and a quiz.
 Meaning that by the end of the course, they will have practiced this skill over 15 times.
 Many excellent data science educational resources use this pedagogy, including software packages (e.g., the swirl R package [@swirl]), online courses (e.g., Kaggle Learn [@kaggle_learn]), and popular textbooks (e.g., R for Data Science [@wickham2023]).
-For those new to designing practice exercises for data science, we recommend looking at the "Exercise Types" chapter of *Teaching Tech Together: How to make your lessons work and build a teaching community around them* by Greg Wilson [-@wilson2019teaching].
+For those new to designing practice exercises for data science, we recommend looking at the "Exercise Types" chapter of *Teaching Tech Together: How to make your lessons work and build a teaching community around them* by Greg Wilson [@wilson2019teaching].
 
 An excellent question instructors may ask in response to reading this rule is, "How do we make time in class and across the curriculum for practice as well as knowledge dissemination?" One strategy we often employ is assigning readings or videos as pre-class homework rather than using the entire class time for lecturing.
 Allowing time for in-class practice is extremely valuable, as instructors and teaching assistants are present to help students get unstuck when they run into trouble.
