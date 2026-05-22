@@ -67,4 +67,4 @@ It is especially important to elaborate on items that you were not able to check
 
 ## Attribution
 
-This was derived from the [JOSE review checklist](https://openjournals.readthedocs.io/en/jose/review_checklist.html) and the ROpenSci review checklist.
+This was derived from the [JOSE review checklist](https://openjournals.readthedocs.io/en/jose/review_checklist.html).

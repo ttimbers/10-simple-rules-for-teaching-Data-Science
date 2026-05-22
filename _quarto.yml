@@ -1,0 +1,6 @@
+project:
+  type: default
+  render:
+    - manuscript/*.qmd
+  post-render:
+    - Rscript manuscript/fix-tex-figure-path.R
