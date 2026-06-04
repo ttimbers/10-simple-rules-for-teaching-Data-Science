@@ -150,7 +150,7 @@ This connects naturally to our final rule: *Keep up to date with modern tooling*
 Our fifth rule is to use tractable or toy data examples when introducing a new tool, method, or algorithm to students.
 Tractable or toy data sets have a countable number of elements, which can fit in our working memory.
 This allows students to track the progression of everything through the algorithm's steps, see how the elements are manipulated, and gain a deeper understanding of these concepts.
-For example, in one of our courses, we use the Palmer Penguins dataset [@horst2020palmerpenguins] to introduce k-means clustering. Instead of giving them the entire data set, which contains hundreds of observations, we first subset it to just a handful. Then we can walk the students through what happens to these observations at each step of the algorithm, building their understanding and intuition. Inspiration for this comes from the STA 545 dplyr joins cheat sheet [@bryan2015stat545], which covers various joins in the dplyr package [@dplyr].
+For example, in one of our courses, we use the Palmer Penguins dataset [@horst2020palmerpenguins] to introduce k-means clustering. Instead of giving them the entire data set, which contains hundreds of observations, we first subset it to just a handful. Then we can walk the students through what happens to these observations at each step of the algorithm, building their understanding and intuition. Inspiration for this comes from the STAT 545 dplyr joins cheat sheet [@bryan2015stat545], which covers various joins in the dplyr package [@dplyr].
 This is a difficult topic for students to wrap their heads around, and when instructors teach it using large datasets, it is really hard for students to see the differences between the types of joins and to understand how they work.
 To make matters worse, all of these joins are also similarly named (e.g, left join, right join, inner join, outer join, etc).
 The cheat sheet addresses this issue by using two toy data sets on superhero comic characters and publishers; the superhero dataset has only 7 rows and 4 columns, while the publisher dataset has 3 rows and 2 columns.
@@ -201,7 +201,7 @@ Eugenics caused real harm to real people, and statistics played a role in that h
 These conversations are not always easy, and few of us received explicit training in how to hold them.
 But acknowledging the harm caused by eugenics and its place in the history of our field is part of responsible teaching.
 Helping students understand this history is how we can equip them to think critically about the methods and data they inherit.
-It also helps ensure new generations do not repeat the mistakes of the past
+It also helps ensure new generations do not repeat the mistakes of the past.
 
 This rule also applies when teaching a new software tool or a new feature of a tool they are familiar with, whose design does not seem optimal from the learner's perspective.
 Rather than leaving students to feel confused or frustrated, it is helpful to explain why the tool was built the way it was.
@@ -235,12 +235,14 @@ This helps them refine their vision of what “good” looks like for the task t
 However, peer review can be particularly challenging if you haven't done it before, or if it involves reviewing something new that you are still learning.
 So what can we, as instructors, do to facilitate this practice for our learners?
 Given that we are well-practiced at creating rubrics for grading student work, we can use our existing rubrics as a starting point for drafting peer-review checklists.
+
 Why checklists?
 Checklists can help ensure complex tasks are completed successfully and have been used in safety-critical systems (such as aviation, surgery, or nuclear power).
-They can be particularly helpful for complex tasks as well as for repetitive ones that can become boring [@gawande2010checklist].
+They can be particularly helpful for completing complex tasks as well as for repetitive ones that can become boring [@gawande2010checklist].
 For these reasons, checklists have recently been adopted in scientific (e.g., PLoS journals, Nature Ecology & Evolution, Journal of Open Source Education, Journal of Open Source Software) and software (e.g., ROpenSci, PyOpenSci) publishing to help ensure that reviewers and editors increase transparency, decrease bias, and call attention to essential elements of reviews that are often overlooked [@parker2018empowering].
 As reviewers for some of these journals and organizations, the authors have found checklists extremely helpful for focusing our attention on the most important elements of a review and for ensuring we don't miss anything.
 We believe this idea also has value in training data science students.
+
 **S1 Checklist** shows an example of a data analysis review checklist that we have used in our data science courses.
 It serves to communicate the aspects that we, as educators, believe are important for the assessment to be completed to a high quality.
 In addition to checking off the checklist items, students are also asked to provide written comments and feedback.
@@ -288,8 +290,8 @@ At the end of the project, we have them complete a teamwork reflection activity 
 As seasoned collaborators, we often take these practices for granted.
 However, for students new to collaboration, these practices are often missed, and as a result, collaboration frequently breaks down.
 Even with these scaffolds in place, we still see some groups struggle with collaboration.
-To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict and, as a group, developing a plan ahead of time for how to manage it when it arises.
-Beyond Intractability offers a useful guide to conflict resolution for students working on group projects [@burgess_group_projects].
+To manage this, we recommend discussing with students the importance of expecting, rather than avoiding, conflict, and to work as a group to develop a plan ahead of time for how to manage it when it arises.
+Beyond Intractability, an online knowledge base on resolving intractable conflicts, offers a useful guide to conflict resolution for students working on group projects [@burgess_group_projects].
 
 # Rule 10: Keep up to date with modern tooling {#sec-rule10}
 
